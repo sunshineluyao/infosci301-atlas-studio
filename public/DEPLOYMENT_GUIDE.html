@@ -1,0 +1,292 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>INFOSCI301 Atlas Studio — Deployment Guide</title><style>body{font:17px/1.65 Georgia,serif;color:#203540;background:#f5f7f5;max-width:1100px;margin:auto;padding:40px 5%}h1,h2,h3{font-family:system-ui,sans-serif;line-height:1.25;letter-spacing:-.5px}h1{font-size:38px;border-bottom:3px solid #087c77;padding-bottom:24px}h2{font-size:26px;margin-top:45px}h3{font-size:20px}a{color:#087c77}table{border-collapse:collapse;width:100%;font:14px/1.5 system-ui,sans-serif;margin:20px 0;background:#fff}th,td{padding:12px;border:1px solid #d7e2dd;text-align:left;vertical-align:top}th{background:#e5efe9}pre{background:#132b39;color:#e2eeed;padding:20px;border-radius:6px;overflow:auto;font-size:14px}code{font-family:ui-monospace,monospace}li{margin:9px 0}strong{color:#163c47}@media(max-width:700px){body{padding:22px 5%;font-size:16px}h1{font-size:29px}table{font-size:12px;display:block;overflow:auto}th,td{min-width:100px;padding:8px}}@media print{body{background:white;font-size:12pt;padding:0}h2,h3{break-after:avoid}pre,table{break-inside:avoid}a{color:#184658}}</style></head><body><h1 id="atlas-studio-configure-teach-and-deploy">Atlas Studio: configure, teach and deploy</h1>
+<p>INFOSCI 301 · Week 4 · prepared 14 September 2026</p>
+<h2 id="1-what-you-have">1. What you have</h2>
+<table>
+<thead>
+<tr>
+<th>Edition</th>
+<th>Starting experience</th>
+<th>Deployment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Guided classroom</td>
+<td>Light interface; four-level walkthrough; 2D first; optional 3D</td>
+<td>Hugging Face Static HTML Space</td>
+</tr>
+<tr>
+<td>Immersive research</td>
+<td>Dark interface; selectable 3D network and space–time scenes; 2D alternative</td>
+<td>Vercel, connected to your GitHub repository</td>
+</tr>
+</tbody>
+</table>
+<p>Both editions share the same curriculum, datasets, configuration and evidence record. These are working static applications, not mock-up images. They do not run hosted Python, LLMs, GeoAI models or drone reconstruction. The notebooks are the executable Python route.</p>
+<p>The release is <strong>not yet published</strong> to your HF, GitHub or Vercel account. Build/data/interface-logic checks were performed locally; the environment blocked browser access to its local preview. Complete the live visual/WebGL/mobile acceptance checklist in Section 8 after deployment.</p>
+<h2 id="2-what-was-retained-and-improved">2. What was retained and improved</h2>
+<table>
+<thead>
+<tr>
+<th>Previous tutorial function</th>
+<th>New route</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Choose an idiom from the broader decision tree</td>
+<td>Code &amp; packages → Original idiom atlas; all 38 original idioms retained</td>
+</tr>
+<tr>
+<td>Inspect data, marks and computation together</td>
+<td>Explore → live workbench, legend, source inspection and active algorithm recipe</td>
+</tr>
+<tr>
+<td>Python and R implementation guidance</td>
+<td>Code &amp; packages → Python / R / browser recipes; R adaptations explicitly unexecuted</td>
+</tr>
+<tr>
+<td>Algorithm/package selection and output previews</td>
+<td>Package gallery → purpose, execution status, documentation and saved artifacts</td>
+</tr>
+<tr>
+<td>Run a notebook</td>
+<td>Download either self-contained notebook → upload to Colab; configure GitHub for a direct link</td>
+</tr>
+<tr>
+<td>Justify the choice</td>
+<td>Four-level walkthrough → decision, validation, evidence note and final-project addition</td>
+</tr>
+</tbody>
+</table>
+<p>The previous <code>notebooks/idiom-algorithm-preview.html</code> path is preserved as a small entry page to the new application. The original full page is archived at <code>notebooks/legacy-idiom-atlas.html</code>. Retain both when replacing the tutorial in an existing static Space.</p>
+<h2 id="3-the-classroom-route">3. The classroom route</h2>
+<h3 id="network-scientific-communication-of-emerging-technology">Network: scientific communication of emerging technology</h3>
+<ol>
+<li><strong>Domain:</strong> select an audience and a communication decision. What misunderstanding could the visual create? What audience evidence is still needed?</li>
+<li><strong>Data/Task:</strong> inspect real OpenAlex paper records. Paper–topic links mean provider classification—not citation, scientific truth or a verified NLP relationship.</li>
+<li><strong>Idiom:</strong> hold the dataset fixed; compare a basic topic-count chart, force-directed view, bipartite view and matrix. Give a peer a relationship-tracing task. Record errors and interpretation.</li>
+<li><strong>Algorithm:</strong> inspect seeded layout, BFS and PageRank parameters; run the notebook and checks. State what sample sensitivity changes. Export the communication brief and validation record.</li>
+</ol>
+<h3 id="place-and-time-human-centered-intelligence-digital-humanities">Place and time: human-centered intelligence / digital humanities</h3>
+<ol>
+<li><strong>Domain:</strong> ask a heritage interpretation question that matters to people. Distinguish an administrative archive from lived experience and consent.</li>
+<li><strong>Data/Task:</strong> inspect designation IDs, date meaning, representative coordinates and missingness. The new core example uses NYC landmarks—not invented Jinxi observations. NASA EONET is a separate extension with a different unit.</li>
+<li><strong>Idiom:</strong> compare a basic timeline, point map, grid aggregation and 3D space–time view. Height encodes time, not cultural importance. Test interpretation against the simpler 2D alternative.</li>
+<li><strong>Algorithm:</strong> validate coordinates, IDs, dates, projections, counts and aggregation. No satellite/model output should be interpreted as a community-impact measure without additional evidence.</li>
+</ol>
+<p>Every level has a different validation test. <strong>Validation is not a fifth level.</strong> A correct algorithm cannot establish that the audience question or data abstraction is valid. Framework: <a href="https://www.cs.ubc.ca/labs/imager/tr/2009/NestedModel/">Munzner's nested model</a>.</p>
+<p><strong>Suggested pacing:</strong> instructor models one route first; pairs complete one task in each studio; advanced tools remain optional. End with the team claim, not a requirement to master every package. This addresses tool overload and unclear purpose raised in the course feedback.</p>
+<h2 id="4-configuration">4. Configuration</h2>
+<p>Open <strong>Configure</strong> to test settings and download <code>config.json</code>. The dialog changes the current session only. To preserve a change, replace <code>public/config.json</code> in the source and rebuild, or replace root <code>config.json</code> in the prebuilt HF files.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Meaning / example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>courseTitle</code>, <code>semester</code>, <code>instructor</code></td>
+<td>Public course labels</td>
+</tr>
+<tr>
+<td><code>defaultStudio</code></td>
+<td><code>network</code> or <code>spatial</code></td>
+</tr>
+<tr>
+<td><code>defaultTheme</code></td>
+<td><code>light</code> or <code>dark</code>; immersive edition starts dark on first load</td>
+</tr>
+<tr>
+<td><code>enable3D</code></td>
+<td><code>true</code> or <code>false</code>; turn off for lower-powered classrooms</td>
+</tr>
+<tr>
+<td><code>maxVisiblePapers</code></td>
+<td>Integer 5–60; start with 20–30 for legibility</td>
+</tr>
+<tr>
+<td><code>allowLocalData</code></td>
+<td>Enable local non-sensitive spatial JSON import</td>
+</tr>
+<tr>
+<td><code>githubRepo</code></td>
+<td><code>YOUR_GITHUB_NAME/YOUR_REPOSITORY</code>, without <code>https://</code></td>
+</tr>
+<tr>
+<td><code>githubBranch</code></td>
+<td>Usually <code>main</code>; use an actual branch</td>
+</tr>
+<tr>
+<td><code>notebookPath</code></td>
+<td><code>public/notebooks</code> for this source repository</td>
+</tr>
+<tr>
+<td><code>spaceUrl</code>, <code>vercelUrl</code></td>
+<td>Optional release metadata; not credentials</td>
+</tr>
+</tbody>
+</table>
+<p>After setting a real public <code>githubRepo</code>, the notebook cards show a direct Colab link. Until then, the UI gives honest download/upload instructions instead of a fabricated “Open in Colab” URL. Private repositories may require additional Colab access; do not assume students have it.</p>
+<p>Imported data format: a JSON array of <code>id</code>, <code>title</code>, <code>group</code>, <code>date</code> (<code>YYYY-MM-DD</code>), <code>lon</code>, <code>lat</code>, optional <code>url</code>. Maximum 5,000 records / 2 MB. It stays in browser memory. The downloadable schema contains placeholder coordinates and is clearly <strong>not real data</strong>. Do not import identifiable travel histories, private homes, restricted heritage locations or sensitive field notes.</p>
+<p>Evidence notes and team drafts are stored on the learner's own device. No server collects submissions. Students must export, review and post through the course platform. Browser privacy settings may prevent local persistence; the UI warns them to export.</p>
+<h2 id="5-create-the-hugging-face-space-easiest-route">5. Create the Hugging Face Space — easiest route</h2>
+<ol>
+<li>Unzip <strong>INFOSCI301_HuggingFace_Ready.zip</strong> on your computer. Upload its contents, not the ZIP file itself.</li>
+<li>Sign in to Hugging Face and create a new Space under the intended account or organization. Choose the <strong>Static</strong> SDK. Choose visibility deliberately after checking data/course-material sharing rights. Do not activate paid hardware for this static lesson.</li>
+<li>In the Space's Files area, upload the extracted root files and folders while preserving their hierarchy. <code>index.html</code> and <code>README.md</code> must be at the repository root—not inside an extra outer folder. For many files, the CLI route below is more reliable.</li>
+<li>Keep this root README metadata (already included in the prepared ZIP):</li>
+</ol>
+<pre><code class="language-yaml">---
+title: INFOSCI 301 Atlas Studio
+emoji: 🌐
+colorFrom: blue
+colorTo: green
+sdk: static
+app_file: index.html
+fullWidth: true
+header: mini
+pinned: false
+---
+</code></pre>
+<ol>
+<li>Open the App tab. Confirm both studios, source links, note export and notebook downloads. Open the app in its full-page view for teaching; an embedded frame may give the controls less room.</li>
+<li>Edit root <code>config.json</code> if needed. No secrets are required. The configuration file is public; never put an HF token in it.</li>
+<li>If replacing only the tutorial inside the existing Week 2 Space, preserve its other course files. Keep a recoverable copy/version first. Deploy this project in a dedicated Space if the current app's root/build architecture is different; do not overwrite an unrelated landing page blindly.</li>
+</ol>
+<p>HF supports HTML/static assets directly; a static SDK is sufficient here. <a href="https://huggingface.co/docs/hub/spaces-sdks-static">Official Static HTML Spaces documentation</a>, <a href="https://huggingface.co/docs/hub/spaces-config-reference">configuration reference</a>.</p>
+<h3 id="hf-upload-from-the-source-project">HF upload from the source project</h3>
+<p>After installing Node.js 22.12+ and extracting the source project:</p>
+<pre><code class="language-bash">npm ci
+npm test
+npm run build:hf
+</code></pre>
+<p>This prepares <code>dist-hf/</code>, including the correct HF README metadata. Install the official Hugging Face CLI in your own environment if needed, then authenticate interactively. Replace the example account/Space below with the exact destination you created:</p>
+<pre><code class="language-bash">hf auth login
+hf upload YOUR_HF_NAME/YOUR_SPACE dist-hf . --repo-type space
+</code></pre>
+<p>Use the normal credential flow; do not paste a token into source files, chat, a Git remote or a public command log. Do not use deletion flags or mirror commands against an existing Space. <a href="https://huggingface.co/docs/huggingface_hub/guides/cli">Official HF CLI guide</a>.</p>
+<h2 id="6-deploy-the-3d-edition-to-vercel-with-git">6. Deploy the 3D edition to Vercel with Git</h2>
+<ol>
+<li>Extract <strong>INFOSCI301_Atlas_Studio_Source.zip</strong>. Open that project folder. It contains <code>package.json</code>, <code>src/</code>, <code>public/</code>, <code>vercel.json</code> and the test workflow.</li>
+<li>Run the local checks and immersive build:</li>
+</ol>
+<pre><code class="language-bash">npm ci
+npm test
+npm run build:vercel
+</code></pre>
+<ol>
+<li>Create an empty GitHub repository under your chosen account. Public sharing should follow the attribution/permission review; choose private if necessary. If this folder is already inside a repository, use that repository's normal workflow rather than initializing or replacing it.</li>
+<li>For a genuinely new, unversioned project folder, initialize and push:</li>
+</ol>
+<pre><code class="language-bash">git init -b main
+git add .
+git commit -m &quot;Add INFOSCI301 Atlas Studio&quot;
+git remote add origin https://github.com/YOUR_GITHUB_NAME/YOUR_REPOSITORY.git
+git push -u origin main
+</code></pre>
+<p>The ignore file excludes dependencies, build folders, local caches and environment files. No credentials are needed in the app.</p>
+<ol>
+<li>In Vercel, choose <strong>Add New → Project</strong>, connect the intended GitHub account, and import only this repository. Review the integration permissions before granting access.</li>
+<li>Keep the repository root as Root Directory. <code>vercel.json</code> sets:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Framework</td>
+<td>Vite</td>
+</tr>
+<tr>
+<td>Install command</td>
+<td><code>npm ci</code></td>
+</tr>
+<tr>
+<td>Build command</td>
+<td><code>npm run build:vercel</code></td>
+</tr>
+<tr>
+<td>Output directory</td>
+<td><code>dist-vercel</code></td>
+</tr>
+<tr>
+<td>Node.js</td>
+<td>22.x or newer compatible runtime</td>
+</tr>
+<tr>
+<td>Environment variables</td>
+<td>None required</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Deploy, then complete Section 8 on the actual URL. This edition starts in dark/3D mode. Use 2D if WebGL is unavailable, hardware is slow, or the comparison task is clearer without depth.</li>
+<li>Set the real repository path in <code>public/config.json</code>, commit and push. Vercel's Git integration deploys changes; non-production branches can be used for review previews, while the configured production branch controls the public course release. Use a PR to review instructional changes before merging. <a href="https://vercel.com/docs/git/vercel-for-github">Vercel GitHub documentation</a>, <a href="https://vite.dev/guide/static-deploy.html">Vite deployment guide</a>.</li>
+</ol>
+<p>The included GitHub Actions workflow tests and builds both editions on pushes to <code>main</code> and on pull requests. It <strong>does not publish to Hugging Face</strong>. For each HF release, build/upload the reviewed version separately; this avoids an undisclosed credential-bearing workflow.</p>
+<h2 id="7-design-precedents-reviewed">7. Design precedents reviewed</h2>
+<p>These are representative references, not a league table of “best” Spaces. Live designs and availability can change. Patterns are adapted, not copied.</p>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>What informed this design</th>
+<th>What was intentionally not imported</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://huggingface.co/spaces/TencentARC/InstantMesh">HF InstantMesh</a></td>
+<td>Example-first workflow, progressive processing views, separate result/export</td>
+<td>Model weights, inference cost, branding</td>
+</tr>
+<tr>
+<td><a href="https://huggingface.co/spaces/trellis-community/TRELLIS">HF TRELLIS</a></td>
+<td>Collapsible advanced controls and clear output states</td>
+<td>Its generative pipeline; Microsoft’s URL redirects to the community instance</td>
+</tr>
+<tr>
+<td><a href="https://deepsite.hf.co/">DeepSite</a></td>
+<td>Obvious starting action and focused onboarding</td>
+<td>Editor behavior was not tested; only the public landing experience was inspected</td>
+</tr>
+<tr>
+<td><a href="https://react-three-next.vercel.app/">React Three Next</a></td>
+<td>Coordinated DOM and 3D manipulation</td>
+<td>Starter code or assets; this project uses direct Three.js</td>
+</tr>
+<tr>
+<td><a href="https://threejspunk.vercel.app/">Threejs-Punk</a></td>
+<td>Restrained depth/atmosphere inspiration</td>
+<td>Heavy cinematic effects that could obscure teaching data</td>
+</tr>
+<tr>
+<td><a href="https://vercel.com/blog/building-an-interactive-3d-event-badge-with-react-three-fiber">Vercel's 3D event badge</a></td>
+<td>Direct manipulation and clear interaction affordances</td>
+<td>Badge physics, personal event data or visual assets</td>
+</tr>
+</tbody>
+</table>
+<p>The result uses a restrained navy/teal system with amber distinctions, progressive controls, source-aware inspection, a lazy-loaded 3D engine, no autoplay and a 2D/data-table alternative. It does not claim formal accessibility certification.</p>
+<h2 id="8-acceptance-checklist-before-class">8. Acceptance checklist before class</h2>
+<ul>
+<li>Open the deployed URL in a fresh/incognito browser. Confirm no console errors or missing local assets.</li>
+<li>Test desktop and a narrow/mobile viewport. Check wrapping, zoom, table scrolling and keyboard focus.</li>
+<li>Network: change paper count, year, layout, metric and neighborhood; select a paper and open its source. Compare graph and matrix on the same subset.</li>
+<li>Spatial: change year window and borough; compare points/grid; switch to NASA; compare world projections; inspect the record and timeline.</li>
+<li>3D: orbit, zoom and select records. Verify axes and date range interpretation. Test 2D fallback on a low-powered device. Spatial axes stay fixed to the full selected dataset across filters; longitude/latitude are still independently normalized, so screen distance is not metric distance.</li>
+<li>Notes: type a non-sensitive test note, reload, export it, and confirm its contents. Confirm that no automatic submission is implied.</li>
+<li>Configuration: test a valid change and invalid input; reload deployed defaults. If enabled, test local data import with a public sample and an invalid file.</li>
+<li>Notebooks: download both, upload to a fresh Colab runtime, and run the required lesson cells. Live external tiles/CDN-dependent legacy previews may need internet; optional Graphviz/GeoAI/Earth Engine paths have distinct requirements.</li>
+<li>Have two students complete a task without instructor help. Record where they get stuck and revise before requiring the activity. Build correctness is not a usability study.</li>
+</ul>
+<h2 id="9-before-students-leave">9. Before students leave</h2>
+<p>One team post: title/shared question; members and complementary strengths; individual-project evidence contributed; bounded SDG/local-community/open-science contribution; basic idiom, network and spatial–temporal design ideas with real sources and relationship/time semantics; Week 5 MVP scope and Week 6 user-study task.</p>
+<p>Students export the draft in <strong>Evidence &amp; team claim</strong>. Each added view must change an interpretation, research question or decision. By the end of the course, the goal is not tool collecting: it is evidence-led design capability, interdisciplinary innovation and responsible global leadership.</p></body></html>

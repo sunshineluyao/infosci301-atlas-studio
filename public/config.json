@@ -1,0 +1,15 @@
+{
+  "courseTitle": "INFOSCI 301",
+  "semester": "Autumn 2026 · Week 4",
+  "instructor": "Prof. Luyao Zhang",
+  "defaultStudio": "network",
+  "defaultTheme": "light",
+  "enable3D": true,
+  "maxVisiblePapers": 30,
+  "allowLocalData": true,
+  "githubRepo": "",
+  "githubBranch": "main",
+  "notebookPath": "public/notebooks",
+  "spaceUrl": "",
+  "vercelUrl": ""
+}

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>pydeck</title>
+        <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.14.0/dist/maplibre-gl.css" />
+    <script src='https://cdn.jsdelivr.net/npm/@deck.gl/jupyter-widget@~9.3.*/dist/index.js'></script>
+    <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/@deck.gl/widgets@~9.3.*/dist/stylesheet.css />
+    <style>
+    body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#deck-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#deck-container canvas {
+  z-index: 1;
+  background: none;
+}
+
+#deck-container .error_text {
+  color: red;
+  background: none;
+  position: absolute;
+  z-index: 100;
+}
+    </style>
+  </head>
+  <body>
+    <div id="deck-container">
+    </div>
+  </body>
+  <script>
+    const container = document.getElementById('deck-container');
+    const jsonInput = {
+  "initialViewState": {
+    "latitude": 10,
+    "longitude": 20,
+    "zoom": 0.5
+  },
+  "layers": [
+    {
+      "@@type": "ScatterplotLayer",
+      "data": [
+        {
+          "category": "Wildfires",
+          "latitude": -19.219845995937,
+          "longitude": 16.525371955075,
+          "title": "Wildfire in Namibia 1031934"
+        },
+        {
+          "category": "Wildfires",
+          "latitude": -19.010826514308,
+          "longitude": 16.853097248467,
+          "title": "Wildfire in Namibia 1031935"
+        },
+        {
+          "category": "Wildfires",
+          "latitude": -17.785345067781,
+          "longitude": 123.83814476183,
+          "title": "Wildfire in Australia 1031957"
+        },
+        {
+          "category": "Wildfires",
+          "latitude": -11.366068693712,
+          "longitude": -46.821645175035,
+          "title": "Wildfire in Brazil 1031958"
+        },
+        {
+          "category": "Wildfires",
+          "latitude": -17.296344622414,
+          "longitude": 23.624330877053,
+          "title": "Wildfire in Zambia 1031940"
+        },
+        {
+          "category": "Wildfires",
+          "latitude": -9.3969353889694,
+          "longitude": -50.133013156616,
+          "title": "Wildfire in Brazil 1031959"
+        },
+        {
+          "category": "Wildfires",
+          "latitude": -13.316752180446,
+          "longitude": -51.673864324419,
+          "title": "Wildfire in Brazil 1031952"
+        },
+        {
+          "category": "Wildfires",
+          "latitude": -20.503068317887,
+          "longitude": 123.6974310692,
+          "title": "Wildfire in Australia 1031915"
+        },
+        {
+          "category": "Wildfires",
+          "latitude": -17.97505203661,
+          "longitude": 123.93079294141,
+          "title": "Wildfire in Australia 1031916"
+        },
+        {
+          "category": "Wildfires",
+          "latitude": -16.51419243014,
+          "longitude": 20.498908523505,
+          "title": "Wildfire in Angola 1031899"
+        },
+        {
+          "category": "Wildfires",
+          "latitude": -10.941649111769,
+          "longitude": 31.823007365441,
+          "title": "Wildfire in Zambia 1031900"
+        },
+        {
+          "category": "Wildfires",
+          "latitude": -23.632054795735,
+          "longitude": 24.324062224471,
+          "title": "Wildfire in Botswana 1031898"
+        },
+        {
+          "category": "Wildfires",
+          "latitude": -18.134428187278,
+          "longitude": 20.523392756908,
+          "title": "Wildfire in Namibia 1031920"
+        },
+        {
+          "category": "Wildfires",
+          "latitude": -18.526100485669,
+          "longitude": 19.339364922523,
+          "title": "Wildfire in Namibia 1031921"
+        },
+        {
+          "category": "Wildfires",
+          "latitude": -10.870696115233,
+          "longitude": 31.891932385475,
+          "title": "Wildfire in Zambia 1031941"
+        },
+        {
+          "category": "Severe Storms",
+          "latitude": 14.1,
+          "longitude": -108.1,
+          "title": "Cyclone Marie"
+        },
+        {
+          "category": "Severe Storms",
+          "latitude": 28.6,
+          "longitude": -91.8,
+          "title": "Tropical Storm Edouard"
+        },
+        {
+          "category": "Severe Storms",
+          "latitude": 10.8,
+          "longitude": -111.5,
+          "title": "Hurricane Karina"
+        },
+        {
+          "category": "Severe Storms",
+          "latitude": 16.9,
+          "longitude": 162.4,
+          "title": "Tropical Storm Bang-Lang"
+        },
+        {
+          "category": "Severe Storms",
+          "latitude": 20.4,
+          "longitude": 167.7,
+          "title": "Tropical Storm Etau"
+        },
+        {
+          "category": "Severe Storms",
+          "latitude": 14.9,
+          "longitude": -119.9,
+          "title": "Tropical Storm Julio"
+        },
+        {
+          "category": "Severe Storms",
+          "latitude": 14.1,
+          "longitude": -111.9,
+          "title": "Tropical Storm Iselle"
+        },
+        {
+          "category": "Severe Storms",
+          "latitude": 13.7,
+          "longitude": -146.7,
+          "title": "Tropical Storm Moke"
+        },
+        {
+          "category": "Severe Storms",
+          "latitude": 20.6,
+          "longitude": 108.7,
+          "title": "Tropical Storm Narra"
+        },
+        {
+          "category": "Severe Storms",
+          "latitude": 8.6,
+          "longitude": 154.2,
+          "title": "Typhoon Saudel"
+        },
+        {
+          "category": "Severe Storms",
+          "latitude": 18.1,
+          "longitude": -131.8,
+          "title": "Cyclone Hernan"
+        },
+        {
+          "category": "Severe Storms",
+          "latitude": 26.5,
+          "longitude": 148.0,
+          "title": "Tropical Storm Nangka"
+        },
+        {
+          "category": "Severe Storms",
+          "latitude": 14.7,
+          "longitude": -142.2,
+          "title": "Tropical Storm Lala"
+        },
+        {
+          "category": "Severe Storms",
+          "latitude": 36.7,
+          "longitude": -43.0,
+          "title": "Tropical Storm Cristobal"
+        },
+        {
+          "category": "Severe Storms",
+          "latitude": 27.1,
+          "longitude": 160.7,
+          "title": "Tropical Storm 15W"
+        },
+        {
+          "category": "Volcanoes",
+          "latitude": -21.244,
+          "longitude": 55.708,
+          "title": "Piton de la Fournaise, Reunion (France)"
+        },
+        {
+          "category": "Volcanoes",
+          "latitude": 43.384,
+          "longitude": 144.013,
+          "title": "Akan Volcano, Japan"
+        },
+        {
+          "category": "Volcanoes",
+          "latitude": 11.9844,
+          "longitude": -86.1688,
+          "title": "Masaya Volcano, Nicaragua"
+        },
+        {
+          "category": "Volcanoes",
+          "latitude": -53.106,
+          "longitude": 73.513,
+          "title": "Heard Volcano, Australia"
+        },
+        {
+          "category": "Volcanoes",
+          "latitude": -23.37,
+          "longitude": -67.73,
+          "title": "Lascar Volcano, Chile"
+        },
+        {
+          "category": "Volcanoes",
+          "latitude": -16.25,
+          "longitude": 168.12,
+          "title": "Ambrym Volcano, Vanuatu"
+        },
+        {
+          "category": "Volcanoes",
+          "latitude": 11.9844,
+          "longitude": -86.1688,
+          "title": "Masaya Volcano, Nicaragua"
+        },
+        {
+          "category": "Volcanoes",
+          "latitude": -1.408,
+          "longitude": 29.2,
+          "title": "Nyamulagira Volcano, DR Congo"
+        },
+        {
+          "category": "Volcanoes",
+          "latitude": -4.08,
+          "longitude": 145.037,
+          "title": "Manam Volcano, Papua New Guinea"
+        },
+        {
+          "category": "Volcanoes",
+          "latitude": 12.278,
+          "longitude": 93.858,
+          "title": "Barren Island Volcano, India"
+        },
+        {
+          "category": "Volcanoes",
+          "latitude": 13.5111,
+          "longitude": 40.7161,
+          "title": "Hayli Gubbi Volcano, Ethiopia"
+        },
+        {
+          "category": "Volcanoes",
+          "latitude": -35.223,
+          "longitude": -70.568,
+          "title": "Planch\u00f3n-Peteroa Volcano, Chile"
+        },
+        {
+          "category": "Volcanoes",
+          "latitude": 24.751,
+          "longitude": 141.289,
+          "title": "Ioto Volcano, Japan"
+        },
+        {
+          "category": "Volcanoes",
+          "latitude": -4.016,
+          "longitude": 103.121,
+          "title": "Dempo Volcano, Indonesia"
+        },
+        {
+          "category": "Volcanoes",
+          "latitude": -6.137,
+          "longitude": 155.196,
+          "title": "Bagana Volcano, Papua New Guinea"
+        },
+        {
+          "category": "Earthquakes",
+          "latitude": -0.1781,
+          "longitude": 119.8401,
+          "title": "Sulawesi, Indonesia M7.5 Earthquake"
+        },
+        {
+          "category": "Earthquakes",
+          "latitude": -6.068,
+          "longitude": 142.768,
+          "title": "Papua New Guinea Earthquake 7.5M"
+        },
+        {
+          "category": "Earthquakes",
+          "latitude": 16.646,
+          "longitude": -97.653,
+          "title": "Oaxaca, Mexico Earthquake M7.2"
+        },
+        {
+          "category": "Earthquakes",
+          "latitude": 36.065,
+          "longitude": 129.27,
+          "title": "South Korea Earthquake 5.4M"
+        },
+        {
+          "category": "Earthquakes",
+          "latitude": 34.905,
+          "longitude": 45.956,
+          "title": "Iran Earthquake 7.3M"
+        },
+        {
+          "category": "Earthquakes",
+          "latitude": 18.584,
+          "longitude": -98.399,
+          "title": "Puebla, Mexico M 7.1 Earthquake"
+        },
+        {
+          "category": "Earthquakes",
+          "latitude": 15.068,
+          "longitude": -93.715,
+          "title": "Pijijiapan, Mexico M 8.1 Earthquake"
+        },
+        {
+          "category": "Earthquakes",
+          "latitude": 33.2308,
+          "longitude": 104.0951,
+          "title": "Jiuzhaigou, China Earthquake"
+        },
+        {
+          "category": "Earthquakes",
+          "latitude": 44.4634,
+          "longitude": 82.7886,
+          "title": "Xhinjiang, China Earthquake"
+        },
+        {
+          "category": "Earthquakes",
+          "latitude": 9.8,
+          "longitude": 125.35,
+          "title": "Surigao , Mindanao, Philippines Earthquake"
+        },
+        {
+          "category": "Earthquakes",
+          "latitude": 5.281,
+          "longitude": 96.108,
+          "title": "Sumatra, Indonesia Earthquake, December 2016"
+        },
+        {
+          "category": "Dust and Haze",
+          "latitude": -28.680949728554964,
+          "longitude": 16.435546875,
+          "title": "Alexander Bay, South Africa Dust Storm"
+        },
+        {
+          "category": "Dust and Haze",
+          "latitude": 30.562260950499443,
+          "longitude": 42.626953125,
+          "title": "Dust Storm, Saudi Arabia/Iraq"
+        },
+        {
+          "category": "Sea and Lake Ice",
+          "latitude": -52.86,
+          "longitude": -41.72,
+          "title": "Iceberg A23J"
+        },
+        {
+          "category": "Sea and Lake Ice",
+          "latitude": -52.21,
+          "longitude": -38.96,
+          "title": "Iceberg A23J"
+        },
+        {
+          "category": "Sea and Lake Ice",
+          "latitude": -53.0,
+          "longitude": -36.94,
+          "title": "Iceberg A23I"
+        },
+        {
+          "category": "Sea and Lake Ice",
+          "latitude": -71.98,
+          "longitude": -173.26,
+          "title": "Iceberg B22J"
+        },
+        {
+          "category": "Sea and Lake Ice",
+          "latitude": -53.17,
+          "longitude": -37.22,
+          "title": "Iceberg A23G"
+        },
+        {
+          "category": "Sea and Lake Ice",
+          "latitude": -53.38,
+          "longitude": -37.18,
+          "title": "Iceberg A23H"
+        },
+        {
+          "category": "Sea and Lake Ice",
+          "latitude": -53.88,
+          "longitude": -35.52,
+          "title": "Iceberg A23F"
+        },
+        {
+          "category": "Sea and Lake Ice",
+          "latitude": -56.44,
+          "longitude": -33.42,
+          "title": "Iceberg A23D"
+        },
+        {
+          "category": "Sea and Lake Ice",
+          "latitude": -56.51,
+          "longitude": -33.26,
+          "title": "Iceberg A23E"
+        },
+        {
+          "category": "Sea and Lake Ice",
+          "latitude": -73.85,
+          "longitude": -168.96,
+          "title": "Iceberg B22I"
+        },
+        {
+          "category": "Sea and Lake Ice",
+          "latitude": -56.25,
+          "longitude": -36.83,
+          "title": "Iceberg A23C"
+        },
+        {
+          "category": "Sea and Lake Ice",
+          "latitude": -66.32,
+          "longitude": 86.55,
+          "title": "Iceberg D36A"
+        },
+        {
+          "category": "Sea and Lake Ice",
+          "latitude": -66.25,
+          "longitude": 86.74,
+          "title": "Iceberg D36B"
+        },
+        {
+          "category": "Sea and Lake Ice",
+          "latitude": -56.79,
+          "longitude": -40.87,
+          "title": "Iceberg A23B"
+        },
+        {
+          "category": "Sea and Lake Ice",
+          "latitude": -72.46,
+          "longitude": -127.08,
+          "title": "Iceberg B22G"
+        },
+        {
+          "category": "Water Color",
+          "latitude": -43.43696596521822,
+          "longitude": 169.365234375,
+          "title": "Phytoplankton Bloom, Tasman Sea/New Zealand"
+        }
+      ],
+      "getFillColor": [
+        33,
+        116,
+        122,
+        150
+      ],
+      "getPosition": "@@=[longitude, latitude]",
+      "getRadius": 45000,
+      "id": "5b675b9c-b31f-4065-ac88-00e95d439abd",
+      "pickable": true
+    }
+  ],
+  "mapProvider": "carto",
+  "views": [
+    {
+      "@@type": "MapView",
+      "controller": true
+    }
+  ]
+};
+    const tooltip = {'text': '{category}\n{title}'};
+    const customLibraries = null;
+    const configuration = null;
+
+    const deckInstance = createDeck({
+                  container,
+      jsonInput,
+      tooltip,
+      customLibraries,
+      configuration,
+          });
+
+  </script>
+</html>

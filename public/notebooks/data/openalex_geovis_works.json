@@ -1,0 +1,1200 @@
+[
+  {
+    "id": "W2141115795",
+    "title": "Visual Analytics: Definition, Process, and Challenges",
+    "year": 2008,
+    "doi": "https://doi.org/10.1007/978-3-540-70956-5_7",
+    "cited_by_count": 1062,
+    "source": "Lecture notes in computer science",
+    "authors": [
+      "Daniel A. Keim",
+      "Gennady Andrienko",
+      "Jean‐Daniel Fekete",
+      "Carsten Görg",
+      "Jörn Kohlhammer",
+      "Guy Mélançon"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Data Management and Algorithms",
+      "Video Analysis and Summarization"
+    ],
+    "keywords": [
+      "Computer science",
+      "Raw data",
+      "Process (computing)",
+      "Data science",
+      "Value (mathematics)",
+      "Analytics",
+      "Visual analytics"
+    ],
+    "abstract": ""
+  },
+  {
+    "id": "W2261525379",
+    "title": "Beyond the hype: Big data concepts, methods, and analytics",
+    "year": 2014,
+    "doi": "https://doi.org/10.1016/j.ijinfomgt.2014.10.007",
+    "cited_by_count": 4200,
+    "source": "International Journal of Information Management",
+    "authors": [
+      "Amir Gandomi",
+      "Murtaza Haider"
+    ],
+    "topics": [
+      "Big Data Technologies and Applications",
+      "Data Visualization and Analytics",
+      "Time Series Analysis and Forecasting"
+    ],
+    "keywords": [
+      "Big data",
+      "Data science",
+      "Computer science",
+      "Unstructured data",
+      "LEAPS",
+      "Leverage (statistics)",
+      "Analytics"
+    ],
+    "abstract": "Size is the first, and at times, the only dimension that leaps out at the mention of big data. This paper attempts to offer a broader definition of big data that captures its other unique and defining characteristics. The rapid evolution and adoption of big data by industry has leapfrogged the discourse to popular outlets, forcing the academic press to catch up. Academic journals in numerous disciplines, which will benefit from a relevant discussion of big data, have yet to cover the topic. This paper presents a consolidated description of big data by integrating definitions from practitioners and academics. The paper's primary focus is on the analytic methods used for big data. A particular distinguishing feature of this paper is its focus on analytics related to unstructured data, which constitute 95% of big data. This paper highlights the need to develop appropriate and efficient analytical methods to leverage massive volumes of heterogeneous data in unstructured text, audio, and video formats. This paper also reinforces the need to devise new tools for predictive analytics for structured big data. The statistical methods in practice were devised to infer from sample data. The heterogeneity, noise, and the massive size of structured big data calls for developing computationally efficient algorithms that may avoid big data pitfalls, such as spurious correlation."
+  },
+  {
+    "id": "W2487200295",
+    "title": "Critical analysis of Big Data challenges and analytical methods",
+    "year": 2016,
+    "doi": "https://doi.org/10.1016/j.jbusres.2016.08.001",
+    "cited_by_count": 2054,
+    "source": "Journal of Business Research",
+    "authors": [
+      "Uthayasankar Sivarajah",
+      "Muhammad Mustafa Kamal",
+      "Zahir Irani",
+      "Vishanth Weerakkody"
+    ],
+    "topics": [
+      "Big Data and Business Intelligence",
+      "Blockchain Technology Applications and Security",
+      "Forecasting Techniques and Applications"
+    ],
+    "keywords": [
+      "Extant taxon",
+      "Big data",
+      "Process (computing)",
+      "Software deployment",
+      "Data science",
+      "Principal (computer security)",
+      "Revenue"
+    ],
+    "abstract": "Big Data (BD), with their potential to ascertain valued insights for enhanced decision-making process, have recently attracted substantial interest from both academics and practitioners. Big Data Analytics (BDA) is increasingly becoming a trending practice that many organizations are adopting with the purpose of constructing valuable information from BD. The analytics process, including the deployment and use of BDA tools, is seen by organizations as a tool to improve operational efficiency though it has strategic potential, drive new revenue streams and gain competitive advantages over business rivals. However, there are different types of analytic applications to consider. Therefore, prior to hasty use and buying costly BD tools, there is a need for organizations to first understand the BDA landscape. Given the significant nature of the BD and BDA, this paper presents a state-of-the-art review that presents a holistic view of the BD challenges and BDA methods theorized/proposed/employed by organizations to help others understand this landscape with the objective of making robust investment decisions. In doing so, systematically analysing and synthesizing the extant research published on BD and BDA area. More specifically, the authors seek to answer the following two principal questions: Q1 – What are the different types of BD challenges theorized/proposed/confronted by organizations? and Q2 – What are the different types of BDA methods theorized/proposed/employed to overcome BD challenges? . This systematic literature review (SLR) is carried out through observing and understanding the past trends and extant patterns/themes in the BDA research area, evaluating contributions, summarizing knowledge, thereby identifying limitations, implications and potential further research avenues to support the academic community in exploring research themes/patterns. Thus, to trace the implementation of BD strategies, a profiling method is employed to analyze articles (published in English-speaking peer-reviewed journals between 1996 and 2015) extracted from the Scopus database. The analysis presented in this paper has identified relevant BD research studies that have contributed both conceptually and empirically to the expansion and accrual of intellectual wealth to the BDA in technology and organizational resource management discipline."
+  },
+  {
+    "id": "W2085864217",
+    "title": "Space, time and visual analytics",
+    "year": 2010,
+    "doi": "https://doi.org/10.1080/13658816.2010.508043",
+    "cited_by_count": 433,
+    "source": "International Journal of Geographical Information Systems",
+    "authors": [
+      "Gennady Andrienko",
+      "Natalia Andrienko",
+      "Urška Demšar",
+      "Doris Dransch",
+      "Jason Dykes",
+      "Sara Irina Fabrikant",
+      "Mikael Jern",
+      "M.J. Kraak",
+      "Heidrun Schumann",
+      "Christian Tominski"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Geographic Information Systems Studies",
+      "Data Management and Algorithms"
+    ],
+    "keywords": [
+      "Visual analytics",
+      "USable",
+      "Data science",
+      "Computer science",
+      "Analytics",
+      "Space (punctuation)",
+      "Visualization"
+    ],
+    "abstract": "Visual analytics aims to combine the strengths of human and electronic data processing. Visualisation, whereby humans and computers cooperate through graphics, is the means through which this is achieved. Seamless and sophisticated synergies are required for analysing spatio-temporal data and solving spatio-temporal problems. In modern society, spatio-temporal analysis is not solely the business of professional analysts. Many citizens need or would be interested in undertaking analysis of information in time and space. Researchers should find approaches to deal with the complexities of the current data and problems and find ways to make analytical tools accessible and usable for the broad community of potential users to support spatio-temporal thinking and contribute to solving a large range of problems."
+  },
+  {
+    "id": "W3195494505",
+    "title": "Street view imagery in urban analytics and GIS: A review",
+    "year": 2021,
+    "doi": "https://doi.org/10.1016/j.landurbplan.2021.104217",
+    "cited_by_count": 892,
+    "source": "Landscape and Urban Planning",
+    "authors": [
+      "Filip Biljecki",
+      "Koichi Ito"
+    ],
+    "topics": [
+      "Impact of Light on Environment and Health",
+      "Automated Road and Building Extraction",
+      "Land Use and Ecosystem Services"
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Analytics",
+      "Data science",
+      "Cultural analytics",
+      "Computer science",
+      "Geographic information system",
+      "Remote sensing"
+    ],
+    "abstract": "Street view imagery has rapidly ascended as an important data source for geospatial data collection and urban analytics, deriving insights and supporting informed decisions. Such surge has been mainly catalysed by the proliferation of large-scale imagery platforms, advances in computer vision and machine learning, and availability of computing resources. We screened more than 600 recent papers to provide a comprehensive systematic review of the state of the art of how street-level imagery is currently used in studies pertaining to the built environment. The main findings are that: (i) street view imagery is now clearly an entrenched component of urban analytics and GIScience; (ii) most of the research relies on data from Google Street View; and (iii) it is used across myriads of domains with numerous applications – ranging from analysing vegetation and transportation to health and socio-economic studies. A notable trend is crowdsourced street view imagery, facilitated by services such as Mapillary and KartaView, in some cases furthering geographical coverage and temporal granularity, at a permissive licence."
+  },
+  {
+    "id": "W2171036274",
+    "title": "Challenges in Visual Data Analysis",
+    "year": 2006,
+    "doi": "https://doi.org/10.1109/iv.2006.31",
+    "cited_by_count": 397,
+    "source": "",
+    "authors": [
+      "Daniel A. Keim",
+      "Florian Mansmann",
+      "J. Schneidewind",
+      "Hartmut Ziegler"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Video Analysis and Summarization"
+    ],
+    "keywords": [
+      "Visual analytics",
+      "Data science",
+      "Computer science",
+      "Pace",
+      "Cultural analytics",
+      "Visualization",
+      "Field (mathematics)"
+    ],
+    "abstract": "In today's applications data is produced at unprecedented rates. While the capacity to collect and store new data grows rapidly, the ability to analyze these data volumes increases at much lower pace. This gap leads to new challenges in the analysis process, since analysts, decision makers, engineers, or emergency response teams depend on information \"concealed\" in the data. The emerging field of visual analytics focuses on handling massive, heterogenous, and dynamic volumes of information through integration of human judgement by means of visual representations and interaction techniques in the analysis process. Furthermore, it is the combination of related research areas including visualization, data mining, and statistics that turns visual analytics into a promising field of research. This paper aims at providing an overview of visual analytics, its scope and concepts, and details the most important technical research challenges in the field"
+  },
+  {
+    "id": "W2151103962",
+    "title": "Visualization and analytics tools for infectious disease epidemiology: A systematic review",
+    "year": 2014,
+    "doi": "https://doi.org/10.1016/j.jbi.2014.04.006",
+    "cited_by_count": 261,
+    "source": "Journal of Biomedical Informatics",
+    "authors": [
+      "Lauren Carroll",
+      "Alan Au",
+      "Landon T Detwiler",
+      "Tsung‐chieh Fu",
+      "Ian Painter",
+      "Neil F. Abernethy"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Data-Driven Disease Surveillance",
+      "Zoonotic diseases and public health"
+    ],
+    "keywords": [
+      "Usability",
+      "Visualization",
+      "Visual analytics",
+      "Computer science",
+      "Information visualization",
+      "Data science",
+      "Confidentiality"
+    ],
+    "abstract": "BACKGROUND: A myriad of new tools and algorithms have been developed to help public health professionals analyze and visualize the complex data used in infectious disease control. To better understand approaches to meet these users' information needs, we conducted a systematic literature review focused on the landscape of infectious disease visualization tools for public health professionals, with a special emphasis on geographic information systems (GIS), molecular epidemiology, and social network analysis. The objectives of this review are to: (1) identify public health user needs and preferences for infectious disease information visualization tools; (2) identify existing infectious disease information visualization tools and characterize their architecture and features; (3) identify commonalities among approaches applied to different data types; and (4) describe tool usability evaluation efforts and barriers to the adoption of such tools. METHODS: We identified articles published in English from January 1, 1980 to June 30, 2013 from five bibliographic databases. Articles with a primary focus on infectious disease visualization tools, needs of public health users, or usability of information visualizations were included in the review. RESULTS: A total of 88 articles met our inclusion criteria. Users were found to have diverse needs, preferences and uses for infectious disease visualization tools, and the existing tools are correspondingly diverse. The architecture of the tools was inconsistently described, and few tools in the review discussed the incorporation of usability studies or plans for dissemination. Many studies identified concerns regarding data sharing, confidentiality and quality. Existing tools offer a range of features and functions that allow users to explore, analyze, and visualize their data, but the tools are often for siloed applications. Commonly cited barriers to widespread adoption included lack of organizational support, access issues, and misconceptions about tool use. DISCUSSION AND CONCLUSION: As the volume and complexity of infectious disease data increases, public health professionals must synthesize highly disparate data to facilitate communication with the public and inform decisions regarding measures to protect the public's health. Our review identified several themes: consideration of users' needs, preferences, and computer literacy; integration of tools into routine workflow; complications associated with understanding and use of visualizations; and the role of user trust and organizational support in the adoption of these tools. Interoperability also emerged as a prominent theme, highlighting challenges associated with the increasingly collaborative and interdisciplinary nature of infectious disease control and prevention. Future work should address methods for representing uncertainty and missing data to avoid misleading users as well as strategies to minimize cognitive overload."
+  },
+  {
+    "id": "W2117332520",
+    "title": "Social media analytics: a survey of techniques, tools and platforms",
+    "year": 2014,
+    "doi": "https://doi.org/10.1007/s00146-014-0549-4",
+    "cited_by_count": 706,
+    "source": "AI & Society",
+    "authors": [
+      "Bogdan Batrinca",
+      "Philip Treleaven"
+    ],
+    "topics": [
+      "Complex Network Analysis Techniques",
+      "Spam and Phishing Detection",
+      "Sentiment Analysis and Opinion Mining"
+    ],
+    "keywords": [
+      "Social media",
+      "Computer science",
+      "World Wide Web",
+      "Data science",
+      "Analytics",
+      "Social media analytics",
+      "Software"
+    ],
+    "abstract": "This paper is written for (social science) researchers seeking to analyze the wealth of social media now available. It presents a comprehensive review of software tools for social networking media, wikis, really simple syndication feeds, blogs, newsgroups, chat and news feeds. For completeness, it also includes introductions to social media scraping, storage, data cleaning and sentiment analysis. Although principally a review, the paper also provides a methodology and a critique of social media tools. Analyzing social media, in particular Twitter feeds for sentiment analysis, has become a major research and business activity due to the availability of web-based application programming interfaces (APIs) provided by Twitter, Facebook and News services. This has led to an ‘explosion’ of data services, software tools for scraping and analysis and social media analytics platforms. It is also a research area undergoing rapid change and evolution due to commercial pressures and the potential for using social media data for computational (social science) research. Using a simple taxonomy, this paper provides a review of leading software tools and how to use them to scrape, cleanse and analyze the spectrum of social media. In addition, it discussed the requirement of an experimental computational environment for social media research and presents as an illustration the system architecture of a social media (analytics) platform built by University College London. The principal contribution of this paper is to provide an overview (including code fragments) for scientists seeking to utilize social media scraping and analytics either in their research or business. The data retrieval techniques that are presented in this paper are valid at the time of writing this paper (June 2014), but they are subject to change since social media data scraping APIs are rapidly changing."
+  },
+  {
+    "id": "W3122555173",
+    "title": "Visualizing and Interacting with Geospatial Networks: A Survey and Design Space",
+    "year": 2021,
+    "doi": "https://doi.org/10.1111/cgf.14198",
+    "cited_by_count": 62,
+    "source": "Computer Graphics Forum",
+    "authors": [
+      "Sarah Schöttler",
+      "Yalong Yang",
+      "Hanspeter Pfister",
+      "Benjamin Bach"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Geographic Information Systems Studies",
+      "Complex Network Analysis Techniques"
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Computer science",
+      "Visualization",
+      "Representation (politics)",
+      "Data science",
+      "Geographic information system",
+      "Readability"
+    ],
+    "abstract": "Abstract This paper surveys visualization and interaction techniques for geospatial networks from a total of 95 papers. Geospatial networks are graphs where nodes and links can be associated with geographic locations. Examples can include social networks, trade and migration, as well as traffic and transport networks. Visualizing geospatial networks poses numerous challenges around the integration of both network and geographical information as well as additional information such as node and link attributes, time and uncertainty. Our overview analyses existing techniques along four dimensions: (i) the representation of geographical information, (ii) the representation of network information, (iii) the visual integration of both and (iv) the use of interaction. These four dimensions allow us to discuss techniques with respect to the trade‐offs they make between showing information across all these dimensions and how they solve the problem of showing as much information as necessary while maintaining readability of the visualization. https://geonetworks.github.io ."
+  },
+  {
+    "id": "W3005359275",
+    "title": "Geospatial Data Management Research: Progress and Future Directions",
+    "year": 2020,
+    "doi": "https://doi.org/10.3390/ijgi9020095",
+    "cited_by_count": 194,
+    "source": "ISPRS International Journal of Geo-Information",
+    "authors": [
+      "Martin Breunig",
+      "Patrick Erik Bradley",
+      "Markus Jahn",
+      "Paul Vincent Kuper",
+      "Nima Mazroob",
+      "Norbert Rösch",
+      "Mulhim Al-Doori",
+      "Emmanuel Stefanakis",
+      "Mojgan Jadidi"
+    ],
+    "topics": [
+      "3D Modeling in Geospatial Applications",
+      "Geographic Information Systems Studies",
+      "Data Management and Algorithms"
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Milestone",
+      "Data science",
+      "Data management",
+      "Computer science",
+      "Geospatial PDF",
+      "Geographic information system"
+    ],
+    "abstract": "Without geospatial data management, today’s challenges in big data applications such as earth observation, geographic information system/building information modeling (GIS/BIM) integration, and 3D/4D city planning cannot be solved. Furthermore, geospatial data management plays a connecting role between data acquisition, data modelling, data visualization, and data analysis. It enables the continuous availability of geospatial data and the replicability of geospatial data analysis. In the first part of this article, five milestones of geospatial data management research are presented that were achieved during the last decade. The first one reflects advancements in BIM/GIS integration at data, process, and application levels. The second milestone presents theoretical progress by introducing topology as a key concept of geospatial data management. In the third milestone, 3D/4D geospatial data management is described as a key concept for city modelling, including subsurface models. Progress in modelling and visualization of massive geospatial features on web platforms is the fourth milestone which includes discrete global grid systems as an alternative geospatial reference framework. The intensive use of geosensor data sources is the fifth milestone which opens the way to parallel data storage platforms supporting data analysis on geosensors. In the second part of this article, five future directions of geospatial data management research are presented that have the potential to become key research fields of geospatial data management in the next decade. Geo-data science will have the task to extract knowledge from unstructured and structured geospatial data and to bridge the gap between modern information technology concepts and the geo-related sciences. Topology is presented as a powerful and general concept to analyze GIS and BIM data structures and spatial relations that will be of great importance in emerging applications such as smart cities and digital twins. Data-streaming libraries and “in-situ” geo-computing on objects executed directly on the sensors will revolutionize geo-information science and bridge geo-computing with geospatial data management. Advanced geospatial data visualization on web platforms will enable the representation of dynamically changing geospatial features or moving objects’ trajectories. Finally, geospatial data management will support big geospatial data analysis, and graph databases are expected to experience a revival on top of parallel and distributed data stores supporting big geospatial data analysis."
+  },
+  {
+    "id": "W2952667803",
+    "title": "Visual Analytics: A Comprehensive Overview",
+    "year": 2019,
+    "doi": "https://doi.org/10.1109/access.2019.2923736",
+    "cited_by_count": 135,
+    "source": "IEEE Access",
+    "authors": [
+      "Wenqiang Cui"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Video Analysis and Summarization",
+      "Image Retrieval and Classification Techniques"
+    ],
+    "keywords": [
+      "Visual analytics",
+      "Computer science",
+      "Analytics",
+      "Data science",
+      "Visualization",
+      "Cultural analytics",
+      "Data visualization"
+    ],
+    "abstract": "With the ever-increasing amount of data, the world has stepped into the era of “Big Data”. Presently, the analysis of massive and complex data and the extraction of relevant information, have been become essential tasks in many fields of studies, such as health, biology, chemistry, social science, astronomy, and physics. However, compared with the development of data storage and management technologies, our ability to gain useful information from the collected data does not match our ability to collect the data. This gap has led to a surge of research activity in the field of visual analytics. Visual analytics employs interactive visualization to integrate human judgment into algorithmic data-analysis processes. In this paper, the aim is to draw a complete picture of visual analytics to direct future research by examining the related research in various application domains. As such, a novel categorization of visual-analytics applications from a technical perspective is proposed, which is based on the dimensionality of visualization and the type of interaction. Based on this categorization, a comprehensive survey of visual analytics is performed, which examines its evolution from visualization and algorithmic data analysis, and investigates how it is applied in various application domains. In addition, based on the observations and findings gained in this survey, the trends, major challenges, and future directions of visual analytics are discussed."
+  },
+  {
+    "id": "W2344199778",
+    "title": "Geospatial big data handling theory and methods: A review and research challenges",
+    "year": 2015,
+    "doi": "https://doi.org/10.1016/j.isprsjprs.2015.10.012",
+    "cited_by_count": 211,
+    "source": "ISPRS Journal of Photogrammetry and Remote Sensing",
+    "authors": [
+      "Siran Li",
+      "Suzana Dragićević",
+      "Francesc Antón Castro",
+      "Monika Sester",
+      "Stephan Winter",
+      "Arzu Çöltekin",
+      "Christopher Pettit",
+      "Bin Jiang",
+      "James Haworth",
+      "Alfred Stein"
+    ],
+    "topics": [
+      "Geographic Information Systems Studies",
+      "Data Management and Algorithms",
+      "Automated Road and Building Extraction"
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Big data",
+      "Data science",
+      "Computer science",
+      "Data quality",
+      "Analytics",
+      "Photogrammetry"
+    ],
+    "abstract": ""
+  },
+  {
+    "id": "W2147235552",
+    "title": "The Cognitive Science of Visual‐Spatial Displays: Implications for Design",
+    "year": 2011,
+    "doi": "https://doi.org/10.1111/j.1756-8765.2011.01150.x",
+    "cited_by_count": 389,
+    "source": "Topics in Cognitive Science",
+    "authors": [
+      "Mary Hegarty"
+    ],
+    "topics": [
+      "Spatial Cognition and Navigation",
+      "Data Visualization and Analytics",
+      "Color perception and design"
+    ],
+    "keywords": [
+      "Cognition",
+      "Cognitive psychology",
+      "Psychology",
+      "Spatial cognition",
+      "Cognitive science",
+      "Computer science",
+      "Human–computer interaction"
+    ],
+    "abstract": "This paper reviews cognitive science perspectives on the design of visual-spatial displays and introduces the other papers in this topic. It begins by classifying different types of visual-spatial displays, followed by a discussion of ways in which visual-spatial displays augment cognition and an overview of the perceptual and cognitive processes involved in using displays. The paper then argues for the importance of cognitive science methods to the design of visual displays and reviews some of the main principles of display design that have emerged from these approaches to date. Cognitive scientists have had good success in characterizing the performance of well-defined tasks with relatively simple visual displays, but many challenges remain in understanding the use of complex displays for ill-defined tasks. Current research exemplified by the papers in this topic extends empirical approaches to new displays and domains, informs the development of general principles of graphic design, and addresses current challenges in display design raised by the recent explosion in availability of complex data sets and new technologies for visualizing and interacting with these data."
+  },
+  {
+    "id": "W2121418890",
+    "title": "Hierarchical Aggregation for Information Visualization: Overview, Techniques, and Design Guidelines",
+    "year": 2009,
+    "doi": "https://doi.org/10.1109/tvcg.2009.84",
+    "cited_by_count": 389,
+    "source": "IEEE Transactions on Visualization and Computer Graphics",
+    "authors": [
+      "Niklas Elmqvist",
+      "Jean‐Daniel Fekete"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Advanced Text Analysis Techniques",
+      "Data Analysis with R"
+    ],
+    "keywords": [
+      "Computer science",
+      "Visualization",
+      "Information visualization",
+      "Set (abstract data type)",
+      "Data visualization",
+      "Visual analytics",
+      "Scalability"
+    ],
+    "abstract": "We present a model for building, visualizing, and interacting with multiscale representations of information visualization techniques using hierarchical aggregation. The motivation for this work is to make visual representations more visually scalable and less cluttered. The model allows for augmenting existing techniques with multiscale functionality, as well as for designing new visualization and interaction techniques that conform to this new class of visual representations. We give some examples of how to use the model for standard information visualization techniques such as scatterplots, parallel coordinates, and node-link diagrams, and discuss existing techniques that are based on hierarchical aggregation. This yields a set of design guidelines for aggregated visualizations. We also present a basic vocabulary of interaction techniques suitable for navigating these multiscale visualizations."
+  },
+  {
+    "id": "W2810874430",
+    "title": "Decision making with visualizations: a cognitive framework across disciplines",
+    "year": 2018,
+    "doi": "https://doi.org/10.1186/s41235-018-0120-9",
+    "cited_by_count": 349,
+    "source": "Cognitive Research Principles and Implications",
+    "authors": [
+      "Lace Padilla",
+      "Sarah H. Creem-Regehr",
+      "Mary Hegarty",
+      "Jeanine K. Stefanucci"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Cognitive Science and Mapping",
+      "Complex Systems and Decision Making"
+    ],
+    "keywords": [
+      "Experimental psychology",
+      "Cognition",
+      "Cognitive science",
+      "Psychology",
+      "Cognitive psychology",
+      "Data science",
+      "Management science"
+    ],
+    "abstract": "Visualizations-visual representations of information, depicted in graphics-are studied by researchers in numerous ways, ranging from the study of the basic principles of creating visualizations, to the cognitive processes underlying their use, as well as how visualizations communicate complex information (such as in medical risk or spatial patterns). However, findings from different domains are rarely shared across domains though there may be domain-general principles underlying visualizations and their use. The limited cross-domain communication may be due to a lack of a unifying cognitive framework. This review aims to address this gap by proposing an integrative model that is grounded in models of visualization comprehension and a dual-process account of decision making. We review empirical studies of decision making with static two-dimensional visualizations motivated by a wide range of research goals and find significant direct and indirect support for a dual-process account of decision making with visualizations. Consistent with a dual-process model, the first type of visualization decision mechanism produces fast, easy, and computationally light decisions with visualizations. The second facilitates slower, more contemplative, and effortful decisions with visualizations. We illustrate the utility of a dual-process account of decision making with visualizations using four cross-domain findings that may constitute universal visualization principles. Further, we offer guidance for future research, including novel areas of exploration and practical recommendations for visualization designers based on cognitive theory and empirical findings."
+  },
+  {
+    "id": "W2523776954",
+    "title": "A Survey on Visual Analytics of Social Media Data",
+    "year": 2016,
+    "doi": "https://doi.org/10.1109/tmm.2016.2614220",
+    "cited_by_count": 126,
+    "source": "IEEE Transactions on Multimedia",
+    "authors": [
+      "Yingcai Wu",
+      "Nan Cao",
+      "David Gotz",
+      "Yap‐Peng Tan",
+      "Daniel A. Keim"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Complex Network Analysis Techniques",
+      "Image and Video Quality Assessment"
+    ],
+    "keywords": [
+      "Data science",
+      "Computer science",
+      "Social media",
+      "Cultural analytics",
+      "Visual analytics",
+      "Social media analytics",
+      "Analytics"
+    ],
+    "abstract": "The unprecedented availability of social media data offers substantial opportunities for data owners, system operators, solution providers, and end users to explore and understand social dynamics. However, the exponential growth in the volume, velocity, and variability of social media data prevents people from fully utilizing such data. Visual analytics, which is an emerging research direction, has received considerable attention in recent years. Many visual analytics methods have been proposed across disciplines to understand large-scale structured and unstructured social media data. This objective, however, also poses significant challenges for researchers to obtain a comprehensive picture of the area, understand research challenges, and develop new techniques. In this paper, we present a comprehensive survey to characterize this fast-growing area and summarize the state-of-the-art techniques for analyzing social media data. In particular, we classify existing techniques into two categories: gathering information and understanding user behaviors. We aim to provide a clear overview of the research area through the established taxonomy. We then explore the design space and identify the research trends. Finally, we discuss challenges and open questions for future studies."
+  },
+  {
+    "id": "W2984563403",
+    "title": "Geospatial Information Visualization and Extended Reality Displays",
+    "year": 2019,
+    "doi": "https://doi.org/10.1007/978-981-32-9915-3_7",
+    "cited_by_count": 51,
+    "source": "",
+    "authors": [
+      "Arzu Çöltekin",
+      "Amy L. Griffin",
+      "Aidan Slingsby",
+      "Anthony C. Robinson",
+      "Sidonie Christophe",
+      "Victoria Rautenbach",
+      "Min Chen",
+      "Christopher Pettit",
+      "Alexander Klippel"
+    ],
+    "topics": [
+      "Geographic Information Systems Studies",
+      "Data Visualization and Analytics",
+      "Data Management and Algorithms"
+    ],
+    "keywords": [
+      "Geovisualization",
+      "Geospatial analysis",
+      "Augmented reality",
+      "Data science",
+      "Virtual reality",
+      "Multidisciplinary approach",
+      "Computer science"
+    ],
+    "abstract": "Abstract In this chapter, we review and summarize the current state of the art in geovisualization and extended reality (i.e., virtual, augmented and mixed reality), covering a wide range of approaches to these subjects in domains that are related to geographic information science. We introduce the relationship between geovisualization, extended reality and Digital Earth, provide some fundamental definitions of related terms, and discuss the introduced topics from a human-centric perspective. We describe related research areas including geovisual analytics and movement visualization, both of which have attracted wide interest from multidisciplinary communities in recent years. The last few sections describe the current progress in the use of immersive technologies and introduce the spectrum of terminology on virtual, augmented and mixed reality, as well as proposed research concepts in geographic information science and beyond. We finish with an overview of “dashboards”, which are used in visual analytics as well as in various immersive technologies. We believe the chapter covers important aspects of visualizing and interacting with current and future Digital Earth applications."
+  },
+  {
+    "id": "W2945688618",
+    "title": "Virtual Knowledge Graphs: An Overview of Systems and Use Cases",
+    "year": 2019,
+    "doi": "https://doi.org/10.1162/dint_a_00011",
+    "cited_by_count": 140,
+    "source": "Data Intelligence",
+    "authors": [
+      "Guohui Xiao",
+      "Linfang Ding",
+      "Benjamin Cogrel",
+      "Diego Calvanese"
+    ],
+    "topics": [
+      "Semantic Web and Ontologies",
+      "Advanced Database Systems and Queries",
+      "Service-Oriented Architecture and Web Services"
+    ],
+    "keywords": [
+      "Structuring",
+      "Computer science",
+      "Ontology",
+      "Flexibility (engineering)",
+      "Data science",
+      "Domain knowledge",
+      "Knowledge graph"
+    ],
+    "abstract": "In this paper, we present the virtual knowledge graph (VKG) paradigm for data integration and access, also known in the literature as Ontology-based Data Access. Instead of structuring the integration layer as a collection of relational tables, the VKG paradigm replaces the rigid structure of tables with the flexibility of graphs that are kept virtual and embed domain knowledge. We explain the main notions of this paradigm, its tooling ecosystem and significant use cases in a wide range of applications. Finally, we discuss future research directions."
+  },
+  {
+    "id": "W2135577168",
+    "title": "Collaborative visualization: Definition, challenges, and research agenda",
+    "year": 2011,
+    "doi": "https://doi.org/10.1177/1473871611412817",
+    "cited_by_count": 299,
+    "source": "Information Visualization",
+    "authors": [
+      "Petra Isenberg",
+      "Niklas Elmqvist",
+      "Jean Scholtz",
+      "Daniel Cernea",
+      "Kwan-Liu Ma",
+      "Hans Hagen"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Multimedia Communication and Technology",
+      "Interactive and Immersive Displays"
+    ],
+    "keywords": [
+      "Visualization",
+      "Computer science",
+      "Information visualization",
+      "Scope (computer science)",
+      "Data science",
+      "Intersection (aeronautics)",
+      "Data visualization"
+    ],
+    "abstract": "The conflux of two growing areas of technology – collaboration and visualization – into a new research direction, collaborative visualization, provides new research challenges. Technology now allows us to easily connect and collaborate with one another – in settings as diverse as over networked computers, across mobile devices, or using shared displays such as interactive walls and tabletop surfaces. Digital information is now regularly accessed by multiple people in order to share information, to view it together, to analyze it, or to form decisions. Visualizations are used to deal more effectively with large amounts of information while interactive visualizations allow users to explore the underlying data. While researchers face many challenges in collaboration and in visualization, the emergence of collaborative visualization poses additional challenges, but it is also an exciting opportunity to reach new audiences and applications for visualization tools and techniques. The purpose of this article is (1) to provide a definition, clear scope, and overview of the evolving field of collaborative visualization, (2) to help pinpoint the unique focus of collaborative visualization with its specific aspects, challenges, and requirements within the intersection of general computer-supported cooperative work and visualization research, and (3) to draw attention to important future research questions to be addressed by the community. We conclude by discussing a research agenda for future work on collaborative visualization and urge for a new generation of visualization tools that are designed with collaboration in mind from their very inception."
+  },
+  {
+    "id": "W4405571084",
+    "title": "Challenges in data-driven geospatial modeling for environmental research and practice",
+    "year": 2024,
+    "doi": "https://doi.org/10.1038/s41467-024-55240-8",
+    "cited_by_count": 170,
+    "source": "Nature Communications",
+    "authors": [
+      "Diana Koldasbayeva",
+      "Polina Tregubova",
+      "Mikhail Gasanov",
+      "Alexey Zaytsev",
+      "Anna Petrovskaia",
+      "Evgeny Burnaev"
+    ],
+    "topics": [
+      "Data Management and Algorithms",
+      "Atmospheric and Environmental Gas Dynamics",
+      "Geographic Information Systems Studies"
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Data science",
+      "Computer science",
+      "Computational biology",
+      "Geography",
+      "Biology",
+      "Remote sensing"
+    ],
+    "abstract": "Machine learning-based geospatial applications offer unique opportunities for environmental monitoring due to domains and scales adaptability and computational efficiency. However, the specificity of environmental data introduces biases in straightforward implementations. We identify a streamlined pipeline to enhance model accuracy, addressing issues like imbalanced data, spatial autocorrelation, prediction errors, and the nuances of model generalization and uncertainty estimation. We examine tools and techniques for overcoming these obstacles and provide insights into future geospatial AI developments. A big picture of the field is completed from advances in data processing in general, including the demands of industry-related solutions relevant to outcomes of applied sciences. In this scoping review, the authors explore the challenges and opportunities of implementing data-driven geospatial models—namely machine learning and deep learning algorithms—in environmental research."
+  },
+  {
+    "id": "W1961379460",
+    "title": "Visualizing Big Data with augmented and virtual reality: challenges and research agenda",
+    "year": 2015,
+    "doi": "https://doi.org/10.1186/s40537-015-0031-2",
+    "cited_by_count": 314,
+    "source": "Journal Of Big Data",
+    "authors": [
+      "Ekaterina Olshannikova",
+      "Aleksandr Ometov",
+      "Yevgeni Koucheryavy",
+      "Thomas Olsson"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Image and Video Quality Assessment",
+      "Big Data Technologies and Applications"
+    ],
+    "keywords": [
+      "Big data",
+      "Visualization",
+      "Augmented reality",
+      "Computer science",
+      "Data science",
+      "Virtual reality",
+      "Field (mathematics)"
+    ],
+    "abstract": "This paper provides a multi-disciplinary overview of the research issues and achievements in the field of Big Data and its visualization techniques and tools. The main aim is to summarize challenges in visualization methods for existing Big Data, as well as to offer novel solutions for issues related to the current state of Big Data Visualization. This paper provides a classification of existing data types, analytical methods, visualization techniques and tools, with a particular emphasis placed on surveying the evolution of visualization methodology over the past years. Based on the results, we reveal disadvantages of existing visualization methods. Despite the technological development of the modern world, human involvement (interaction), judgment and logical thinking are necessary while working with Big Data. Therefore, the role of human perceptional limitations involving large amounts of information is evaluated. Based on the results, a non-traditional approach is proposed: we discuss how the capabilities of Augmented Reality and Virtual Reality could be applied to the field of Big Data Visualization. We discuss the promising utility of Mixed Reality technology integration with applications in Big Data Visualization. Placing the most essential data in the central area of the human visual field in Mixed Reality would allow one to obtain the presented information in a short period of time without significant data losses due to human perceptual issues. Furthermore, we discuss the impacts of new technologies, such as Virtual Reality displays and Augmented Reality helmets on the Big Data visualization as well as to the classification of the main challenges of integrating the technology."
+  },
+  {
+    "id": "W2980020285",
+    "title": "Geospatial Dashboards for Monitoring Smart City Performance",
+    "year": 2019,
+    "doi": "https://doi.org/10.3390/su11205648",
+    "cited_by_count": 90,
+    "source": "Sustainability",
+    "authors": [
+      "Changfeng Jing",
+      "Mingyi Du",
+      "Songnian Li",
+      "Siyuan Liu"
+    ],
+    "topics": [
+      "Human Mobility and Location-Based Analysis",
+      "Smart Cities and Technologies",
+      "Geographic Information Systems Studies"
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Data science",
+      "Computer science",
+      "Analytics",
+      "Visualization",
+      "Decision support system",
+      "Key (lock)"
+    ],
+    "abstract": "Geospatial dashboards have attracted increasing attention from both user communities and academic researchers since the late 1990s. Dashboards can gather, visualize, analyze and advise on urban performance to support sustainable development of smart cities. We conducted a critical review of the research and development of geospatial dashboards, including the integration of maps, spatial data analytics, and geographic visualization for decision support and real-time monitoring of smart city performance. The research about this kind of system has mainly focused on indicators, information models including statistical models and geospatial models, and other related issues. This paper presents an overview of dashboard history and key technologies and applications in smart cities, and summarizes major research progress and representative developments by analyzing their key technical issues. Based on the review, we discuss the visualization model and validity of models for decision support and real-time monitoring that need to be further researched, and recommend some future research directions."
+  },
+  {
+    "id": "W2065873970",
+    "title": "Visual analytics for the big data era — A comparative review of state-of-the-art commercial systems",
+    "year": 2012,
+    "doi": "https://doi.org/10.1109/vast.2012.6400554",
+    "cited_by_count": 150,
+    "source": "",
+    "authors": [
+      "Leishi Zhang",
+      "Andreas Stoffel",
+      "Michael Behrisch",
+      "Sebastian Mittelstädt",
+      "Tobias Schreck",
+      "R. Pompl",
+      "H. Wéber",
+      "Holger Last",
+      "Daniel Keim"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Video Analysis and Summarization",
+      "Multimedia Communication and Technology"
+    ],
+    "keywords": [
+      "Big data",
+      "Data science",
+      "IBM",
+      "Analytics",
+      "Computer science",
+      "Open source",
+      "Visualization"
+    ],
+    "abstract": "Visual analytics (VA) system development started in academic research institutions where novel visualization techniques and open source toolkits were developed. Simultaneously, small software companies, sometimes spin-offs from academic research institutions, built solutions for specific application domains. In recent years we observed the following trend: some small VA companies grew exponentially; at the same time some big software vendors such as IBM and SAP started to acquire successful VA companies and integrated the acquired VA components into their existing frameworks. Generally the application domains of VA systems have broadened substantially. This phenomenon is driven by the generation of more and more data of high volume and complexity, which leads to an increasing demand for VA solutions from many application domains. In this paper we survey a selection of state-of-the-art commercial VA frameworks, complementary to an existing survey on open source VA tools. From the survey results we identify several improvement opportunities as future research directions."
+  },
+  {
+    "id": "W3160903453",
+    "title": "Interactive Dynamics for Visual Analysis",
+    "year": 2012,
+    "doi": "https://doi.org/10.1145/2133416.2146416",
+    "cited_by_count": 271,
+    "source": "Queue",
+    "authors": [
+      "Jeffrey Heer",
+      "Ben Shneiderman"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Data Analysis with R",
+      "Scientific Computing and Data Management"
+    ],
+    "keywords": [
+      "Computer science",
+      "Data science",
+      "Domain (mathematical analysis)",
+      "Outlier",
+      "Public domain",
+      "Resource (disambiguation)",
+      "Scale (ratio)"
+    ],
+    "abstract": "The increasing scale and availability of digital data provides an extraordinary resource for informing public policy, scientific discovery, business strategy, and even our personal lives. To get the most out of such data, however, users must be able to make sense of it: to pursue questions, uncover patterns of interest, and identify (and potentially correct) errors. In concert with data-management systems and statistical algorithms, analysis requires contextualized human judgments regarding the domain-specific significance of the clusters, trends, and outliers discovered in data."
+  },
+  {
+    "id": "W2596574850",
+    "title": "Geospatial big data and cartography: research challenges and opportunities for making maps that matter",
+    "year": 2017,
+    "doi": "https://doi.org/10.1080/23729333.2016.1278151",
+    "cited_by_count": 160,
+    "source": "International Journal of Cartography",
+    "authors": [
+      "Anthony C. Robinson",
+      "Urška Demšar",
+      "Antoni Moore",
+      "Aileen Buckley",
+      "Bin Jiang",
+      "Kenneth Field",
+      "M.J. Kraak",
+      "Silvana Philippi Camboim",
+      "Claúdia Robbi Sluter"
+    ],
+    "topics": [
+      "Geographic Information Systems Studies",
+      "Data Management and Algorithms",
+      "Data Visualization and Analytics"
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Big data",
+      "Data science",
+      "Set (abstract data type)",
+      "Geography",
+      "Geovisualization",
+      "Craft"
+    ],
+    "abstract": "Geospatial big data present a new set of challenges and opportunities for cartographic researchers in technical, methodological and artistic realms. New computational and technical paradigms for cartography are accompanying the rise of geospatial big data. Additionally, the art and science of cartography needs to focus its contemporary efforts on work that connects to outside disciplines and is grounded in problems that are important to humankind and its sustainability. Following the development of position papers and a collaborative workshop to craft consensus around key topics, this article presents a new cartographic research agenda focused on making maps that matter using geospatial big data. This agenda provides both long-term challenges that require significant attention and short-term opportunities that we believe could be addressed in more concentrated studies."
+  },
+  {
+    "id": "W2018681530",
+    "title": "Big Data Analytics for Earth Sciences: the EarthServer approach",
+    "year": 2015,
+    "doi": "https://doi.org/10.1080/17538947.2014.1003106",
+    "cited_by_count": 223,
+    "source": "International Journal of Digital Earth",
+    "authors": [
+      "Peter Baumann",
+      "P. Mazzetti",
+      "Joachim Ungar",
+      "R. Barbera",
+      "Damiano Barboni",
+      "Alan Beccati",
+      "Lorenzo Bigagli",
+      "Enrico Boldrini",
+      "Riccardo Bruno",
+      "Antonio Calanducci"
+    ],
+    "topics": [
+      "Geological Modeling and Analysis",
+      "Scientific Computing and Data Management",
+      "Geochemistry and Geologic Mapping"
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Big data",
+      "Data science",
+      "Computer science",
+      "Analytics",
+      "Scalability",
+      "Visual analytics"
+    ],
+    "abstract": "Big Data Analytics is an emerging field since massive storage and computing capabilities have been made available by advanced e-infrastructures. Earth and Environmental sciences are likely to benefit from Big Data Analytics techniques supporting the processing of the large number of Earth Observation datasets currently acquired and generated through observations and simulations. However, Earth Science data and applications present specificities in terms of relevance of the geospatial information, wide heterogeneity of data models and formats, and complexity of processing. Therefore, Big Earth Data Analytics requires specifically tailored techniques and tools. The EarthServer Big Earth Data Analytics engine offers a solution for coverage-type datasets, built around a high performance array database technology, and the adoption and enhancement of standards for service interaction (OGC WCS and WCPS). The EarthServer solution, led by the collection of requirements from scientific communities and international initiatives, provides a holistic approach that ranges from query languages and scalability up to mobile access and visualization. The result is demonstrated and validated through the development of lighthouse applications in the Marine, Geology, Atmospheric, Planetary and Cryospheric science domains."
+  },
+  {
+    "id": "W2738293192",
+    "title": "KAVAGait: Knowledge-Assisted Visual Analytics for Clinical Gait Analysis",
+    "year": 2018,
+    "doi": "https://doi.org/10.1109/tvcg.2017.2785271",
+    "cited_by_count": 61,
+    "source": "IEEE Transactions on Visualization and Computer Graphics",
+    "authors": [
+      "Markus Wagner",
+      "Djordje Slijepčević",
+      "Brian Horsak",
+      "Alexander Rind",
+      "Matthias Zeppelzauer",
+      "Wolfgang Aigner"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Time Series Analysis and Forecasting",
+      "Human Pose and Action Recognition"
+    ],
+    "keywords": [
+      "Computer science",
+      "Gait analysis",
+      "Visual analytics",
+      "Gait",
+      "Knowledge base",
+      "Analytics",
+      "Human–computer interaction"
+    ],
+    "abstract": "In 2014, more than 10 million people in the US were affected by an ambulatory disability. Thus, gait rehabilitation is a crucial part of health care systems. The quantification of human locomotion enables clinicians to describe and analyze a patient's gait performance in detail and allows them to base clinical decisions on objective data. These assessments generate a vast amount of complex data which need to be interpreted in a short time period. We conducted a design study in cooperation with gait analysis experts to develop a novel Knowledge-Assisted Visual Analytics solution for clinical Gait analysis (KAVAGait). KAVAGait allows the clinician to store and inspect complex data derived during clinical gait analysis. The system incorporates innovative and interactive visual interface concepts, which were developed based on the needs of clinicians. Additionally, an explicit knowledge store (EKS) allows externalization and storage of implicit knowledge from clinicians. It makes this information available for others, supporting the process of data inspection and clinical decision making. We validated our system by conducting expert reviews, a user study, and a case study. Results suggest that KAVAGait is able to support a clinician during clinical practice by visualizing complex gait data and providing knowledge of other clinicians."
+  },
+  {
+    "id": "W2152762220",
+    "title": "Glyph-based Visualization: Foundations, Design Guidelines, Techniques and Applications",
+    "year": 2012,
+    "doi": "https://doi.org/10.2312/conf/eg2013/stars/039-063",
+    "cited_by_count": 264,
+    "source": "Eurographics",
+    "authors": [
+      "Rita Borgo",
+      "Johannes Kehrer",
+      "David Chung",
+      "Eamonn Maguire",
+      "Robert S. Laramee",
+      "Helwig Hauser",
+      "Matthew Ward",
+      "Min Chen"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Data Management and Algorithms",
+      "Image Retrieval and Classification Techniques"
+    ],
+    "keywords": [
+      "Glyph (data visualization)",
+      "Computer science",
+      "Visualization",
+      "Data visualization",
+      "Information visualization",
+      "Rendering (computer graphics)",
+      "Data mining"
+    ],
+    "abstract": "This state of the art report focuses on glyph-based visualization, a common form of visual design where a data set is depicted by a collection of visual objects referred to as glyphs. Its major strength is that patterns of multivariate data involving more than two attribute dimensions can often be more readily perceived in the context of a spatial relationship, whereas many techniques for spatial data such as direct volume rendering find difficult to depict with multivariate or multi-field data, and many techniques for non-spatial data such as parallel coordinates are less able to convey spatial relationships encoded in the data. This report fills several major gaps in the literature, drawing the link between the fundamental concepts in semiotics and the broad spectrum of glyph-based visualization, reviewing existing design guidelines and implementation techniques, and surveying the use of glyph-based visualization in many applications."
+  },
+  {
+    "id": "W4200049315",
+    "title": "Immersive Analytics with Abstract 3D Visualizations: A Survey",
+    "year": 2021,
+    "doi": "https://doi.org/10.1111/cgf.14430",
+    "cited_by_count": 93,
+    "source": "Computer Graphics Forum",
+    "authors": [
+      "Matthias Kraus",
+      "Johannes Fuchs",
+      "Björn Sommer",
+      "Karsten Klein",
+      "Ulrich Engelke",
+      "Daniel A. Keim",
+      "Falk Schreiber"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Computer Graphics and Visualization Techniques",
+      "Virtual Reality Applications and Impacts"
+    ],
+    "keywords": [
+      "Computer science",
+      "Visual analytics",
+      "Data science",
+      "Visualization",
+      "Categorization",
+      "Embedding",
+      "Analytics"
+    ],
+    "abstract": "Abstract After a long period of scepticism, more and more publications describe basic research but also practical approaches to how abstract data can be presented in immersive environments for effective and efficient data understanding. Central aspects of this important research question in immersive analytics research are concerned with the use of 3D for visualization, the embedding in the immersive space, the combination with spatial data, suitable interaction paradigms and the evaluation of use cases. We provide a characterization that facilitates the comparison and categorization of published works and present a survey of publications that gives an overview of the state of the art, current trends, and gaps and challenges in current research."
+  },
+  {
+    "id": "W2136893259",
+    "title": "4 Research Methods: Quantitative and Qualitative Approaches",
+    "year": 2023,
+    "doi": "https://doi.org/10.21832/9781800417151-006",
+    "cited_by_count": 5000,
+    "source": "Multilingual Matters eBooks",
+    "authors": [
+      "Durk Gorter",
+      "Jasone Cenoz"
+    ],
+    "topics": [
+      "Qualitative Research Methods and Ethics",
+      "Qualitative Comparative Analysis Research",
+      "Qualitative Research Methods and Applications"
+    ],
+    "keywords": [
+      "Computer science"
+    ],
+    "abstract": "The improvement and expansion of higher education have been priorities of our national development in Kenya.Within a span of thirty five years since independence, we have witnessed the creation of five public universities.Several private universities have also been established.In our national universities, more professional programmes have been developed at both undergraduate and postgraduate levels and several departments now offer Ph.D programmes through research.As one of many African countries that have suffered from the effects of colonialism and marginalization, Kenya has made tremendous progress in the field of higher education that should be desired for the wider region, now defined by the Preferential Trade Area (PTA) and the Common Market of East and Southern Africa (COMESA).There has, however, been a constant lack of locally available textbooks for use at both the undergraduate and postgraduate levels.Many departments continue to use imported textbooks at a great price in foreign exchange.Worse still, the teaching staff have to relate material in these texts to our local situation and experiences.With the onset of the third millennium and the ever-growing quest for information, there is a desperate need for people to write books in various areas of specialization that are relevant to our needs.One of the objectives of any institution of higher learning is to conduct research.Research generates new knowledge and information; it extends the frontiers of understanding as we gain new insights into phenomena.There can be no improvement of higher education without sound research.The Kenya Government has encouraged and supported research in our public universities and has gone further to establish independent research institutes in several disciplines.This is testimony to the important role that research plays in the national development of any country.It is with these points in mind that we set about the task of writing a book on research methods.Research methods as a subject cuts across the boundaries of all disciplines.Whether in History, Engineering, Medicine, Education or Literature, a researcher needs the necessary tools to conduct a research study properly.We sincerely believe that Research Methods compliments arid strengthens the philosophy of our system of education by equipping the student or any aspiring researcher with the necessary tools and skills to identify a problem and look for practical solutions in a systematic way.Excellent research skills should also strengthen a person's ability to work, thirik and act independently.In writing this book, we felt a research methods book should be \"skill\" and \"application\" oriented.We have therefore tried to discuss thoroughly the necessary skills in research and how such skills should be applied when conducting a research study.This text is intended for people who will either conduct field research.Or who need to rely on literature research.It is therefore suitable for university students at both the undergraduate and graduate levels and for personnel in Government and Non-Governmental Organizations.University teaching staff should also find this book useful as a reference text for their research.The organization of the material in this text follows the format of the research process.Chapters 1 and 2 deal with the definition and purpose of research.Chapters 3-9 deal with the critical, elemen. of the research process.Chapters 10 and 12 deal with types of research while Chapter 11 discusses logistical and ethical issues in research.Finally, research and project proposal development is discussed in Chapter 13.This chapter should be particularly helpful to students who are doing higher degrees and practitioners who may want to develop project proposals.There are review assignments at the .end of each chapter to help in studying and revision.An example of a published journal paper is included in Appendix I.The journal article contains most of the components of a research report as discussed in Chapter 9.While the book lays great emphasis on quantitative research methods, it also gives an"
+  },
+  {
+    "id": "W1994414501",
+    "title": "Geographic information systems and science",
+    "year": 2005,
+    "doi": "https://doi.org/10.1111/j.1477-9730.2005.00343_5.x",
+    "cited_by_count": 912,
+    "source": "The Photogrammetric Record",
+    "authors": [
+      "A. Retalis"
+    ],
+    "topics": [
+      "Geographic Information Systems Studies",
+      "Land Use and Ecosystem Services",
+      "Satellite Image Processing and Photogrammetry"
+    ],
+    "keywords": [
+      "Citation",
+      "Computer science",
+      "Information retrieval",
+      "Library science",
+      "World Wide Web",
+      "Data science"
+    ],
+    "abstract": "involving artificial neural networks, graphs theory, cellular automata, and multiagent systems.Jorge's works are quite diverse, focusing mainly, but not exclusively, on urban morphology, remote sensing, epidemiology, health geography, smart cities, and big data.Patrícia Abrantes is an assistant professor in the Institute of Ge"
+  },
+  {
+    "id": "W2933602294",
+    "title": "Knowledge Graphs: New Directions for Knowledge Representation on the Semantic Web (Dagstuhl Seminar 18371)",
+    "year": 2019,
+    "doi": "https://doi.org/10.4230/dagrep.8.9.29",
+    "cited_by_count": 114,
+    "source": "DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)",
+    "authors": [
+      "Piero A. Bonatti",
+      "Stefan Decker",
+      "Axel Polleres",
+      "Valentina Presutti"
+    ],
+    "topics": [
+      "Semantic Web and Ontologies",
+      "Data Quality and Management",
+      "Advanced Graph Neural Networks"
+    ],
+    "keywords": [
+      "Computer science",
+      "Social Semantic Web",
+      "Semantic Web",
+      "Semantic analytics",
+      "Semantic Web Stack",
+      "Knowledge representation and reasoning",
+      "World Wide Web"
+    ],
+    "abstract": "The increasingly pervasive nature of the Web, expanding to devices and things in everyday life, along with new trends in Artificial Intelligence call for new paradigms and a new look on Knowledge Representation and Processing at scale for the Semantic Web. The emerging, but still to be concretely shaped concept of \"Knowledge Graphs\" provides an excellent unifying metaphor for this current status of Semantic Web research. More than two decades of Semantic Web research provides a solid basis and a promising technology and standards stack to interlink data, ontologies and knowledge on the Web. However, neither are applications for Knowledge Graphs as such limited to Linked Open Data, nor are instantiations of Knowledge Graphs in enterprises - while often inspired by - limited to the core Semantic Web stack. This report documents the program and the outcomes of Dagstuhl Seminar 18371 \"Knowledge Graphs: New Directions for Knowledge Representation on the Semantic Web\", where a group of experts from academia and industry discussed fundamental questions around these topics for a week in early September 2018, including the following: what are knowledge graphs? Which applications do we see to emerge? Which open research questions still need be addressed and which technology gaps still need to be closed?"
+  },
+  {
+    "id": "W2090244154",
+    "title": "Geo-social visual analytics",
+    "year": 2014,
+    "doi": "https://doi.org/10.5311/josis.2014.8.139",
+    "cited_by_count": 53,
+    "source": "Journal of Spatial Information Science",
+    "authors": [
+      "Wei Luo",
+      "Alan M. MacEachren"
+    ],
+    "topics": [
+      "Human Mobility and Location-Based Analysis",
+      "Data Visualization and Analytics",
+      "Geographic Information Systems Studies"
+    ],
+    "keywords": [
+      "Data science",
+      "Homophily",
+      "Social network analysis",
+      "Social network (sociolinguistics)",
+      "Visual analytics",
+      "Context (archaeology)",
+      "Network science"
+    ],
+    "abstract": "Spatial analysis and social network analysis typically consider social processes in their own specific contexts, either geographical or network space. Both approaches demonstrate strong conceptual overlaps. For example, actors close to each other tend to have greater similarity than those far apart; this phenomenon has different labels in geography (spatial autocorrelation) and in network science (homophily). In spite of those conceptual and observed overlaps, the integration of geography and social network context has not received the attention needed in order to develop a comprehensive understanding of their interaction or their impact on outcomes of interest, such as population health behaviors, information dissemination, or human behavior in a crisis. In order to address this gap, this paper discusses the integration of geographic with social network perspectives applied to understanding social processes in place from two levels: the theoretical level and the methodological level. At the theoretical level, this paper argues that the concepts of nearness and relationship in terms of a possible extension of the First Law of Geography are a matter of both geographical and social network distance, relationship, and interaction. At the methodological level, the integration of geography and social network contexts are framed within a new interdisciplinary field:~visual analytics, in which three major application-oriented subfields (data exploration, decision-making, and predictive analysis) are used to organize discussion. In each subfield, this paper presents a theoretical framework first, and then reviews what has been achieved regarding geo-social visual analytics in order to identify potential future research."
+  },
+  {
+    "id": "W2626959846",
+    "title": "The State of the Art in Sentiment Visualization",
+    "year": 2017,
+    "doi": "https://doi.org/10.1111/cgf.13217",
+    "cited_by_count": 107,
+    "source": "Computer Graphics Forum",
+    "authors": [
+      "Kostiantyn Kucher",
+      "Carita Paradis",
+      "Andreas Kerren"
+    ],
+    "topics": [
+      "Sentiment Analysis and Opinion Mining",
+      "Advanced Text Analysis Techniques",
+      "Data Visualization and Analytics"
+    ],
+    "keywords": [
+      "Visualization",
+      "Computer science",
+      "Visual analytics",
+      "Sentiment analysis",
+      "Categorization",
+      "Data science",
+      "Geovisualization"
+    ],
+    "abstract": "Abstract Visualization of sentiments and opinions extracted from or annotated in texts has become a prominent topic of research over the last decade. From basic pie and bar charts used to illustrate customer reviews to extensive visual analytics systems involving novel representations, sentiment visualization techniques have evolved to deal with complex multidimensional data sets, including temporal, relational and geospatial aspects. This contribution presents a survey of sentiment visualization techniques based on a detailed categorization. We describe the background of sentiment analysis, introduce a categorization for sentiment visualization techniques that includes 7 groups with 35 categories in total, and discuss 132 techniques from peer‐reviewed publications together with an interactive web‐based survey browser. Finally, we discuss insights and opportunities for further research in sentiment visualization. We expect this survey to be useful for visualization researchers whose interests include sentiment or other aspects of text data as well as researchers and practitioners from other disciplines in search of efficient visualization techniques applicable to their tasks and data."
+  },
+  {
+    "id": "W4306759050",
+    "title": "A survey of urban visual analytics: Advances and future directions",
+    "year": 2022,
+    "doi": "https://doi.org/10.1007/s41095-022-0275-7",
+    "cited_by_count": 72,
+    "source": "Computational Visual Media",
+    "authors": [
+      "Zikun Deng",
+      "Di Weng",
+      "Shuhan Liu",
+      "Yuan Tian",
+      "Mingliang Xu",
+      "Yingcai Wu"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Human Mobility and Location-Based Analysis",
+      "Land Use and Ecosystem Services"
+    ],
+    "keywords": [
+      "Visual analytics",
+      "Visualization",
+      "Data science",
+      "Computer science",
+      "Domain (mathematical analysis)",
+      "Analytics",
+      "Categorization"
+    ],
+    "abstract": "Developing effective visual analytics systems demands care in characterization of domain problems and integration of visualization techniques and computational models. Urban visual analytics has already achieved remarkable success in tackling urban problems and providing fundamental services for smart cities. To promote further academic research and assist the development of industrial urban analytics systems, we comprehensively review urban visual analytics studies from four perspectives. In particular, we identify 8 urban domains and 22 types of popular visualization, analyze 7 types of computational method, and categorize existing systems into 4 types based on their integration of visualization techniques and computational models. We conclude with potential research directions and opportunities."
+  },
+  {
+    "id": "W2828623846",
+    "title": "Geospatial Analysis and the Internet of Things",
+    "year": 2018,
+    "doi": "https://doi.org/10.3390/ijgi7070269",
+    "cited_by_count": 68,
+    "source": "ISPRS International Journal of Geo-Information",
+    "authors": [
+      "Andreas Kamilaris",
+      "Frank Ostermann"
+    ],
+    "topics": [
+      "Human Mobility and Location-Based Analysis",
+      "Geographic Information Systems Studies",
+      "Data Management and Algorithms"
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Internet of Things",
+      "Variety (cybernetics)",
+      "Data science",
+      "Context (archaeology)",
+      "Computer science",
+      "Dimension (graph theory)"
+    ],
+    "abstract": "As the Internet of Things (IoT) penetrates our everyday lives, being used to address a wide variety of real-life challenges and problems, the location of things becomes an important parameter. The exact location of measuring the physical world through IoT is highly relevant to understand local environmental conditions, or to develop powerful, personalized and context-aware location-based services and applications. This survey paper maps and analyzes the IoT based on its location dimension, categorizing IoT applications and projects according to the geospatial analytical methods performed. The survey investigates the opportunities of location-aware IoT, and examines the potential of geospatial analysis in this research area."
+  },
+  {
+    "id": "W3209986559",
+    "title": "Spatial regression graph convolutional neural networks: A deep learning paradigm for spatial multivariate distributions",
+    "year": 2021,
+    "doi": "https://doi.org/10.1007/s10707-021-00454-x",
+    "cited_by_count": 87,
+    "source": "GeoInformatica",
+    "authors": [
+      "Di Zhu",
+      "Yu Liu",
+      "Xin Yao",
+      "Manfréd M. Fischer"
+    ],
+    "topics": [
+      "Spatial and Panel Data Analysis",
+      "Human Mobility and Location-Based Analysis",
+      "Urban Transport and Accessibility"
+    ],
+    "keywords": [
+      "Computer science",
+      "Artificial intelligence",
+      "Geospatial analysis",
+      "Locality",
+      "Deep learning",
+      "Graph",
+      "Multivariate statistics"
+    ],
+    "abstract": ""
+  },
+  {
+    "id": "W2287566020",
+    "title": "Genome assembly and geospatial phylogenomics of the bed bug Cimex lectularius",
+    "year": 2016,
+    "doi": "https://doi.org/10.1038/ncomms10164",
+    "cited_by_count": 123,
+    "source": "Nature Communications",
+    "authors": [
+      "Jeffrey Rosenfeld",
+      "Darryl Reeves",
+      "Mercer R. Brugler",
+      "Apurva Narechania",
+      "Sabrina Simon",
+      "R. Durrett",
+      "Jonathan Foox",
+      "Kevin V. Shianna",
+      "Michael C. Schatz",
+      "Jorge Gandara"
+    ],
+    "topics": [
+      "Dermatological diseases and infestations",
+      "Insects and Parasite Interactions",
+      "Insect symbiosis and bacterial influences"
+    ],
+    "keywords": [
+      "Bed bug",
+      "Cimex lectularius",
+      "Biology",
+      "Wolbachia",
+      "Phylogenomics",
+      "Genome",
+      "Host adaptation"
+    ],
+    "abstract": "The common bed bug (Cimex lectularius) has been a persistent pest of humans for thousands of years, yet the genetic basis of the bed bug's basic biology and adaptation to dense human environments is largely unknown. Here we report the assembly, annotation and phylogenetic mapping of the 697.9-Mb Cimex lectularius genome, with an N50 of 971 kb, using both long and short read technologies. A RNA-seq time course across all five developmental stages and male and female adults generated 36,985 coding and noncoding gene models. The most pronounced change in gene expression during the life cycle occurs after feeding on human blood and included genes from the Wolbachia endosymbiont, which shows a simultaneous and coordinated host/commensal response to haematophagous activity. These data provide a rich genetic resource for mapping activity and density of C. lectularius across human hosts and cities, which can help track, manage and control bed bug infestations."
+  },
+  {
+    "id": "W2801516600",
+    "title": "Visualization of Cultural Heritage Collection Data: State of the Art and Future Challenges",
+    "year": 2018,
+    "doi": "https://doi.org/10.1109/tvcg.2018.2830759",
+    "cited_by_count": 238,
+    "source": "IEEE Transactions on Visualization and Computer Graphics",
+    "authors": [
+      "Florian Windhager",
+      "Paolo Federico",
+      "Günther Schreder",
+      "Katrin Glinka",
+      "Marian Dörk",
+      "Silvia Miksch",
+      "Eva Mayr"
+    ],
+    "topics": [
+      "Data Visualization and Analytics",
+      "Video Analysis and Summarization",
+      "Web Data Mining and Analysis"
+    ],
+    "keywords": [
+      "Cultural heritage",
+      "Computer science",
+      "World Wide Web",
+      "Visualization",
+      "Data science",
+      "Information visualization",
+      "Archaeology"
+    ],
+    "abstract": "After decades of digitization, large cultural heritage collections have emerged on the web, which contain massive stocks of content from galleries, libraries, archives, and museums. This increase in digital cultural heritage data promises new modes of analysis and increased levels of access for academic scholars and casual users alike. Going beyond the standard representations of search-centric and grid-based interfaces, a multitude of approaches has recently started to enable visual access to cultural collections, and to explore them as complex and comprehensive information spaces by the means of interactive visualizations. In contrast to conventional web interfaces, we witness a widening spectrum of innovative visualization types specially designed for rich collections from the cultural heritage sector. This new class of information visualizations gives rise to a notable diversity of interaction and representation techniques while lending currency and urgency to a discussion about principles such as serendipity, generosity, and criticality in connection with visualization design. With this survey, we review information visualization approaches to digital cultural heritage collections and reflect on the state of the art in techniques and design choices. We contextualize our survey with humanist perspectives on the field and point out opportunities for future research."
+  },
+  {
+    "id": "W4406643700",
+    "title": "Towards the next generation of Geospatial Artificial Intelligence",
+    "year": 2025,
+    "doi": "https://doi.org/10.1016/j.jag.2025.104368",
+    "cited_by_count": 82,
+    "source": "International Journal of Applied Earth Observation and Geoinformation",
+    "authors": [
+      "Gengchen Mai",
+      "Yiqun Xie",
+      "Xiaowei Jia",
+      "Ni Lao",
+      "Jinmeng Rao",
+      "Qing Zhu",
+      "Zeping Liu",
+      "Yao‐Yi Chiang",
+      "Junfeng Jiao"
+    ],
+    "topics": [
+      "Geographic Information Systems Studies",
+      "Automated Road and Building Extraction",
+      "Data Management and Algorithms"
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Geomatics",
+      "Geography",
+      "Cartography",
+      "Data science",
+      "Regional science",
+      "Computer science"
+    ],
+    "abstract": "Geospatial Artificial Intelligence (GeoAI), as the integration of geospatial studies and AI, has become one of the fastest-developing research directions in spatial data science and geography . This rapid change in the field calls for a deeper understanding of the recent developments and envision where the field is going in the near future. In this work, we provide a quantitative analysis of the GeoAI literature from the spatial, temporal, and semantic aspects. We briefly discuss the history of AI and GeoAI by highlighting some pioneering work. Then we discuss the current landscape of GeoAI by selecting five representative subdomains including remote sensing , urban computing, Earth system science , cartography , and geospatial semantics. Finally, we highlight several unique future research directions of GeoAI which are classified into two groups: GeoAI method development challenges and GeoAI Ethics challenges. Topics include heterogeneity-aware GeoAI, knowledge-guided GeoAI, spatial representation learning, geo-foundation models, fairness-aware GeoAI, privacy-aware GeoAI, as well as interpretable and explainable GeoAI. We hope our review of GeoAI’s past, present, and future is comprehensive and can enlighten the next generation of GeoAI research."
+  }
+]

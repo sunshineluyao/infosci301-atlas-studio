@@ -1,0 +1,37 @@
+{
+  "snapshotDate": "2026-09-14",
+  "emergingTech": {
+    "provider": "OpenAlex",
+    "url": "https://api.openalex.org/works?search=geospatial%20artificial%20intelligence&filter=from_publication_date:2019-01-01&per-page=60",
+    "records": 60,
+    "population": "First 60 API search results, not a systematic review; retrieval order retained.",
+    "unit": "Publication",
+    "transform": "Up to three provider-assigned topics per paper; bipartite paper-topic edges are classifications, not citations or verified NLP triples.",
+    "license": "OpenAlex metadata is CC0. See https://docs.openalex.org/additional-help/faq"
+  },
+  "heritage": {
+    "provider": "NYC Landmarks Preservation Commission / NYC Open Data",
+    "url": "https://data.cityofnewyork.us/Housing-Development/Designated-and-Calendared-Buildings-and-Sites/ncre-qhxs",
+    "query": "https://data.cityofnewyork.us/resource/ncre-qhxs.json?$where=status=%27DESIGNATED%27%20AND%20lm_type=%27Individual%20Landmark%27&$limit=5000&$order=lp_number,bin_number&$select=lp_number,lm_name,boroughid,desdate,latitude,longitude,bin_number",
+    "inputBuildingRecords": 2065,
+    "invalidDropped": 74,
+    "records": 1457,
+    "unit": "Individual-landmark designation ID",
+    "transform": "Filter DESIGNATED + Individual Landmark. Deduplicate lp_number; first valid building coordinate retained; retain buildingRecords count. Designation date is not construction date or community value.",
+    "license": "Public NYC Open Data metadata; governed by NYC Open Data Terms of Use, not a blanket CC0 claim. No photographs copied.",
+    "boundary": "Administrative designations reflect institutional selection, not the full universe of cultural heritage. NYC observations do not establish Jinxi community needs."
+  },
+  "earth": {
+    "provider": "NASA EONET v3",
+    "records": 272,
+    "unit": "Dated event geometry, not unique event or people affected",
+    "url": "https://eonet.gsfc.nasa.gov/docs/v3",
+    "transform": "Reuse documented closed-event category snapshots from the Week 4 notebook; not a complete hazard census.",
+    "boundary": "Source coverage and event definition vary; absence is not safety and point count is not impact."
+  },
+  "world": {
+    "provider": "Natural Earth via world-atlas",
+    "url": "https://github.com/topojson/world-atlas",
+    "license": "Natural Earth public domain; simplified cartography for context, not boundary adjudication."
+  }
+}

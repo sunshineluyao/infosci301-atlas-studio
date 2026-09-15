@@ -1,0 +1,12 @@
+node_modules/
+.test-cache/
+dist/
+dist-hf/
+dist-vercel/
+release/
+.env
+.env.*
+!.env.example
+.vercel/
+*.log
+.DS_Store

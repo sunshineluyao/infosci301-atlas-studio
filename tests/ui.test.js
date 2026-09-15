@@ -1,0 +1,38 @@
+// DOM-emulated interaction tests, NOT visual or WebGL browser acceptance tests.
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+import {build} from 'esbuild';
+import {JSDOM} from 'jsdom';
+import React,{act} from 'react';
+import {createRoot} from 'react-dom/client';
+test('Guided UI loads real data, switches studios/sections, filters and opens configuration',async()=>{
+ const dom=new JSDOM('<!doctype html><div id="root"></div>',{url:'http://localhost/'});
+ for(const key of ['window','document','localStorage','location','HTMLElement','Event','MouseEvent'])globalThis[key]=dom.window[key];
+ globalThis.IS_REACT_ACT_ENVIRONMENT=true;
+ globalThis.fetch=async url=>({ok:true,json:async()=>JSON.parse(fs.readFileSync(path.join(process.cwd(),'public',String(url).replace(/^\//,''))))});
+ const output=await build({entryPoints:['src/App.jsx'],bundle:true,format:'esm',platform:'node',write:false,packages:'external',define:{__EDITION__:'"guided"','import.meta.env.BASE_URL':'"/"'}});
+ fs.mkdirSync('.test-cache',{recursive:true});fs.writeFileSync('.test-cache/app.mjs',output.outputFiles[0].text);
+ const App=(await import(pathToFileURL(path.resolve('.test-cache/app.mjs')).href+'?v='+Date.now())).default;
+ const root=createRoot(document.getElementById('root'));
+ await act(async()=>{root.render(React.createElement(App));await new Promise(r=>setTimeout(r,40));});
+ const text=()=>document.body.textContent;
+ const button=name=>[...document.querySelectorAll('button')].find(b=>b.textContent.trim()===name);
+ const click=async name=>{const b=button(name);assert.ok(b,'Button exists: '+name);await act(async()=>{b.dispatchEvent(new dom.window.MouseEvent('click',{bubbles:true}));});};
+ assert.ok(text().includes('Make emerging science legible.'));assert.ok(text().includes('30 papers'));assert.ok(document.querySelector('svg[aria-label^="Interactive paper"]'));
+ await click('Four-level walkthrough');assert.ok(text().includes('Listen before you map'));
+ await click('Next level');assert.ok(text().includes('Declare what a connection means'));
+ await click('Evidence & team claim');assert.equal(document.querySelectorAll('.note-block textarea').length,4);assert.ok(text().includes('15% + 5%'));
+ await click('Place & time intelligence');await click('Explore');assert.ok(text().includes('1,457'));assert.ok(text().includes('Read change. Keep people in view.'));
+ const dataset=[...document.querySelectorAll('select')].find(s=>s.querySelector('option[value="earth"]'));
+ await act(async()=>{dataset.value='earth';dataset.dispatchEvent(new dom.window.Event('change',{bubbles:true}));});assert.ok(text().includes('272'));assert.ok(text().includes('Earth events in place and time'));
+ const group=[...document.querySelectorAll('select')].find(s=>s.querySelector('option')?.textContent==='All');
+ const selectedGroup=group.options[1].value;await act(async()=>{group.value=selectedGroup;group.dispatchEvent(new dom.window.Event('change',{bubbles:true}));});assert.ok(text().includes('visible records'));
+ await click('Code & packages');assert.ok(text().includes('Open original idiom atlas'));assert.equal(document.querySelectorAll('a[download]').length,2);
+ await click('R');assert.ok(text().includes('R was not executed in this release'));
+ await click('Sources & inspiration');assert.ok(text().includes('InstantMesh'));assert.ok(text().includes('React Three Next'));
+ await click('Configure');assert.ok(document.querySelector('[role="dialog"]'));await click('Apply for this session');assert.equal(document.querySelector('[role="dialog"]'),null);
+ await act(async()=>root.unmount());dom.window.close();
+});

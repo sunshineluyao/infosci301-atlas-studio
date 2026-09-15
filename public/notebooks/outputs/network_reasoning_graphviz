@@ -1,0 +1,12 @@
+digraph network_reasoning {
+	bgcolor=transparent rankdir=LR
+	task [label=Task fillcolor="#21747A" fontcolor=white shape=box style="rounded,filled"]
+	model [label=Model fillcolor="#6A5983" fontcolor=white shape=box style="rounded,filled"]
+	layout [label=Layout fillcolor="#C59A43" fontcolor=white shape=box style="rounded,filled"]
+	evidence [label=Evidence fillcolor="#C76D5A" fontcolor=white shape=box style="rounded,filled"]
+	claim [label=Claim fillcolor="#173F4A" fontcolor=white shape=box style="rounded,filled"]
+	task -> model
+	model -> layout
+	layout -> evidence
+	evidence -> claim
+}

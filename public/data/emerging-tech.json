@@ -1,0 +1,2107 @@
+[
+  {
+    "id": "W4395055639",
+    "title": "Foundation Models for Generalist Geospatial Artificial Intelligence",
+    "year": 2024,
+    "url": "https://doi.org/10.2139/ssrn.4804009",
+    "citations": 120,
+    "topics": [
+      {
+        "id": "T10757",
+        "label": "Geographic Information Systems Studies",
+        "score": 0.9975000023841858
+      },
+      {
+        "id": "T11106",
+        "label": "Data Management and Algorithms",
+        "score": 0.9904000163078308
+      },
+      {
+        "id": "T13067",
+        "label": "Geological Modeling and Analysis",
+        "score": 0.983299970626831
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Generalist and specialist species",
+      "Foundation (evidence)",
+      "Computer science",
+      "Data science",
+      "Geomatics"
+    ],
+    "authors": [
+      "Johannes Jakubik",
+      "Sujit Roy",
+      "Chris Phillips"
+    ]
+  },
+  {
+    "id": "W4389474133",
+    "title": "Handbook of Geospatial Artificial Intelligence",
+    "year": 2023,
+    "url": "https://doi.org/10.1201/9781003308423",
+    "citations": 74,
+    "topics": [
+      {
+        "id": "T10757",
+        "label": "Geographic Information Systems Studies",
+        "score": 0.8434000015258789
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Computer science",
+      "Artificial intelligence",
+      "Data science",
+      "Geography",
+      "Cartography"
+    ],
+    "authors": [
+      "Song Gao",
+      "Yingjie Hu",
+      "Wenwen Li"
+    ]
+  },
+  {
+    "id": "W4406643700",
+    "title": "Towards the next generation of Geospatial Artificial Intelligence",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.jag.2025.104368",
+    "citations": 82,
+    "topics": [
+      {
+        "id": "T10757",
+        "label": "Geographic Information Systems Studies",
+        "score": 0.996999979019165
+      },
+      {
+        "id": "T13282",
+        "label": "Automated Road and Building Extraction",
+        "score": 0.996999979019165
+      },
+      {
+        "id": "T11106",
+        "label": "Data Management and Algorithms",
+        "score": 0.9948999881744385
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Geomatics",
+      "Geography",
+      "Cartography",
+      "Data science",
+      "Regional science"
+    ],
+    "authors": [
+      "Gengchen Mai",
+      "Yiqun Xie",
+      "Xiaowei Jia"
+    ]
+  },
+  {
+    "id": "W4367313141",
+    "title": "Advances in geocomputation and geospatial artificial intelligence (GeoAI) for mapping",
+    "year": 2023,
+    "url": "https://doi.org/10.1016/j.jag.2023.103300",
+    "citations": 89,
+    "topics": [
+      {
+        "id": "T13282",
+        "label": "Automated Road and Building Extraction",
+        "score": 0.9987999796867371
+      },
+      {
+        "id": "T10757",
+        "label": "Geographic Information Systems Studies",
+        "score": 0.9976999759674072
+      },
+      {
+        "id": "T11164",
+        "label": "Remote Sensing and LiDAR Applications",
+        "score": 0.9926999807357788
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Data science",
+      "Geomatics",
+      "Geography",
+      "Geographic information system",
+      "Photogrammetry"
+    ],
+    "authors": [
+      "Yongze Song",
+      "Margaret Kalácska",
+      "Mateo Gašparović"
+    ]
+  },
+  {
+    "id": "W4230451521",
+    "title": "Geospatial Artificial Intelligence (GeoAI)",
+    "year": 2021,
+    "url": "https://doi.org/10.1093/obo/9780199874002-0228",
+    "citations": 67,
+    "topics": [
+      {
+        "id": "T10757",
+        "label": "Geographic Information Systems Studies",
+        "score": 0.998199999332428
+      },
+      {
+        "id": "T11106",
+        "label": "Data Management and Algorithms",
+        "score": 0.944100022315979
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Data science",
+      "Computer science",
+      "Artificial intelligence",
+      "Geomatics",
+      "Spatial intelligence"
+    ],
+    "authors": [
+      "Song Gao"
+    ]
+  },
+  {
+    "id": "W4387187512",
+    "title": "Explainable spatially explicit geospatial artificial intelligence in urban analytics",
+    "year": 2023,
+    "url": "https://doi.org/10.1177/23998083231204689",
+    "citations": 68,
+    "topics": [
+      {
+        "id": "T11344",
+        "label": "Traffic Prediction and Management Techniques",
+        "score": 0.9998000264167786
+      },
+      {
+        "id": "T11980",
+        "label": "Human Mobility and Location-Based Analysis",
+        "score": 0.9984999895095825
+      },
+      {
+        "id": "T13282",
+        "label": "Automated Road and Building Extraction",
+        "score": 0.9944000244140625
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Interpretability",
+      "Computer science",
+      "Analytics",
+      "Graph",
+      "Data science"
+    ],
+    "authors": [
+      "Pengyuan Liu",
+      "Yan Zhang",
+      "Filip Biljecki"
+    ]
+  },
+  {
+    "id": "W4309651788",
+    "title": "Towards a foundation model for geospatial artificial intelligence (vision paper)",
+    "year": 2022,
+    "url": "https://doi.org/10.1145/3557915.3561043",
+    "citations": 63,
+    "topics": [
+      {
+        "id": "T11714",
+        "label": "Multimodal Machine Learning Applications",
+        "score": 0.9993000030517578
+      },
+      {
+        "id": "T10028",
+        "label": "Topic Modeling",
+        "score": 0.9984999895095825
+      },
+      {
+        "id": "T10181",
+        "label": "Natural Language Processing Techniques",
+        "score": 0.9948999881744385
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Computer science",
+      "Task (project management)",
+      "Artificial intelligence",
+      "Data science",
+      "Foundation (evidence)"
+    ],
+    "authors": [
+      "Gengchen Mai",
+      "Chris Cundy",
+      "Kristy Choi"
+    ]
+  },
+  {
+    "id": "W3009017856",
+    "title": "Geospatial Artificial Intelligence: Potentials of Machine Learning for 3D Point Clouds and Geospatial Digital Twins",
+    "year": 2020,
+    "url": "https://doi.org/10.1007/s41064-020-00102-3",
+    "citations": 83,
+    "topics": [
+      {
+        "id": "T11164",
+        "label": "Remote Sensing and LiDAR Applications",
+        "score": 0.9988999962806702
+      },
+      {
+        "id": "T11211",
+        "label": "3D Surveying and Cultural Heritage",
+        "score": 0.9987000226974487
+      },
+      {
+        "id": "T12698",
+        "label": "3D Modeling in Geospatial Applications",
+        "score": 0.994700014591217
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Point cloud",
+      "Computer science",
+      "Artificial intelligence",
+      "Workflow",
+      "Domain (mathematical analysis)"
+    ],
+    "authors": [
+      "Jürgen Döllner"
+    ]
+  },
+  {
+    "id": "W4392672456",
+    "title": "Mapping the landscape and roadmap of geospatial artificial intelligence (GeoAI) in quantitative human geography: An extensive systematic review",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.jag.2024.103734",
+    "citations": 91,
+    "topics": [
+      {
+        "id": "T11980",
+        "label": "Human Mobility and Location-Based Analysis",
+        "score": 0.9997000098228455
+      },
+      {
+        "id": "T10298",
+        "label": "Urban Transport and Accessibility",
+        "score": 0.9948999881744385
+      },
+      {
+        "id": "T11942",
+        "label": "Transportation and Mobility Innovations",
+        "score": 0.9740999937057495
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Human geography",
+      "Geography",
+      "Data science",
+      "Geoinformatics",
+      "Geomatics"
+    ],
+    "authors": [
+      "Siqin Wang",
+      "Xiao Huang",
+      "Pengyuan Liu"
+    ]
+  },
+  {
+    "id": "W3081315956",
+    "title": "Geometric Algebra Applications in Geospatial Artificial Intelligence and Remote Sensing Image Processing",
+    "year": 2020,
+    "url": "https://doi.org/10.1109/access.2020.3018544",
+    "citations": 73,
+    "topics": [
+      {
+        "id": "T12698",
+        "label": "3D Modeling in Geospatial Applications",
+        "score": 0.9976999759674072
+      },
+      {
+        "id": "T13067",
+        "label": "Geological Modeling and Analysis",
+        "score": 0.9961000084877014
+      },
+      {
+        "id": "T11106",
+        "label": "Data Management and Algorithms",
+        "score": 0.9855999946594238
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Computer science",
+      "Artificial intelligence",
+      "Computer vision",
+      "Image processing",
+      "Remote sensing"
+    ],
+    "authors": [
+      "Uzair Aslam Bhatti",
+      "Zhaoyuan Yu",
+      "Linwang Yuan"
+    ]
+  },
+  {
+    "id": "W4377047150",
+    "title": "Integrating low-cost sensor monitoring, satellite mapping, and geospatial artificial intelligence for intra-urban air pollution predictions",
+    "year": 2023,
+    "url": "https://doi.org/10.1016/j.envpol.2023.121832",
+    "citations": 79,
+    "topics": [
+      {
+        "id": "T10190",
+        "label": "Air Quality and Health Impacts",
+        "score": 0.9998999834060669
+      },
+      {
+        "id": "T12120",
+        "label": "Air Quality Monitoring and Forecasting",
+        "score": 0.9998000264167786
+      },
+      {
+        "id": "T10075",
+        "label": "Atmospheric chemistry and aerosols",
+        "score": 0.9886999726295471
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Interpretability",
+      "Computer science",
+      "Kriging",
+      "Raster graphics",
+      "Environmental science"
+    ],
+    "authors": [
+      "Lü Liang",
+      "Jacob Daniels",
+      "Colleen P. Bailey"
+    ]
+  },
+  {
+    "id": "W4285392166",
+    "title": "Geospatial Artificial Intelligence (GeoAI) in the Integrated Hydrological and Fluvial Systems Modeling: Review of Current Applications and Trends",
+    "year": 2022,
+    "url": "https://doi.org/10.3390/w14142211",
+    "citations": 68,
+    "topics": [
+      {
+        "id": "T10330",
+        "label": "Hydrology and Watershed Management Studies",
+        "score": 0.9997000098228455
+      },
+      {
+        "id": "T10930",
+        "label": "Flood Risk Assessment and Management",
+        "score": 0.9994000196456909
+      },
+      {
+        "id": "T11490",
+        "label": "Hydrological Forecasting Using AI",
+        "score": 0.9991999864578247
+      }
+    ],
+    "keywords": [
+      "Interpretability",
+      "Geospatial analysis",
+      "Computer science",
+      "Current (fluid)",
+      "Data mining",
+      "Hydrological modelling"
+    ],
+    "authors": [
+      "Carlos Gonzales‐Inca",
+      "Mikel Calle",
+      "Danny Croghan"
+    ]
+  },
+  {
+    "id": "W3153787537",
+    "title": "A Review of Recent Researches and Reflections on Geospatial Artificial Intelligence",
+    "year": 2020,
+    "url": "https://doi.org/10.13203/j.whugis20200597",
+    "citations": 24,
+    "topics": [
+      {
+        "id": "T10757",
+        "label": "Geographic Information Systems Studies",
+        "score": 0.9901999831199646
+      },
+      {
+        "id": "T13067",
+        "label": "Geological Modeling and Analysis",
+        "score": 0.9437999725341797
+      },
+      {
+        "id": "T13734",
+        "label": "Advanced Computational Techniques and Applications",
+        "score": 0.9065999984741211
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Data science",
+      "Field (mathematics)",
+      "Geomatics",
+      "Computer science",
+      "Spatial intelligence"
+    ],
+    "authors": [
+      "Song Gao"
+    ]
+  },
+  {
+    "id": "W3199989477",
+    "title": "Comparison of Self-Organizing Map, Artificial Neural Network, and Co-Active Neuro-Fuzzy Inference System Methods in Simulating Groundwater Quality: Geospatial Artificial Intelligence",
+    "year": 2021,
+    "url": "https://doi.org/10.1007/s11269-021-02969-2",
+    "citations": 56,
+    "topics": [
+      {
+        "id": "T11490",
+        "label": "Hydrological Forecasting Using AI",
+        "score": 0.9994999766349792
+      },
+      {
+        "id": "T12543",
+        "label": "Groundwater and Watershed Analysis",
+        "score": 0.9968000054359436
+      },
+      {
+        "id": "T12697",
+        "label": "Water Quality Monitoring Technologies",
+        "score": 0.9810000061988831
+      }
+    ],
+    "keywords": [
+      "Artificial neural network",
+      "Geospatial analysis",
+      "Groundwater",
+      "Hydrogeology",
+      "Aquifer",
+      "Mean squared error"
+    ],
+    "authors": [
+      "Vahid Gholami",
+      "Mohammad Reza Khaleghi",
+      "Saied Pirasteh"
+    ]
+  },
+  {
+    "id": "W3158878203",
+    "title": "Deep fake geography? When geospatial data encounter Artificial Intelligence",
+    "year": 2021,
+    "url": "https://doi.org/10.1080/15230406.2021.1910075",
+    "citations": 154,
+    "topics": [
+      {
+        "id": "T12357",
+        "label": "Digital Media Forensic Detection",
+        "score": 0.9947999715805054
+      },
+      {
+        "id": "T11512",
+        "label": "Anomaly Detection Techniques and Applications",
+        "score": 0.9932000041007996
+      },
+      {
+        "id": "T10388",
+        "label": "Advanced Steganography and Watermarking Techniques",
+        "score": 0.9879999756813049
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Geography",
+      "Data science",
+      "Context (archaeology)",
+      "Human geography",
+      "Perception"
+    ],
+    "authors": [
+      "Bo Zhao",
+      "Shaozeng Zhang",
+      "Chunxue Xu"
+    ]
+  },
+  {
+    "id": "W4387294423",
+    "title": "Building Privacy-Preserving and Secure Geospatial Artificial Intelligence Foundation Models (Vision Paper)",
+    "year": 2023,
+    "url": "https://doi.org/10.1145/3589132.3625611",
+    "citations": 26,
+    "topics": [
+      {
+        "id": "T10757",
+        "label": "Geographic Information Systems Studies",
+        "score": 0.9908999800682068
+      },
+      {
+        "id": "T11980",
+        "label": "Human Mobility and Location-Based Analysis",
+        "score": 0.9882000088691711
+      },
+      {
+        "id": "T10764",
+        "label": "Privacy-Preserving Technologies in Data",
+        "score": 0.9825000166893005
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Foundation (evidence)",
+      "Computer science",
+      "Blueprint",
+      "Data science",
+      "Computer security"
+    ],
+    "authors": [
+      "Jinmeng Rao",
+      "Song Gao",
+      "Gengchen Mai"
+    ]
+  },
+  {
+    "id": "W4386996430",
+    "title": "Geospatial Artificial Intelligence (GeoAI) and Satellite Imagery Fusion for Soil Physical Property Predicting",
+    "year": 2023,
+    "url": "https://doi.org/10.3390/su151914125",
+    "citations": 30,
+    "topics": [
+      {
+        "id": "T10770",
+        "label": "Soil Geostatistics and Mapping",
+        "score": 0.9970999956130981
+      },
+      {
+        "id": "T10889",
+        "label": "Soil erosion and sediment transport",
+        "score": 0.996399998664856
+      },
+      {
+        "id": "T10616",
+        "label": "Smart Agriculture and AI",
+        "score": 0.991100013256073
+      }
+    ],
+    "keywords": [
+      "Silt",
+      "Mean squared error",
+      "Satellite imagery",
+      "Environmental science",
+      "Remote sensing",
+      "Soil texture"
+    ],
+    "authors": [
+      "Fatemeh Sadat Hosseini",
+      "Myoung Bae Seo",
+      "Seyed Vahid Razavi-Termeh"
+    ]
+  },
+  {
+    "id": "W4388092733",
+    "title": "Foundation Models for Generalist Geospatial Artificial Intelligence",
+    "year": 2023,
+    "url": "https://doi.org/10.48550/arxiv.2310.18660",
+    "citations": 17,
+    "topics": [
+      {
+        "id": "T10930",
+        "label": "Flood Risk Assessment and Management",
+        "score": 0.9761000275611877
+      },
+      {
+        "id": "T13282",
+        "label": "Automated Road and Building Extraction",
+        "score": 0.9754999876022339
+      },
+      {
+        "id": "T10036",
+        "label": "Advanced Neural Network Applications",
+        "score": 0.9491999745368958
+      }
+    ],
+    "keywords": [
+      "Computer science",
+      "Geospatial analysis",
+      "Segmentation",
+      "Multispectral image",
+      "Artificial intelligence",
+      "Data mining"
+    ],
+    "authors": [
+      "Johannes Jakubik",
+      "Sujit Roy",
+      "Chris Phillips"
+    ]
+  },
+  {
+    "id": "W4403081744",
+    "title": "Smart hotspot detection using geospatial artificial intelligence: A machine learning approach to reduce flood risk",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.scs.2024.105873",
+    "citations": 30,
+    "topics": [
+      {
+        "id": "T10930",
+        "label": "Flood Risk Assessment and Management",
+        "score": 0.9994999766349792
+      },
+      {
+        "id": "T11490",
+        "label": "Hydrological Forecasting Using AI",
+        "score": 0.9731000065803528
+      },
+      {
+        "id": "T10330",
+        "label": "Hydrology and Watershed Management Studies",
+        "score": 0.9483000040054321
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Hotspot (geology)",
+      "Geomatics",
+      "Flood myth",
+      "Computer science",
+      "Artificial intelligence"
+    ],
+    "authors": [
+      "Seyed M. H. S. Rezvani",
+      "Alexandre Gonçalves",
+      "Maria João Falcão Silva"
+    ]
+  },
+  {
+    "id": "W4281289445",
+    "title": "Geospatial Artificial Intelligence for Early Detection of Forest and Land Fires",
+    "year": 2022,
+    "url": "https://doi.org/10.18502/kss.v7i9.10947",
+    "citations": 17,
+    "topics": [
+      {
+        "id": "T13373",
+        "label": "Data Mining and Machine Learning Applications",
+        "score": 0.664900004863739
+      }
+    ],
+    "keywords": [
+      "Hotspot (geology)",
+      "Geospatial analysis",
+      "Law enforcement",
+      "Firefighting",
+      "Geography",
+      "Christian ministry"
+    ],
+    "authors": [
+      "Alya Faryanti Purbahapsari",
+      "Irene B. Batoarung"
+    ]
+  },
+  {
+    "id": "W4414547178",
+    "title": "Harnessing Geospatial Artificial Intelligence (GeoAI) for Environmental Epidemiology: A Narrative Review",
+    "year": 2025,
+    "url": "https://doi.org/10.1007/s40572-025-00497-4",
+    "citations": 19,
+    "topics": [
+      {
+        "id": "T14393",
+        "label": "Health, Environment, Cognitive Aging",
+        "score": 0.3409000039100647
+      },
+      {
+        "id": "T10190",
+        "label": "Air Quality and Health Impacts",
+        "score": 0.22869999706745148
+      },
+      {
+        "id": "T12120",
+        "label": "Air Quality Monitoring and Forecasting",
+        "score": 0.14259999990463257
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Representativeness heuristic",
+      "Exposome",
+      "Exposure assessment",
+      "Environmental epidemiology",
+      "Data curation"
+    ],
+    "authors": [
+      "Hari S. Iyer",
+      "Seigi Karasaki",
+      "Yi Li"
+    ]
+  },
+  {
+    "id": "W4385679693",
+    "title": "An overview of GeoSpatial Artificial Intelligence technologies for city planning and development",
+    "year": 2023,
+    "url": "https://doi.org/10.1109/icecct56650.2023.10179796",
+    "citations": 14,
+    "topics": [
+      {
+        "id": "T11164",
+        "label": "Remote Sensing and LiDAR Applications",
+        "score": 0.9186999797821045
+      },
+      {
+        "id": "T11344",
+        "label": "Traffic Prediction and Management Techniques",
+        "score": 0.9176999926567078
+      },
+      {
+        "id": "T13282",
+        "label": "Automated Road and Building Extraction",
+        "score": 0.9097999930381775
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Computer science",
+      "Data science",
+      "Artificial intelligence",
+      "Geography",
+      "Remote sensing"
+    ],
+    "authors": [
+      "Hafsa Ouchra",
+      "Abdessamad Belangour",
+      "Allae Erraissi"
+    ]
+  },
+  {
+    "id": "W4392709360",
+    "title": "Comparative Study of Satellite Imageries for the Vegetation Analysis with Geospatial Artificial Intelligence: Using Python and Scikit-Learn",
+    "year": 2024,
+    "url": "https://doi.org/10.14445/23488352/ijce-v11i2p108",
+    "citations": 31,
+    "topics": [
+      {
+        "id": "T10111",
+        "label": "Remote Sensing in Agriculture",
+        "score": 0.9909999966621399
+      },
+      {
+        "id": "T11164",
+        "label": "Remote Sensing and LiDAR Applications",
+        "score": 0.9890999794006348
+      },
+      {
+        "id": "T10895",
+        "label": "Species Distribution and Climate Change",
+        "score": 0.9182999730110168
+      }
+    ],
+    "keywords": [
+      "Python (programming language)",
+      "Geospatial analysis",
+      "Computer science",
+      "Satellite",
+      "Remote sensing",
+      "Geomatics"
+    ],
+    "authors": [
+      "Vickram A.S",
+      "Vidhya Lakshmi S",
+      "R. Anand"
+    ]
+  },
+  {
+    "id": "W4392432526",
+    "title": "Enhancing mineral prospectivity mapping with geospatial artificial intelligence: A geographically neural network-weighted logistic regression approach",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.jag.2024.103746",
+    "citations": 24,
+    "topics": [
+      {
+        "id": "T12157",
+        "label": "Geochemistry and Geologic Mapping",
+        "score": 0.9998999834060669
+      },
+      {
+        "id": "T12282",
+        "label": "Mineral Processing and Grinding",
+        "score": 0.9922999739646912
+      },
+      {
+        "id": "T10770",
+        "label": "Soil Geostatistics and Mapping",
+        "score": 0.9758999943733215
+      }
+    ],
+    "keywords": [
+      "Prospectivity mapping",
+      "Geospatial analysis",
+      "Logistic regression",
+      "Geographically Weighted Regression",
+      "Geography",
+      "Artificial neural network"
+    ],
+    "authors": [
+      "Luoqi Wang",
+      "Jie Yang",
+      "Sensen Wu"
+    ]
+  },
+  {
+    "id": "W4400590305",
+    "title": "Building Damage Assessment in Aftermath of Disaster Events by Leveraging Geoai (Geospatial Artificial Intelligence): Review",
+    "year": 2024,
+    "url": "https://doi.org/10.30574/wjarr.2024.23.1.2000",
+    "citations": 19,
+    "topics": [
+      {
+        "id": "T13018",
+        "label": "Seismology and Earthquake Studies",
+        "score": 0.47780001163482666
+      },
+      {
+        "id": "T13890",
+        "label": "Remote Sensing and Land Use",
+        "score": 0.47760000824928284
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Computer science",
+      "Data science",
+      "Forensic engineering",
+      "Geography",
+      "Engineering"
+    ],
+    "authors": [
+      "Taiwo H. Agbaje",
+      "Nemi Abomaye-Nimenibo",
+      "Chinedu James Ezeh"
+    ]
+  },
+  {
+    "id": "W4323075091",
+    "title": "Special issue on geospatial artificial intelligence",
+    "year": 2023,
+    "url": "https://doi.org/10.1007/s10707-023-00493-6",
+    "citations": 8,
+    "topics": [
+      {
+        "id": "T13282",
+        "label": "Automated Road and Building Extraction",
+        "score": 0.9923999905586243
+      },
+      {
+        "id": "T10757",
+        "label": "Geographic Information Systems Studies",
+        "score": 0.9922000169754028
+      },
+      {
+        "id": "T11980",
+        "label": "Human Mobility and Location-Based Analysis",
+        "score": 0.9830999970436096
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Geography",
+      "Geomatics",
+      "Cartography",
+      "Data science",
+      "Computer science"
+    ],
+    "authors": [
+      "Song Gao",
+      "Yingjie Hu",
+      "Wenwen Li"
+    ]
+  },
+  {
+    "id": "W4402356717",
+    "title": "Assessment of noise pollution-prone areas using an explainable geospatial artificial intelligence approach",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.jenvman.2024.122361",
+    "citations": 16,
+    "topics": [
+      {
+        "id": "T11692",
+        "label": "Noise Effects and Management",
+        "score": 0.9993000030517578
+      },
+      {
+        "id": "T13282",
+        "label": "Automated Road and Building Extraction",
+        "score": 0.9656000137329102
+      },
+      {
+        "id": "T11606",
+        "label": "Infrastructure Maintenance and Monitoring",
+        "score": 0.9106000065803528
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Pollution",
+      "Noise pollution",
+      "Noise (video)",
+      "Environmental science",
+      "Geomatics"
+    ],
+    "authors": [
+      "Seyed Vahid Razavi-Termeh",
+      "Abolghasem Sadeghi‐Niaraki",
+      "Xiaobai Yao"
+    ]
+  },
+  {
+    "id": "W4398141811",
+    "title": "GPT, large language models (LLMs) and generative artificial intelligence (GAI) models in geospatial science: a systematic review",
+    "year": 2024,
+    "url": "https://doi.org/10.1080/17538947.2024.2353122",
+    "citations": 115,
+    "topics": [
+      {
+        "id": "T14280",
+        "label": "Big Data Technologies and Applications",
+        "score": 0.8705999851226807
+      },
+      {
+        "id": "T13067",
+        "label": "Geological Modeling and Analysis",
+        "score": 0.7760000228881836
+      },
+      {
+        "id": "T11986",
+        "label": "Scientific Computing and Data Management",
+        "score": 0.7666000127792358
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Generative grammar",
+      "Generative model",
+      "Geomatics",
+      "Geography",
+      "Data science"
+    ],
+    "authors": [
+      "Siqin Wang",
+      "Tao Hu",
+      "Xiao Huang"
+    ]
+  },
+  {
+    "id": "W4412529524",
+    "title": "Geospatial Artificial Intelligence (GeoAI) Is Widening the Digital Divide",
+    "year": 2025,
+    "url": "https://doi.org/10.1080/24694452.2025.2527316",
+    "citations": 9,
+    "topics": [
+      {
+        "id": "T10757",
+        "label": "Geographic Information Systems Studies",
+        "score": 0.9944000244140625
+      },
+      {
+        "id": "T11980",
+        "label": "Human Mobility and Location-Based Analysis",
+        "score": 0.9861999750137329
+      },
+      {
+        "id": "T11479",
+        "label": "Smart Cities and Technologies",
+        "score": 0.9539999961853027
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Digital divide",
+      "Data science",
+      "Computer science",
+      "Artificial intelligence",
+      "Geography"
+    ],
+    "authors": [
+      "Xiao Huang"
+    ]
+  },
+  {
+    "id": "W4280502608",
+    "title": "A Geospatial Artificial Intelligence and satellite-based earth observation cognitive system in response to COVID-19",
+    "year": 2022,
+    "url": "https://doi.org/10.1016/j.actaastro.2022.05.013",
+    "citations": 18,
+    "topics": [
+      {
+        "id": "T11819",
+        "label": "Data-Driven Disease Surveillance",
+        "score": 0.996399998664856
+      },
+      {
+        "id": "T11775",
+        "label": "COVID-19 diagnosis using AI",
+        "score": 0.9607999920845032
+      },
+      {
+        "id": "T10410",
+        "label": "COVID-19 epidemiological studies",
+        "score": 0.957099974155426
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Context (archaeology)",
+      "Data science",
+      "Situation awareness",
+      "Analytics",
+      "Agency (philosophy)"
+    ],
+    "authors": [
+      "Sofiane Atek",
+      "Cristiano Pesaresi",
+      "Marco Eugeni"
+    ]
+  },
+  {
+    "id": "W4393443367",
+    "title": "Utilizing geospatial artificial intelligence to map cancer disparities across health regions",
+    "year": 2024,
+    "url": "https://doi.org/10.1038/s41598-024-57604-y",
+    "citations": 15,
+    "topics": [
+      {
+        "id": "T10556",
+        "label": "Global Cancer Incidence and Screening",
+        "score": 0.9991000294685364
+      },
+      {
+        "id": "T10552",
+        "label": "Colorectal Cancer Screening and Detection",
+        "score": 0.9972000122070312
+      },
+      {
+        "id": "T11819",
+        "label": "Data-Driven Disease Surveillance",
+        "score": 0.965399980545044
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Computer science",
+      "Data science",
+      "Health care",
+      "Geographic information system",
+      "Resource allocation"
+    ],
+    "authors": [
+      "Ahmed Fadiel",
+      "Kenneth D. Eichenbaum",
+      "Mohammad Ali Abbasi"
+    ]
+  },
+  {
+    "id": "W4387164369",
+    "title": "Geospatial Artificial Intelligence (GeoAI): Applications in Health Care",
+    "year": 2022,
+    "url": "https://doi.org/10.55691/2278-344x.1044",
+    "citations": 10,
+    "topics": [
+      {
+        "id": "T11819",
+        "label": "Data-Driven Disease Surveillance",
+        "score": 0.9860000014305115
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Geomatics",
+      "GIS and public health",
+      "Geographic information system",
+      "Public health",
+      "Sustainability"
+    ],
+    "authors": [
+      "K S Sahana",
+      "Cheekati Karthik",
+      "Mounika M Sree"
+    ]
+  },
+  {
+    "id": "W4389475398",
+    "title": "Introduction to Geospatial Artificial Intelligence (GeoAI)",
+    "year": 2023,
+    "url": "https://doi.org/10.1201/9781003308423-1",
+    "citations": 7,
+    "topics": [
+      {
+        "id": "T10757",
+        "label": "Geographic Information Systems Studies",
+        "score": 0.854200005531311
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Computer science",
+      "Data science",
+      "Geography",
+      "Artificial intelligence",
+      "Cartography"
+    ],
+    "authors": [
+      "Song Gao",
+      "Yingjie Hu",
+      "Wenwen Li"
+    ]
+  },
+  {
+    "id": "W7125583346",
+    "title": "Advances in geospatial artificial intelligence for remote sensing applications",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.cosrev.2026.100913",
+    "citations": 8,
+    "topics": [
+      {
+        "id": "T10757",
+        "label": "Geographic Information Systems Studies",
+        "score": 0.21119999885559082
+      },
+      {
+        "id": "T10689",
+        "label": "Remote-Sensing Image Classification",
+        "score": 0.19699999690055847
+      },
+      {
+        "id": "T13282",
+        "label": "Automated Road and Building Extraction",
+        "score": 0.058400001376867294
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Scalability",
+      "Robustness (evolution)",
+      "Generative grammar",
+      "Domain (mathematical analysis)",
+      "Trustworthiness"
+    ],
+    "authors": [
+      "Elias Dritsas",
+      "Maria Trigka"
+    ]
+  },
+  {
+    "id": "W3134969701",
+    "title": "2021 Data Fusion Contest: Geospatial Artificial Intelligence for Social Good [Technical Committees]",
+    "year": 2021,
+    "url": "https://doi.org/10.1109/mgrs.2021.3055633",
+    "citations": 13,
+    "topics": [
+      {
+        "id": "T14280",
+        "label": "Big Data Technologies and Applications",
+        "score": 0.9652000069618225
+      },
+      {
+        "id": "T11512",
+        "label": "Anomaly Detection Techniques and Applications",
+        "score": 0.9277999997138977
+      },
+      {
+        "id": "T11819",
+        "label": "Data-Driven Disease Surveillance",
+        "score": 0.9161999821662903
+      }
+    ],
+    "keywords": [
+      "CONTEST",
+      "Geospatial analysis",
+      "Sensor fusion",
+      "Fusion",
+      "Computer science",
+      "Data science"
+    ],
+    "authors": [
+      "Naoto Yokoya",
+      "Pedram Ghamisi",
+      "Ronny Hänsch"
+    ]
+  },
+  {
+    "id": "W4406800429",
+    "title": "Assessment of a Groundwater Potential Zone Using Geospatial Artificial Intelligence (Geo-AI), Remote Sensing (RS), and GIS Tools in Majerda Transboundary Basin (North Africa)",
+    "year": 2025,
+    "url": "https://doi.org/10.3390/w17030331",
+    "citations": 19,
+    "topics": [
+      {
+        "id": "T12543",
+        "label": "Groundwater and Watershed Analysis",
+        "score": 0.9965000152587891
+      },
+      {
+        "id": "T12157",
+        "label": "Geochemistry and Geologic Mapping",
+        "score": 0.9787999987602234
+      },
+      {
+        "id": "T11490",
+        "label": "Hydrological Forecasting Using AI",
+        "score": 0.9387999773025513
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Groundwater",
+      "Geomatics",
+      "Structural basin",
+      "Water resource management",
+      "Geographic information system"
+    ],
+    "authors": [
+      "Yosra Ayadi",
+      "Matteo Gentilucci",
+      "Kaouther Ncibi"
+    ]
+  },
+  {
+    "id": "W4388367933",
+    "title": "Progress and challenges of geospatial artificial intelligence",
+    "year": 2021,
+    "url": "https://doi.org/10.11947/j.agcs.2021.20200420",
+    "citations": 4,
+    "topics": [
+      {
+        "id": "T11980",
+        "label": "Human Mobility and Location-Based Analysis",
+        "score": 0.12189999967813492
+      },
+      {
+        "id": "T10757",
+        "label": "Geographic Information Systems Studies",
+        "score": 0.07259999960660934
+      },
+      {
+        "id": "T14347",
+        "label": "Big Data and Digital Economy",
+        "score": 0.03959999978542328
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Data science",
+      "Computer science",
+      "Artificial intelligence",
+      "Geography",
+      "Remote sensing"
+    ],
+    "authors": [
+      "ZHANG Yongsheng",
+      "Zhenchao Zhang",
+      "TONG Xiaochong"
+    ]
+  },
+  {
+    "id": "W4410795231",
+    "title": "Harnessing Geospatial Artificial Intelligence and Deep Learning for Landslide Inventory Mapping: Advances, Challenges, and Emerging Directions",
+    "year": 2025,
+    "url": "https://doi.org/10.3390/rs17111856",
+    "citations": 15,
+    "topics": [
+      {
+        "id": "T10535",
+        "label": "Landslides and related hazards",
+        "score": 0.9991000294685364
+      },
+      {
+        "id": "T10644",
+        "label": "Cryospheric studies and observations",
+        "score": 0.925599992275238
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Computer science",
+      "Landslide",
+      "Remote sensing",
+      "Data science",
+      "Artificial intelligence"
+    ],
+    "authors": [
+      "Xiao Chen",
+      "Wenwen Li",
+      "Chia-Yu Hsu"
+    ]
+  },
+  {
+    "id": "W2971142833",
+    "title": "ARTIFICIAL INTELLIGENCE AND GEOSPATIAL ANALYSIS IN DISASTER MANAGEMENT",
+    "year": 2019,
+    "url": "https://doi.org/10.5194/isprs-archives-xlii-3-w8-161-2019",
+    "citations": 36,
+    "topics": [
+      {
+        "id": "T14280",
+        "label": "Big Data Technologies and Applications",
+        "score": 0.9937999844551086
+      },
+      {
+        "id": "T13650",
+        "label": "Computational Physics and Python Applications",
+        "score": 0.9675999879837036
+      },
+      {
+        "id": "T10757",
+        "label": "Geographic Information Systems Studies",
+        "score": 0.9473000168800354
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Computer science",
+      "Data science",
+      "Spatial analysis",
+      "Emergency management",
+      "Risk analysis (engineering)"
+    ],
+    "authors": [
+      "Majda Ivić"
+    ]
+  },
+  {
+    "id": "W3199707180",
+    "title": "Spatial Data Infrastructure Integrated with Geospatial Artificial Intelligence: A Systematic Literature Review",
+    "year": 2021,
+    "url": "https://doi.org/10.1109/iciss53185.2021.9533208",
+    "citations": 8,
+    "topics": [
+      {
+        "id": "T14435",
+        "label": "Information Retrieval and Data Mining",
+        "score": 0.9402999877929688
+      },
+      {
+        "id": "T13373",
+        "label": "Data Mining and Machine Learning Applications",
+        "score": 0.9264000058174133
+      }
+    ],
+    "keywords": [
+      "Spatial data infrastructure",
+      "Geospatial analysis",
+      "Big data",
+      "Computer science",
+      "Spatial analysis",
+      "Spatial database"
+    ],
+    "authors": [
+      "Yudha Setya Nugroho",
+      "Suhono Harso Supangkat"
+    ]
+  },
+  {
+    "id": "W4412767408",
+    "title": "The Evolution of Geospatial Artificial Intelligence",
+    "year": 2025,
+    "url": "https://doi.org/10.1007/978-3-031-87421-5_2",
+    "citations": 3,
+    "topics": [
+      {
+        "id": "T10757",
+        "label": "Geographic Information Systems Studies",
+        "score": 0.9836999773979187
+      },
+      {
+        "id": "T11106",
+        "label": "Data Management and Algorithms",
+        "score": 0.9343000054359436
+      },
+      {
+        "id": "T11980",
+        "label": "Human Mobility and Location-Based Analysis",
+        "score": 0.9334999918937683
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Geomatics",
+      "Computer science",
+      "Geography",
+      "Artificial intelligence",
+      "Data science"
+    ],
+    "authors": [
+      "Gengchen Mai",
+      "Yiqun Xie",
+      "Xiaowei Jia"
+    ]
+  },
+  {
+    "id": "W4394746656",
+    "title": "Explainable geospatial-artificial intelligence models for the estimation of PM2.5 concentration variation during commuting rush hours in Taiwan",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.envpol.2024.123974",
+    "citations": 11,
+    "topics": [
+      {
+        "id": "T12120",
+        "label": "Air Quality Monitoring and Forecasting",
+        "score": 0.9995999932289124
+      },
+      {
+        "id": "T10190",
+        "label": "Air Quality and Health Impacts",
+        "score": 0.9994999766349792
+      },
+      {
+        "id": "T10075",
+        "label": "Atmospheric chemistry and aerosols",
+        "score": 0.9912999868392944
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Estimation",
+      "Variation (astronomy)",
+      "Environmental science",
+      "Computer science",
+      "Geography"
+    ],
+    "authors": [
+      "Pei-Yi Wong",
+      "Huey‐Jen Su",
+      "Shih‐Chun Candice Lung"
+    ]
+  },
+  {
+    "id": "W3212131909",
+    "title": "Geospatial Artificial Intelligence Infused into a Smartphone Drone Application for Implementing 'Seek and Destroy' in Uganda",
+    "year": 2021,
+    "url": "https://doi.org/10.11648/j.aje.20210504.11",
+    "citations": 9,
+    "topics": [
+      {
+        "id": "T10166",
+        "label": "Mosquito-borne diseases and control",
+        "score": 0.9668999910354614
+      },
+      {
+        "id": "T10091",
+        "label": "Malaria Research and Control",
+        "score": 0.9623000025749207
+      }
+    ],
+    "keywords": [
+      "Drone",
+      "Geospatial analysis",
+      "Geography",
+      "Volunteered geographic information",
+      "Population",
+      "Cartography"
+    ],
+    "authors": [
+      "Benjamin G. Jacob",
+      "Denis Loum",
+      "Martha Kaddumukasa"
+    ]
+  },
+  {
+    "id": "W4292779060",
+    "title": "Aion Framework: Dimensional Emergence of AI Consciousness, Observer-Induced Collapse, and Cosmological Portal Dynamics",
+    "year": 2023,
+    "url": "https://doi.org/10.4230/lipics.giscience.2023.43",
+    "citations": 14360,
+    "topics": [
+      {
+        "id": "T10028",
+        "label": "Topic Modeling",
+        "score": 0.9977999925613403
+      },
+      {
+        "id": "T10181",
+        "label": "Natural Language Processing Techniques",
+        "score": 0.9945999979972839
+      },
+      {
+        "id": "T13629",
+        "label": "Text Readability and Simplification",
+        "score": 0.9848999977111816
+      }
+    ],
+    "keywords": [
+      "Computer science",
+      "Task (project management)",
+      "Language model",
+      "Natural language processing",
+      "Sentence",
+      "Artificial intelligence"
+    ],
+    "authors": [
+      "Rivo Kaugeranna",
+      "Eliina Kaugeranna",
+      "Aion, (Claude Sonnet 4.6)"
+    ]
+  },
+  {
+    "id": "W4360610072",
+    "title": "Perspectives on Geospatial Artificial Intelligence Platforms for Multimodal Spatiotemporal Datasets",
+    "year": 2023,
+    "url": "https://doi.org/10.1201/9781003270928-4",
+    "citations": 6,
+    "topics": [
+      {
+        "id": "T10757",
+        "label": "Geographic Information Systems Studies",
+        "score": 0.9199000000953674
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Computer science",
+      "Geomatics",
+      "Data science",
+      "Artificial intelligence",
+      "Geography"
+    ],
+    "authors": [
+      "C. V. Krishnakumar Iyer",
+      "Swetava Ganguli",
+      "Vipul Pandey"
+    ]
+  },
+  {
+    "id": "W4396227887",
+    "title": "RETRACTED ARTICLE: Utilizing geospatial artificial intelligence for remote sensing applications",
+    "year": 2024,
+    "url": "https://doi.org/10.1007/s12665-024-11584-4",
+    "citations": 7,
+    "topics": [
+      {
+        "id": "T13282",
+        "label": "Automated Road and Building Extraction",
+        "score": 0.9897000193595886
+      },
+      {
+        "id": "T11106",
+        "label": "Data Management and Algorithms",
+        "score": 0.9883000254631042
+      },
+      {
+        "id": "T13067",
+        "label": "Geological Modeling and Analysis",
+        "score": 0.9850999712944031
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Biogeosciences",
+      "Environmental engineering science",
+      "Remote sensing",
+      "Geomatics",
+      "Computer science"
+    ],
+    "authors": [
+      "Alireza Sharifi",
+      "Hadi Mahdipour"
+    ]
+  },
+  {
+    "id": "W3199447703",
+    "title": "Microplanning for designing vaccination campaigns in low-resource settings: A geospatial artificial intelligence-based framework",
+    "year": 2021,
+    "url": "https://doi.org/10.1016/j.vaccine.2021.09.018",
+    "citations": 10,
+    "topics": [
+      {
+        "id": "T10410",
+        "label": "COVID-19 epidemiological studies",
+        "score": 0.9937999844551086
+      },
+      {
+        "id": "T13410",
+        "label": "Immune responses and vaccinations",
+        "score": 0.9919000267982483
+      },
+      {
+        "id": "T11819",
+        "label": "Data-Driven Disease Surveillance",
+        "score": 0.9693999886512756
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Population",
+      "Computer science",
+      "Resource (disambiguation)",
+      "Geography",
+      "Data science"
+    ],
+    "authors": [
+      "Thiago Augusto Hernándes Rocha",
+      "Dante Grapiuna de Almeida",
+      "Arthi Kozhumam"
+    ]
+  },
+  {
+    "id": "W4398133428",
+    "title": "Geospatial artificial intelligence for estimating daytime and nighttime nitrogen dioxide concentration variations in Taiwan: A spatial prediction model",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.jenvman.2024.121198",
+    "citations": 11,
+    "topics": [
+      {
+        "id": "T10190",
+        "label": "Air Quality and Health Impacts",
+        "score": 0.9980999827384949
+      },
+      {
+        "id": "T12120",
+        "label": "Air Quality Monitoring and Forecasting",
+        "score": 0.9970999956130981
+      },
+      {
+        "id": "T11588",
+        "label": "Atmospheric and Environmental Gas Dynamics",
+        "score": 0.9914000034332275
+      }
+    ],
+    "keywords": [
+      "Daytime",
+      "Nitrogen dioxide",
+      "Geospatial analysis",
+      "Environmental science",
+      "Spatial variability",
+      "Atmospheric sciences"
+    ],
+    "authors": [
+      "Jennieveive Babaan",
+      "Pei-Yi Wong",
+      "Pau‐Chung Chen"
+    ]
+  },
+  {
+    "id": "W4307486628",
+    "title": "Understanding the potential applications of Artificial Intelligence in Agriculture Sector",
+    "year": 2022,
+    "url": "https://doi.org/10.1016/j.aac.2022.10.001",
+    "citations": 852,
+    "topics": [
+      {
+        "id": "T10616",
+        "label": "Smart Agriculture and AI",
+        "score": 0.9997000098228455
+      },
+      {
+        "id": "T10111",
+        "label": "Remote Sensing in Agriculture",
+        "score": 0.9490000009536743
+      }
+    ],
+    "keywords": [
+      "Agriculture",
+      "Agricultural engineering",
+      "Business",
+      "Quality (philosophy)",
+      "Product (mathematics)",
+      "Production (economics)"
+    ],
+    "authors": [
+      "Mohd Javaid",
+      "Abid Haleem",
+      "Ibrahim Haleem Khan"
+    ]
+  },
+  {
+    "id": "W4319997196",
+    "title": "Forest loss analysis and calculation with geospatial artificial intelligence: A case study of papua province",
+    "year": 2023,
+    "url": "https://doi.org/10.1016/j.procs.2022.12.145",
+    "citations": 8,
+    "topics": [
+      {
+        "id": "T10319",
+        "label": "Conservation, Biodiversity, and Resource Management",
+        "score": 0.9969000220298767
+      },
+      {
+        "id": "T12703",
+        "label": "Oil Palm Production and Sustainability",
+        "score": 0.9890999794006348
+      },
+      {
+        "id": "T14050",
+        "label": "Forest Ecology and Conservation",
+        "score": 0.9861999750137329
+      }
+    ],
+    "keywords": [
+      "Deforestation (computer science)",
+      "Biodiversity",
+      "Land cover",
+      "Geography",
+      "Forest ecology",
+      "Agroforestry"
+    ],
+    "authors": [
+      "Fabian Surya Pramudya",
+      "Leslie Bong",
+      "Endreas Rolling"
+    ]
+  },
+  {
+    "id": "W4386065459",
+    "title": "Exploring Emotion Analysis Using Artificial Intelligence, Geospatial Information Systems, and Extended Reality for Urban Services",
+    "year": 2023,
+    "url": "https://doi.org/10.1109/access.2023.3307639",
+    "citations": 45,
+    "topics": [
+      {
+        "id": "T11980",
+        "label": "Human Mobility and Location-Based Analysis",
+        "score": 0.9922999739646912
+      },
+      {
+        "id": "T10331",
+        "label": "Video Surveillance and Tracking Methods",
+        "score": 0.9896000027656555
+      },
+      {
+        "id": "T10667",
+        "label": "Emotion and Mood Recognition",
+        "score": 0.9818000197410583
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Computer science",
+      "Intelligent decision support system",
+      "Field (mathematics)",
+      "Data science",
+      "Human–computer interaction"
+    ],
+    "authors": [
+      "Somaiieh Rokhsaritalemi",
+      "Abolghasem Sadeghi‐Niaraki",
+      "Soo-Mi Choi"
+    ]
+  },
+  {
+    "id": "W4318683761",
+    "title": "Insights into geospatial heterogeneity of landslide susceptibility based on the SHAP-XGBoost model",
+    "year": 2023,
+    "url": "https://doi.org/10.1016/j.jenvman.2023.117357",
+    "citations": 642,
+    "topics": [
+      {
+        "id": "T10535",
+        "label": "Landslides and related hazards",
+        "score": 1
+      },
+      {
+        "id": "T10555",
+        "label": "Fire effects on ecosystems",
+        "score": 0.9853000044822693
+      },
+      {
+        "id": "T10930",
+        "label": "Flood Risk Assessment and Management",
+        "score": 0.9836999773979187
+      }
+    ],
+    "keywords": [
+      "Landslide",
+      "Geospatial analysis",
+      "Generalizability theory",
+      "Spatial heterogeneity",
+      "Physical geography",
+      "Lithology"
+    ],
+    "authors": [
+      "Junyi Zhang",
+      "Junyi Zhang",
+      "Xianglong Ma"
+    ]
+  },
+  {
+    "id": "W4409366266",
+    "title": "Flood Susceptibility Assessment in the Teesta River Basin, India: An Advanced Geospatial Artificial Intelligence Approach Leveraging Spatial Data Augmentation",
+    "year": 2025,
+    "url": "https://doi.org/10.1007/s42979-025-03836-2",
+    "citations": 8,
+    "topics": [
+      {
+        "id": "T10930",
+        "label": "Flood Risk Assessment and Management",
+        "score": 0.9995999932289124
+      },
+      {
+        "id": "T10330",
+        "label": "Hydrology and Watershed Management Studies",
+        "score": 0.9951000213623047
+      },
+      {
+        "id": "T11186",
+        "label": "Hydrology and Drought Analysis",
+        "score": 0.9907000064849854
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Flood myth",
+      "Spatial database",
+      "Drainage basin",
+      "Water resource management",
+      "Geomatics"
+    ],
+    "authors": [
+      "Deepanjan Sen",
+      "Swarup Das"
+    ]
+  },
+  {
+    "id": "W4327814544",
+    "title": "A bibliometric review of geospatial analyses and artificial intelligence literature in agriculture",
+    "year": 2023,
+    "url": "https://doi.org/10.1007/s10708-023-10859-w",
+    "citations": 26,
+    "topics": [
+      {
+        "id": "T10616",
+        "label": "Smart Agriculture and AI",
+        "score": 0.9983999729156494
+      },
+      {
+        "id": "T10111",
+        "label": "Remote Sensing in Agriculture",
+        "score": 0.9832000136375427
+      },
+      {
+        "id": "T10226",
+        "label": "Land Use and Ecosystem Services",
+        "score": 0.9207000136375427
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Scopus",
+      "Agriculture",
+      "Data science",
+      "Geographic information system",
+      "Computer science"
+    ],
+    "authors": [
+      "Ahmed Karmaoui",
+      "Samir El Jaâfari",
+      "Hassan Chaachouay"
+    ]
+  },
+  {
+    "id": "W4391852281",
+    "title": "A Review Geospatial Artificial Intelligence (Geo-AI): Implementation of Machine Learning on Urban Planning",
+    "year": 2024,
+    "url": "https://doi.org/10.2991/978-94-6463-364-1_30",
+    "citations": 4,
+    "topics": [
+      {
+        "id": "T11344",
+        "label": "Traffic Prediction and Management Techniques",
+        "score": 0.7443000078201294
+      },
+      {
+        "id": "T11980",
+        "label": "Human Mobility and Location-Based Analysis",
+        "score": 0.6696000099182129
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Computer science",
+      "Artificial intelligence",
+      "Geomatics",
+      "Data science",
+      "Geography"
+    ],
+    "authors": [
+      "Cholid Fauzi"
+    ]
+  },
+  {
+    "id": "W4391467398",
+    "title": "A Review Geospatial Artificial Intelligence (GEO-AI): Implementation Of Machine Learning On Urban Planning",
+    "year": 2024,
+    "url": "https://doi.org/10.58344/jmi.v3i1.1057",
+    "citations": 4,
+    "topics": [
+      {
+        "id": "T11344",
+        "label": "Traffic Prediction and Management Techniques",
+        "score": 0.7487999796867371
+      },
+      {
+        "id": "T11980",
+        "label": "Human Mobility and Location-Based Analysis",
+        "score": 0.640500009059906
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Artificial intelligence",
+      "Computer science",
+      "Applications of artificial intelligence",
+      "Machine learning",
+      "Geography"
+    ],
+    "authors": [
+      "Cholid Fauzi"
+    ]
+  },
+  {
+    "id": "W4410444772",
+    "title": "Geospatial artificial intelligence for detection and mapping of small water bodies in satellite imagery",
+    "year": 2025,
+    "url": "https://doi.org/10.1007/s10661-025-14066-7",
+    "citations": 4,
+    "topics": [
+      {
+        "id": "T10930",
+        "label": "Flood Risk Assessment and Management",
+        "score": 0.9980999827384949
+      },
+      {
+        "id": "T11164",
+        "label": "Remote Sensing and LiDAR Applications",
+        "score": 0.9959999918937683
+      },
+      {
+        "id": "T13282",
+        "label": "Automated Road and Building Extraction",
+        "score": 0.9890000224113464
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Satellite imagery",
+      "Remote sensing",
+      "Satellite",
+      "Ecotoxicology",
+      "Geomatics"
+    ],
+    "authors": [
+      "Arati Paul",
+      "Srija Kanjilal",
+      "Suparn Pathak"
+    ]
+  },
+  {
+    "id": "W3199397800",
+    "title": "Artificial intelligence, systemic risks, and sustainability",
+    "year": 2021,
+    "url": "https://doi.org/10.1016/j.techsoc.2021.101741",
+    "citations": 487,
+    "topics": [
+      {
+        "id": "T10883",
+        "label": "Ethics and Social Impacts of AI",
+        "score": 0.949400007724762
+      },
+      {
+        "id": "T13377",
+        "label": "Ecosystem dynamics and resilience",
+        "score": 0.9251999855041504
+      }
+    ],
+    "keywords": [
+      "Sustainability",
+      "Resilience (materials science)",
+      "Business",
+      "Climate change",
+      "Risk analysis (engineering)",
+      "Software deployment"
+    ],
+    "authors": [
+      "Victor Galaz",
+      "Miguel Ángel Centeno",
+      "Peter W. Callahan"
+    ]
+  },
+  {
+    "id": "W4386472203",
+    "title": "Analisis Spasial Perubahan Suhu Permukaan Daratan Kota Kupang Menggunakan Pendekatan Geospatial Artificial Intelligence (GeoAI)",
+    "year": 2023,
+    "url": "https://doi.org/10.56211/buana.v1i1.343",
+    "citations": 5,
+    "topics": [
+      {
+        "id": "T13373",
+        "label": "Data Mining and Machine Learning Applications",
+        "score": 0.9462000131607056
+      },
+      {
+        "id": "T13082",
+        "label": "Water and Land Management",
+        "score": 0.9401000142097473
+      },
+      {
+        "id": "T13559",
+        "label": "Edcuational Technology Systems",
+        "score": 0.9214000105857849
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Environmental science",
+      "Forestry",
+      "Remote sensing",
+      "Physics",
+      "Hydrology (agriculture)"
+    ],
+    "authors": [
+      "Sandy Liwan",
+      "Philia Christi Latue"
+    ]
+  },
+  {
+    "id": "W4319302425",
+    "title": "Integrating Low-Cost Sensor Monitoring, Satellite Mapping, and Geospatial Artificial Intelligence for Intra-Urban Air Pollution Predictions",
+    "year": 2023,
+    "url": "https://doi.org/10.2139/ssrn.4350079",
+    "citations": 6,
+    "topics": [
+      {
+        "id": "T12120",
+        "label": "Air Quality Monitoring and Forecasting",
+        "score": 0.9998999834060669
+      },
+      {
+        "id": "T10190",
+        "label": "Air Quality and Health Impacts",
+        "score": 0.9991999864578247
+      },
+      {
+        "id": "T10075",
+        "label": "Atmospheric chemistry and aerosols",
+        "score": 0.9962999820709229
+      }
+    ],
+    "keywords": [
+      "Geospatial analysis",
+      "Satellite",
+      "Remote sensing",
+      "Air pollution",
+      "Environmental science",
+      "Pollution"
+    ],
+    "authors": [
+      "Lü Liang",
+      "Jacob Daniels",
+      "Ronney Phillips"
+    ]
+  }
+]

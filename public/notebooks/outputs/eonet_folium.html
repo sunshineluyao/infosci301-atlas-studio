@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_64f60bd5c261922d2fe416f7ad6e5732 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.control.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_64f60bd5c261922d2fe416f7ad6e5732" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_64f60bd5c261922d2fe416f7ad6e5732 = L.map(
+                "map_64f60bd5c261922d2fe416f7ad6e5732",
+                {
+                    center: [15.5, -40.334999999999994],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_64f60bd5c261922d2fe416f7ad6e5732);
+
+            
+
+        
+    
+            var tile_layer_72bcf6514c359d2c1bce0b5d99aadea1 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_72bcf6514c359d2c1bce0b5d99aadea1.addTo(map_64f60bd5c261922d2fe416f7ad6e5732);
+        
+    
+            var marker_cluster_adc033281804a70ba9d0ac0fd442f8a6 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_4c942dbf5f20a1889d26b7d518ab4349 = L.circleMarker(
+                [-19.219845995937, 16.525371955075],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_4c942dbf5f20a1889d26b7d518ab4349.bindTooltip(
+                `<div>
+                     Wildfires: Wildfire in Namibia 1031934
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b1da0844bb4957fffdf0d79e4701dcc9 = L.circleMarker(
+                [-19.010826514308, 16.853097248467],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_b1da0844bb4957fffdf0d79e4701dcc9.bindTooltip(
+                `<div>
+                     Wildfires: Wildfire in Namibia 1031935
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_123ba42d4dc86ec3a23e70aa0876e7af = L.circleMarker(
+                [-17.785345067781, 123.83814476183],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_123ba42d4dc86ec3a23e70aa0876e7af.bindTooltip(
+                `<div>
+                     Wildfires: Wildfire in Australia 1031957
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_074f1be43b63bda44bc42345b9fee7cb = L.circleMarker(
+                [-11.366068693712, -46.821645175035],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_074f1be43b63bda44bc42345b9fee7cb.bindTooltip(
+                `<div>
+                     Wildfires: Wildfire in Brazil 1031958
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4199dff33c6c514a9822faedfec1e3c0 = L.circleMarker(
+                [-17.296344622414, 23.624330877053],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_4199dff33c6c514a9822faedfec1e3c0.bindTooltip(
+                `<div>
+                     Wildfires: Wildfire in Zambia 1031940
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9a9f509ac71a0024d46dd6a63fdacf0 = L.circleMarker(
+                [-9.3969353889694, -50.133013156616],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_c9a9f509ac71a0024d46dd6a63fdacf0.bindTooltip(
+                `<div>
+                     Wildfires: Wildfire in Brazil 1031959
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1e2a505fbd7a5f78fe82da2e902fd75 = L.circleMarker(
+                [-13.316752180446, -51.673864324419],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_f1e2a505fbd7a5f78fe82da2e902fd75.bindTooltip(
+                `<div>
+                     Wildfires: Wildfire in Brazil 1031952
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_207d7664414eedb93c23e8e1881c69e9 = L.circleMarker(
+                [-20.503068317887, 123.6974310692],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_207d7664414eedb93c23e8e1881c69e9.bindTooltip(
+                `<div>
+                     Wildfires: Wildfire in Australia 1031915
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a4107a3c8aa28f524fa66a64847c4d8 = L.circleMarker(
+                [-17.97505203661, 123.93079294141],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_5a4107a3c8aa28f524fa66a64847c4d8.bindTooltip(
+                `<div>
+                     Wildfires: Wildfire in Australia 1031916
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9fa633ff8a3eb580793448b5810f8dad = L.circleMarker(
+                [-16.51419243014, 20.498908523505],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_9fa633ff8a3eb580793448b5810f8dad.bindTooltip(
+                `<div>
+                     Wildfires: Wildfire in Angola 1031899
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_454404daeed2b118757b562609405072 = L.circleMarker(
+                [-10.941649111769, 31.823007365441],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_454404daeed2b118757b562609405072.bindTooltip(
+                `<div>
+                     Wildfires: Wildfire in Zambia 1031900
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3369424d1451c023e5f9d85ad6648620 = L.circleMarker(
+                [-23.632054795735, 24.324062224471],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_3369424d1451c023e5f9d85ad6648620.bindTooltip(
+                `<div>
+                     Wildfires: Wildfire in Botswana 1031898
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f044f1875b712af9720252fb8ac5c9f4 = L.circleMarker(
+                [-18.134428187278, 20.523392756908],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_f044f1875b712af9720252fb8ac5c9f4.bindTooltip(
+                `<div>
+                     Wildfires: Wildfire in Namibia 1031920
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_de4a7e45d4fa5012d67d4be8f8bb6aba = L.circleMarker(
+                [-18.526100485669, 19.339364922523],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_de4a7e45d4fa5012d67d4be8f8bb6aba.bindTooltip(
+                `<div>
+                     Wildfires: Wildfire in Namibia 1031921
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cecf6e86dd18d50192ec498a627e0095 = L.circleMarker(
+                [-10.870696115233, 31.891932385475],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_cecf6e86dd18d50192ec498a627e0095.bindTooltip(
+                `<div>
+                     Wildfires: Wildfire in Zambia 1031941
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_25d930674b80854634e923bba86ea85a = L.circleMarker(
+                [14.1, -108.1],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_25d930674b80854634e923bba86ea85a.bindTooltip(
+                `<div>
+                     Severe Storms: Cyclone Marie
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c8a544ff469e7b0ad524b99d87f54361 = L.circleMarker(
+                [28.6, -91.8],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_c8a544ff469e7b0ad524b99d87f54361.bindTooltip(
+                `<div>
+                     Severe Storms: Tropical Storm Edouard
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_189408ecd0945acdbf49ffbbb1e463e0 = L.circleMarker(
+                [10.8, -111.5],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_189408ecd0945acdbf49ffbbb1e463e0.bindTooltip(
+                `<div>
+                     Severe Storms: Hurricane Karina
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a2f253c5c5c0bb23b16d0aea5eb93ef9 = L.circleMarker(
+                [16.9, 162.4],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_a2f253c5c5c0bb23b16d0aea5eb93ef9.bindTooltip(
+                `<div>
+                     Severe Storms: Tropical Storm Bang-Lang
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d3ee5f511bfaa6f98f1ebf32a43fdea9 = L.circleMarker(
+                [20.4, 167.7],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_d3ee5f511bfaa6f98f1ebf32a43fdea9.bindTooltip(
+                `<div>
+                     Severe Storms: Tropical Storm Etau
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3b482a54b82681b1fe648c67f606999 = L.circleMarker(
+                [14.9, -119.9],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_f3b482a54b82681b1fe648c67f606999.bindTooltip(
+                `<div>
+                     Severe Storms: Tropical Storm Julio
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eaf2ca6bcfb73ab5717dba611147c5a0 = L.circleMarker(
+                [14.1, -111.9],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_eaf2ca6bcfb73ab5717dba611147c5a0.bindTooltip(
+                `<div>
+                     Severe Storms: Tropical Storm Iselle
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40b129dd1ad25cee88d33db08b6a9855 = L.circleMarker(
+                [13.7, -146.7],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_40b129dd1ad25cee88d33db08b6a9855.bindTooltip(
+                `<div>
+                     Severe Storms: Tropical Storm Moke
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4487eda975ec56db94d1973f1c216a60 = L.circleMarker(
+                [20.6, 108.7],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_4487eda975ec56db94d1973f1c216a60.bindTooltip(
+                `<div>
+                     Severe Storms: Tropical Storm Narra
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7ce2fb347ccd8695ede5467a1d217427 = L.circleMarker(
+                [8.6, 154.2],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_7ce2fb347ccd8695ede5467a1d217427.bindTooltip(
+                `<div>
+                     Severe Storms: Typhoon Saudel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b3f7dc25c82daa0ecc5303b957ad6be9 = L.circleMarker(
+                [18.1, -131.8],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_b3f7dc25c82daa0ecc5303b957ad6be9.bindTooltip(
+                `<div>
+                     Severe Storms: Cyclone Hernan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_27d4539ae9a481521d09536ceeb686d8 = L.circleMarker(
+                [26.5, 148.0],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_27d4539ae9a481521d09536ceeb686d8.bindTooltip(
+                `<div>
+                     Severe Storms: Tropical Storm Nangka
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_605669977f263675929f12be0330fb45 = L.circleMarker(
+                [14.7, -142.2],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_605669977f263675929f12be0330fb45.bindTooltip(
+                `<div>
+                     Severe Storms: Tropical Storm Lala
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b220ff8ae8b5708fc1bb1ca480fb111a = L.circleMarker(
+                [36.7, -43.0],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_b220ff8ae8b5708fc1bb1ca480fb111a.bindTooltip(
+                `<div>
+                     Severe Storms: Tropical Storm Cristobal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_849670f204a80c1b8bf54137d8e58e2a = L.circleMarker(
+                [27.1, 160.7],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_849670f204a80c1b8bf54137d8e58e2a.bindTooltip(
+                `<div>
+                     Severe Storms: Tropical Storm 15W
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2af5e0006555944933718a1ad5e95dcc = L.circleMarker(
+                [-21.244, 55.708],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_2af5e0006555944933718a1ad5e95dcc.bindTooltip(
+                `<div>
+                     Volcanoes: Piton de la Fournaise, Reunion (France)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_169baae978b7cd22a84a55019b6d7c30 = L.circleMarker(
+                [43.384, 144.013],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_169baae978b7cd22a84a55019b6d7c30.bindTooltip(
+                `<div>
+                     Volcanoes: Akan Volcano, Japan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1fe2cd902a1b8d25ebca70f42c9bc600 = L.circleMarker(
+                [11.9844, -86.1688],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_1fe2cd902a1b8d25ebca70f42c9bc600.bindTooltip(
+                `<div>
+                     Volcanoes: Masaya Volcano, Nicaragua
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f35c38ec2ff7830afadb0fc3a5a6d37 = L.circleMarker(
+                [-53.106, 73.513],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_2f35c38ec2ff7830afadb0fc3a5a6d37.bindTooltip(
+                `<div>
+                     Volcanoes: Heard Volcano, Australia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df4dfabf94294a8b30534861237113ad = L.circleMarker(
+                [-23.37, -67.73],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_df4dfabf94294a8b30534861237113ad.bindTooltip(
+                `<div>
+                     Volcanoes: Lascar Volcano, Chile
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_499c3ad1725c2fbfd814ff0a31677c76 = L.circleMarker(
+                [-16.25, 168.12],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_499c3ad1725c2fbfd814ff0a31677c76.bindTooltip(
+                `<div>
+                     Volcanoes: Ambrym Volcano, Vanuatu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_613513ebe72efb4759035092f8f633c5 = L.circleMarker(
+                [11.9844, -86.1688],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_613513ebe72efb4759035092f8f633c5.bindTooltip(
+                `<div>
+                     Volcanoes: Masaya Volcano, Nicaragua
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9691a8b5f32e3cc74df87f19aad5a740 = L.circleMarker(
+                [-1.408, 29.2],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_9691a8b5f32e3cc74df87f19aad5a740.bindTooltip(
+                `<div>
+                     Volcanoes: Nyamulagira Volcano, DR Congo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c26de8ec8483b6ee812351123ad8aea4 = L.circleMarker(
+                [-4.08, 145.037],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_c26de8ec8483b6ee812351123ad8aea4.bindTooltip(
+                `<div>
+                     Volcanoes: Manam Volcano, Papua New Guinea
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_43ff2b6f87cd02706761d13042fb8a54 = L.circleMarker(
+                [12.278, 93.858],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_43ff2b6f87cd02706761d13042fb8a54.bindTooltip(
+                `<div>
+                     Volcanoes: Barren Island Volcano, India
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_18d04cdc7b0423ebaf9a9ae826e3d613 = L.circleMarker(
+                [13.5111, 40.7161],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_18d04cdc7b0423ebaf9a9ae826e3d613.bindTooltip(
+                `<div>
+                     Volcanoes: Hayli Gubbi Volcano, Ethiopia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2a2027bf1b897c4b37123869cc0a2be = L.circleMarker(
+                [-35.223, -70.568],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_d2a2027bf1b897c4b37123869cc0a2be.bindTooltip(
+                `<div>
+                     Volcanoes: Planchón-Peteroa Volcano, Chile
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0899f0ed389fbdd01fdda7ac5aca43ae = L.circleMarker(
+                [24.751, 141.289],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_0899f0ed389fbdd01fdda7ac5aca43ae.bindTooltip(
+                `<div>
+                     Volcanoes: Ioto Volcano, Japan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90e02acc5aa62ebfd410b3e857de5ca9 = L.circleMarker(
+                [-4.016, 103.121],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_90e02acc5aa62ebfd410b3e857de5ca9.bindTooltip(
+                `<div>
+                     Volcanoes: Dempo Volcano, Indonesia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4bede7437d7a7e275428c005049f5ab5 = L.circleMarker(
+                [-6.137, 155.196],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_4bede7437d7a7e275428c005049f5ab5.bindTooltip(
+                `<div>
+                     Volcanoes: Bagana Volcano, Papua New Guinea
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3dee8d759acd3480b6885a7c3af0435d = L.circleMarker(
+                [-0.1781, 119.8401],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_3dee8d759acd3480b6885a7c3af0435d.bindTooltip(
+                `<div>
+                     Earthquakes: Sulawesi, Indonesia M7.5 Earthquake
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_103ba2921c96738141637c67c9cbfdf4 = L.circleMarker(
+                [-6.068, 142.768],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_103ba2921c96738141637c67c9cbfdf4.bindTooltip(
+                `<div>
+                     Earthquakes: Papua New Guinea Earthquake 7.5M
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c83abcf5f72ca0b5047b1124cdb5ab71 = L.circleMarker(
+                [16.646, -97.653],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_c83abcf5f72ca0b5047b1124cdb5ab71.bindTooltip(
+                `<div>
+                     Earthquakes: Oaxaca, Mexico Earthquake M7.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1caca309b58f4ccf5b2d719617ad3927 = L.circleMarker(
+                [36.065, 129.27],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_1caca309b58f4ccf5b2d719617ad3927.bindTooltip(
+                `<div>
+                     Earthquakes: South Korea Earthquake 5.4M
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c549168abda76d6869f6aee4b33fb510 = L.circleMarker(
+                [34.905, 45.956],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_c549168abda76d6869f6aee4b33fb510.bindTooltip(
+                `<div>
+                     Earthquakes: Iran Earthquake 7.3M
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e3f884e22df9affceb803522d4f0da98 = L.circleMarker(
+                [18.584, -98.399],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_e3f884e22df9affceb803522d4f0da98.bindTooltip(
+                `<div>
+                     Earthquakes: Puebla, Mexico M 7.1 Earthquake
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c7cb759f62dc053fc384a335f3d1225 = L.circleMarker(
+                [15.068, -93.715],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_2c7cb759f62dc053fc384a335f3d1225.bindTooltip(
+                `<div>
+                     Earthquakes: Pijijiapan, Mexico M 8.1 Earthquake
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5b2c0a3ae2f87df64399bbde460c7f8 = L.circleMarker(
+                [33.2308, 104.0951],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_d5b2c0a3ae2f87df64399bbde460c7f8.bindTooltip(
+                `<div>
+                     Earthquakes: Jiuzhaigou, China Earthquake
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e3a8637610c34ee85f3867ad1d811638 = L.circleMarker(
+                [44.4634, 82.7886],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_e3a8637610c34ee85f3867ad1d811638.bindTooltip(
+                `<div>
+                     Earthquakes: Xhinjiang, China Earthquake
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a16e204b15b4360a439bf66099a2b58 = L.circleMarker(
+                [9.8, 125.35],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_7a16e204b15b4360a439bf66099a2b58.bindTooltip(
+                `<div>
+                     Earthquakes: Surigao , Mindanao, Philippines Earthquake
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a41d52bf4b8d99e0da91136a469f6de = L.circleMarker(
+                [5.281, 96.108],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_4a41d52bf4b8d99e0da91136a469f6de.bindTooltip(
+                `<div>
+                     Earthquakes: Sumatra, Indonesia Earthquake, December 2016
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d90e0cd9a7b4b0ae8e705b608e9acd58 = L.circleMarker(
+                [-28.680949728554964, 16.435546875],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_d90e0cd9a7b4b0ae8e705b608e9acd58.bindTooltip(
+                `<div>
+                     Dust and Haze: Alexander Bay, South Africa Dust Storm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b87101c39ec061d580fb65a601b19fd8 = L.circleMarker(
+                [30.562260950499443, 42.626953125],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_b87101c39ec061d580fb65a601b19fd8.bindTooltip(
+                `<div>
+                     Dust and Haze: Dust Storm, Saudi Arabia/Iraq
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_33a61375b11a45cf163dabd8b177d35c = L.circleMarker(
+                [-52.86, -41.72],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_33a61375b11a45cf163dabd8b177d35c.bindTooltip(
+                `<div>
+                     Sea and Lake Ice: Iceberg A23J
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4105059575a93afcc7a4c2f064e696bb = L.circleMarker(
+                [-52.21, -38.96],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_4105059575a93afcc7a4c2f064e696bb.bindTooltip(
+                `<div>
+                     Sea and Lake Ice: Iceberg A23J
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fbf108eb59dbee1f303808c7092e6652 = L.circleMarker(
+                [-53.0, -36.94],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_fbf108eb59dbee1f303808c7092e6652.bindTooltip(
+                `<div>
+                     Sea and Lake Ice: Iceberg A23I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_71500d61f087c031ac8d0a63f87361aa = L.circleMarker(
+                [-71.98, -173.26],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_71500d61f087c031ac8d0a63f87361aa.bindTooltip(
+                `<div>
+                     Sea and Lake Ice: Iceberg B22J
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a34cb1c71fd58f1a7d9440012a90f55 = L.circleMarker(
+                [-53.17, -37.22],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_2a34cb1c71fd58f1a7d9440012a90f55.bindTooltip(
+                `<div>
+                     Sea and Lake Ice: Iceberg A23G
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a286d9e4e3a0c76226468fe0589f25b6 = L.circleMarker(
+                [-53.38, -37.18],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_a286d9e4e3a0c76226468fe0589f25b6.bindTooltip(
+                `<div>
+                     Sea and Lake Ice: Iceberg A23H
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f7d1e7554ae7209eeb7e9f6d2439aefa = L.circleMarker(
+                [-53.88, -35.52],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_f7d1e7554ae7209eeb7e9f6d2439aefa.bindTooltip(
+                `<div>
+                     Sea and Lake Ice: Iceberg A23F
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58c96459452e8e7f3469abe72a08cb79 = L.circleMarker(
+                [-56.44, -33.42],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_58c96459452e8e7f3469abe72a08cb79.bindTooltip(
+                `<div>
+                     Sea and Lake Ice: Iceberg A23D
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4efa823ec8394c4807a51180b2bb2a41 = L.circleMarker(
+                [-56.51, -33.26],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_4efa823ec8394c4807a51180b2bb2a41.bindTooltip(
+                `<div>
+                     Sea and Lake Ice: Iceberg A23E
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0aa89098f7e0b639162ba98d3a473915 = L.circleMarker(
+                [-73.85, -168.96],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_0aa89098f7e0b639162ba98d3a473915.bindTooltip(
+                `<div>
+                     Sea and Lake Ice: Iceberg B22I
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fdc1e1d55124b6fcdb2dbd06eb27e98e = L.circleMarker(
+                [-56.25, -36.83],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_fdc1e1d55124b6fcdb2dbd06eb27e98e.bindTooltip(
+                `<div>
+                     Sea and Lake Ice: Iceberg A23C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_98c5a5c356fea9f77a742b879777b750 = L.circleMarker(
+                [-66.32, 86.55],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_98c5a5c356fea9f77a742b879777b750.bindTooltip(
+                `<div>
+                     Sea and Lake Ice: Iceberg D36A
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_51b0035c51744bba7811f156f35cf521 = L.circleMarker(
+                [-66.25, 86.74],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_51b0035c51744bba7811f156f35cf521.bindTooltip(
+                `<div>
+                     Sea and Lake Ice: Iceberg D36B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d599e598fa8397c799dbde3870213d1 = L.circleMarker(
+                [-56.79, -40.87],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_4d599e598fa8397c799dbde3870213d1.bindTooltip(
+                `<div>
+                     Sea and Lake Ice: Iceberg A23B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_238c7c89b9691d86eecdd73d54353432 = L.circleMarker(
+                [-72.46, -127.08],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_238c7c89b9691d86eecdd73d54353432.bindTooltip(
+                `<div>
+                     Sea and Lake Ice: Iceberg B22G
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dbb61f8cc8b526de8c63f2d64f7baac4 = L.circleMarker(
+                [-43.43696596521822, 169.365234375],
+                {"bubblingMouseEvents": true, "color": "#21747A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21747A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_adc033281804a70ba9d0ac0fd442f8a6);
+        
+    
+            circle_marker_dbb61f8cc8b526de8c63f2d64f7baac4.bindTooltip(
+                `<div>
+                     Water Color: Phytoplankton Bloom, Tasman Sea/New Zealand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_adc033281804a70ba9d0ac0fd442f8a6.addTo(map_64f60bd5c261922d2fe416f7ad6e5732);
+        
+    
+            L.Control.TimeDimensionCustom = L.Control.TimeDimension.extend({
+                _getDisplayDateFormat: function(date){
+                    var newdate = new moment(date);
+                    console.log(newdate)
+                    return newdate.format("YYYY-MM-DD HH:mm:ss");
+                }
+            });
+            map_64f60bd5c261922d2fe416f7ad6e5732.timeDimension = L.timeDimension(
+                {
+                    period: "P1M",
+                }
+            );
+            var timeDimensionControl = new L.Control.TimeDimensionCustom(
+                {
+  "position": "bottomleft",
+  "minSpeed": 0.1,
+  "maxSpeed": 2,
+  "autoPlay": false,
+  "loopButton": false,
+  "timeSliderDragUpdate": false,
+  "speedSlider": true,
+  "playerOptions": {
+  "transitionTime": 200,
+  "loop": false,
+  "startOver": true,
+},
+}
+            );
+            map_64f60bd5c261922d2fe416f7ad6e5732.addControl(this.timeDimensionControl);
+
+            var geoJsonLayer = L.geoJson({"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [96.108, 5.281]}, "properties": {"time": "2016-12-07T00:00:00+00:00", "popup": "Sumatra, Indonesia Earthquake, December 2016", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [125.35, 9.8]}, "properties": {"time": "2017-02-10T00:00:00+00:00", "popup": "Surigao , Mindanao, Philippines Earthquake", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [82.7886, 44.4634]}, "properties": {"time": "2017-08-08T00:00:00+00:00", "popup": "Xhinjiang, China Earthquake", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [104.0951, 33.2308]}, "properties": {"time": "2017-08-08T00:00:00+00:00", "popup": "Jiuzhaigou, China Earthquake", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-93.715, 15.068]}, "properties": {"time": "2017-09-08T00:00:00+00:00", "popup": "Pijijiapan, Mexico M 8.1 Earthquake", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-98.399, 18.584]}, "properties": {"time": "2017-09-19T00:00:00+00:00", "popup": "Puebla, Mexico M 7.1 Earthquake", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [42.626953125, 30.562260950499443]}, "properties": {"time": "2017-10-29T00:00:00+00:00", "popup": "Dust Storm, Saudi Arabia/Iraq", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [169.365234375, -43.43696596521822]}, "properties": {"time": "2017-11-05T00:00:00+00:00", "popup": "Phytoplankton Bloom, Tasman Sea/New Zealand", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [45.956, 34.905]}, "properties": {"time": "2017-11-12T18:18:00+00:00", "popup": "Iran Earthquake 7.3M", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [129.27, 36.065]}, "properties": {"time": "2017-11-15T05:29:00+00:00", "popup": "South Korea Earthquake 5.4M", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-97.653, 16.646]}, "properties": {"time": "2018-02-16T23:39:42+00:00", "popup": "Oaxaca, Mexico Earthquake M7.2", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [142.768, -6.068]}, "properties": {"time": "2018-02-25T17:44:43+00:00", "popup": "Papua New Guinea Earthquake 7.5M", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [119.8401, -0.1781]}, "properties": {"time": "2018-09-28T10:02:00+00:00", "popup": "Sulawesi, Indonesia M7.5 Earthquake", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [16.435546875, -28.680949728554964]}, "properties": {"time": "2018-10-20T00:00:00+00:00", "popup": "Alexander Bay, South Africa Dust Storm", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-127.08, -72.46]}, "properties": {"time": "2024-08-15T00:00:00+00:00", "popup": "Iceberg B22G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-139.07, -74.36]}, "properties": {"time": "2025-01-02T00:00:00+00:00", "popup": "Iceberg B22G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-40.87, -56.79]}, "properties": {"time": "2025-01-31T00:00:00+00:00", "popup": "Iceberg A23B", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-40.94, -57.42]}, "properties": {"time": "2025-02-06T00:00:00+00:00", "popup": "Iceberg A23B", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-40.23, -57.81]}, "properties": {"time": "2025-02-14T00:00:00+00:00", "popup": "Iceberg A23B", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-39.53, -58.3]}, "properties": {"time": "2025-02-28T00:00:00+00:00", "popup": "Iceberg A23B", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-148.24, -75.38]}, "properties": {"time": "2025-03-06T00:00:00+00:00", "popup": "Iceberg B22G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-38.99, -57.41]}, "properties": {"time": "2025-03-13T00:00:00+00:00", "popup": "Iceberg A23B", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-154.86, -75.34]}, "properties": {"time": "2025-04-04T00:00:00+00:00", "popup": "Iceberg B22G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [86.55, -66.32]}, "properties": {"time": "2025-04-24T00:00:00+00:00", "popup": "Iceberg D36A", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [86.74, -66.25]}, "properties": {"time": "2025-04-24T00:00:00+00:00", "popup": "Iceberg D36B", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-36.83, -56.25]}, "properties": {"time": "2025-04-24T00:00:00+00:00", "popup": "Iceberg A23C", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-34.16, -56.76]}, "properties": {"time": "2025-05-02T00:00:00+00:00", "popup": "Iceberg A23C", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-34.77, -55.8]}, "properties": {"time": "2025-05-09T00:00:00+00:00", "popup": "Iceberg A23C", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-34.3, -54.27]}, "properties": {"time": "2025-05-16T00:00:00+00:00", "popup": "Iceberg A23C", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-157.83, -74.38]}, "properties": {"time": "2025-05-16T00:00:00+00:00", "popup": "Iceberg B22G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-161.08, -73.79]}, "properties": {"time": "2025-06-05T00:00:00+00:00", "popup": "Iceberg B22G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-168.96, -73.85]}, "properties": {"time": "2025-07-11T00:00:00+00:00", "popup": "Iceberg B22I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-33.26, -56.51]}, "properties": {"time": "2025-07-18T00:00:00+00:00", "popup": "Iceberg A23E", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-162.07, -72.14]}, "properties": {"time": "2025-07-18T00:00:00+00:00", "popup": "Iceberg B22G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-33.42, -56.44]}, "properties": {"time": "2025-07-18T00:00:00+00:00", "popup": "Iceberg A23D", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-35.43, -53.88]}, "properties": {"time": "2025-07-31T00:00:00+00:00", "popup": "Iceberg A23D", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-33.17, -55.88]}, "properties": {"time": "2025-07-31T00:00:00+00:00", "popup": "Iceberg A23E", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-160.83, -71.28]}, "properties": {"time": "2025-08-08T00:00:00+00:00", "popup": "Iceberg B22G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-37.57, -52.24]}, "properties": {"time": "2025-08-08T00:00:00+00:00", "popup": "Iceberg A23D", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-168.97, -73.21]}, "properties": {"time": "2025-08-08T00:00:00+00:00", "popup": "Iceberg B22I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-34.73, -54.53]}, "properties": {"time": "2025-08-08T00:00:00+00:00", "popup": "Iceberg A23E", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-34.96, -53.93]}, "properties": {"time": "2025-08-14T00:00:00+00:00", "popup": "Iceberg A23E", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-33.81, -52.17]}, "properties": {"time": "2025-08-21T00:00:00+00:00", "popup": "Iceberg A23E", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-37.95, -51.67]}, "properties": {"time": "2025-08-21T00:00:00+00:00", "popup": "Iceberg A23D", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-35.52, -53.88]}, "properties": {"time": "2025-08-21T00:00:00+00:00", "popup": "Iceberg A23F", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-35.94, -50.96]}, "properties": {"time": "2025-08-28T00:00:00+00:00", "popup": "Iceberg A23D", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-33.55, -51.63]}, "properties": {"time": "2025-08-28T00:00:00+00:00", "popup": "Iceberg A23E", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-170.32, -72.07]}, "properties": {"time": "2025-08-28T00:00:00+00:00", "popup": "Iceberg B22I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [155.196, -6.137]}, "properties": {"time": "2025-08-28T00:00:00+00:00", "popup": "Bagana Volcano, Papua New Guinea", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-161.82, -70.61]}, "properties": {"time": "2025-08-28T00:00:00+00:00", "popup": "Iceberg B22G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [103.121, -4.016]}, "properties": {"time": "2025-08-29T00:00:00+00:00", "popup": "Dempo Volcano, Indonesia", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [141.289, 24.751]}, "properties": {"time": "2025-09-01T00:00:00+00:00", "popup": "Ioto Volcano, Japan", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-37.22, -53.17]}, "properties": {"time": "2025-09-04T00:00:00+00:00", "popup": "Iceberg A23G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-172.39, -71.96]}, "properties": {"time": "2025-09-04T00:00:00+00:00", "popup": "Iceberg B22I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-37.18, -53.38]}, "properties": {"time": "2025-09-04T00:00:00+00:00", "popup": "Iceberg A23H", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-173.26, -71.98]}, "properties": {"time": "2025-09-11T00:00:00+00:00", "popup": "Iceberg B22J", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-33.17, -50.98]}, "properties": {"time": "2025-09-11T00:00:00+00:00", "popup": "Iceberg A23E", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-36.94, -53.0]}, "properties": {"time": "2025-09-11T00:00:00+00:00", "popup": "Iceberg A23I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-173.67, -71.72]}, "properties": {"time": "2025-09-11T00:00:00+00:00", "popup": "Iceberg B22I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-37.11, -52.37]}, "properties": {"time": "2025-09-18T00:00:00+00:00", "popup": "Iceberg A23I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-39.45, -53.35]}, "properties": {"time": "2025-09-18T00:00:00+00:00", "popup": "Iceberg A23G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-162.1, -71.25]}, "properties": {"time": "2025-09-18T00:00:00+00:00", "popup": "Iceberg B22G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-37.99, -53.46]}, "properties": {"time": "2025-09-18T00:00:00+00:00", "popup": "Iceberg A23H", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-40.44, -53.36]}, "properties": {"time": "2025-09-26T00:00:00+00:00", "popup": "Iceberg A23H", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-174.24, -71.58]}, "properties": {"time": "2025-09-26T00:00:00+00:00", "popup": "Iceberg B22J", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-37.51, -53.22]}, "properties": {"time": "2025-09-26T00:00:00+00:00", "popup": "Iceberg A23I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-41.29, -51.63]}, "properties": {"time": "2025-10-09T00:00:00+00:00", "popup": "Iceberg A23H", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-38.96, -52.55]}, "properties": {"time": "2025-10-09T00:00:00+00:00", "popup": "Iceberg A23G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-40.0, -53.51]}, "properties": {"time": "2025-10-09T00:00:00+00:00", "popup": "Iceberg A23I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-175.21, -71.16]}, "properties": {"time": "2025-10-16T00:00:00+00:00", "popup": "Iceberg B22I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-39.99, -51.54]}, "properties": {"time": "2025-10-16T00:00:00+00:00", "popup": "Iceberg A23H", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-175.8, -71.17]}, "properties": {"time": "2025-10-16T00:00:00+00:00", "popup": "Iceberg B22J", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-41.57, -52.25]}, "properties": {"time": "2025-10-16T00:00:00+00:00", "popup": "Iceberg A23I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-40.46, -50.93]}, "properties": {"time": "2025-10-23T00:00:00+00:00", "popup": "Iceberg A23I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-38.96, -52.21]}, "properties": {"time": "2025-10-31T00:00:00+00:00", "popup": "Iceberg A23J", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-39.9, -50.26]}, "properties": {"time": "2025-10-31T00:00:00+00:00", "popup": "Iceberg A23I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-38.0, -52.59]}, "properties": {"time": "2025-11-07T00:00:00+00:00", "popup": "Iceberg A23G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-176.71, -70.66]}, "properties": {"time": "2025-11-07T00:00:00+00:00", "popup": "Iceberg B22J", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-70.568, -35.223]}, "properties": {"time": "2025-11-13T00:00:00+00:00", "popup": "Planch\u00f3n-Peteroa Volcano, Chile", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-39.23, -49.76]}, "properties": {"time": "2025-11-14T00:00:00+00:00", "popup": "Iceberg A23I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-161.18, -69.62]}, "properties": {"time": "2025-11-14T00:00:00+00:00", "popup": "Iceberg B22G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-38.19, -53.27]}, "properties": {"time": "2025-11-14T00:00:00+00:00", "popup": "Iceberg A23G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-37.62, -51.49]}, "properties": {"time": "2025-11-21T00:00:00+00:00", "popup": "Iceberg A23J", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-177.14, -70.47]}, "properties": {"time": "2025-11-21T00:00:00+00:00", "popup": "Iceberg B22I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-37.21, -52.9]}, "properties": {"time": "2025-11-21T00:00:00+00:00", "popup": "Iceberg A23G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-177.39, -70.17]}, "properties": {"time": "2025-11-21T00:00:00+00:00", "popup": "Iceberg B22J", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [40.7161, 13.5111]}, "properties": {"time": "2025-11-23T12:23:00+00:00", "popup": "Hayli Gubbi Volcano, Ethiopia", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-178.16, -69.98]}, "properties": {"time": "2025-11-28T00:00:00+00:00", "popup": "Iceberg B22I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-38.63, -50.92]}, "properties": {"time": "2025-11-28T00:00:00+00:00", "popup": "Iceberg A23G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-177.39, -69.25]}, "properties": {"time": "2025-11-28T00:00:00+00:00", "popup": "Iceberg B22J", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [93.858, 12.278]}, "properties": {"time": "2025-11-29T00:00:00+00:00", "popup": "Barren Island Volcano, India", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [145.037, -4.08]}, "properties": {"time": "2025-11-30T00:00:00+00:00", "popup": "Manam Volcano, Papua New Guinea", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-178.78, -69.1]}, "properties": {"time": "2025-12-05T00:00:00+00:00", "popup": "Iceberg B22J", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-179.71, -70.13]}, "properties": {"time": "2025-12-05T00:00:00+00:00", "popup": "Iceberg B22I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [29.2, -1.408]}, "properties": {"time": "2025-12-07T00:00:00+00:00", "popup": "Nyamulagira Volcano, DR Congo", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-86.1688, 11.9844]}, "properties": {"time": "2026-01-02T00:00:00+00:00", "popup": "Masaya Volcano, Nicaragua", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [179.75, -70.56]}, "properties": {"time": "2026-01-02T00:00:00+00:00", "popup": "Iceberg B22I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [168.12, -16.25]}, "properties": {"time": "2026-01-08T00:00:00+00:00", "popup": "Ambrym Volcano, Vanuatu", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-178.79, -68.55]}, "properties": {"time": "2026-01-09T00:00:00+00:00", "popup": "Iceberg B22J", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-178.99, -69.02]}, "properties": {"time": "2026-01-16T00:00:00+00:00", "popup": "Iceberg B22J", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-41.72, -52.86]}, "properties": {"time": "2026-01-16T00:00:00+00:00", "popup": "Iceberg A23J", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-178.22, -68.62]}, "properties": {"time": "2026-01-30T00:00:00+00:00", "popup": "Iceberg B22J", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-178.59, -70.0]}, "properties": {"time": "2026-02-06T00:00:00+00:00", "popup": "Iceberg B22I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-67.73, -23.37]}, "properties": {"time": "2026-02-08T00:00:00+00:00", "popup": "Lascar Volcano, Chile", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [73.513, -53.106]}, "properties": {"time": "2026-02-11T00:00:00+00:00", "popup": "Heard Volcano, Australia", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-86.1688, 11.9844]}, "properties": {"time": "2026-02-13T00:00:00+00:00", "popup": "Masaya Volcano, Nicaragua", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-178.37, -69.52]}, "properties": {"time": "2026-02-26T00:00:00+00:00", "popup": "Iceberg B22I", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-159.71, -68.77]}, "properties": {"time": "2026-02-26T00:00:00+00:00", "popup": "Iceberg B22G", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [144.013, 43.384]}, "properties": {"time": "2026-03-08T00:00:00+00:00", "popup": "Akan Volcano, Japan", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [55.708, -21.244]}, "properties": {"time": "2026-04-08T00:00:00+00:00", "popup": "Piton de la Fournaise, Reunion (France)", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [160.7, 27.1]}, "properties": {"time": "2026-08-10T06:00:00+00:00", "popup": "Tropical Storm 15W", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [160.6, 27.5]}, "properties": {"time": "2026-08-10T12:00:00+00:00", "popup": "Tropical Storm 15W", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [160.2, 27.5]}, "properties": {"time": "2026-08-10T18:00:00+00:00", "popup": "Tropical Storm 15W", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [160.8, 28.4]}, "properties": {"time": "2026-08-11T00:00:00+00:00", "popup": "Tropical Storm 15W", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-43.0, 36.7]}, "properties": {"time": "2026-08-12T15:00:00+00:00", "popup": "Tropical Storm Cristobal", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-142.2, 14.7]}, "properties": {"time": "2026-08-12T18:00:00+00:00", "popup": "Tropical Storm Lala", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-41.0, 37.2]}, "properties": {"time": "2026-08-12T21:00:00+00:00", "popup": "Tropical Storm Cristobal", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [148.0, 26.5]}, "properties": {"time": "2026-08-13T00:00:00+00:00", "popup": "Tropical Storm Nangka", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [149.6, 27.5]}, "properties": {"time": "2026-08-13T06:00:00+00:00", "popup": "Tropical Storm Nangka", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-131.8, 18.1]}, "properties": {"time": "2026-08-13T06:00:00+00:00", "popup": "Cyclone Hernan", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-38.2, 38.6]}, "properties": {"time": "2026-08-13T09:00:00+00:00", "popup": "Tropical Storm Cristobal", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-131.9, 18.1]}, "properties": {"time": "2026-08-13T12:00:00+00:00", "popup": "Cyclone Hernan", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [151.0, 28.0]}, "properties": {"time": "2026-08-13T12:00:00+00:00", "popup": "Tropical Storm Nangka", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-36.8, 39.4]}, "properties": {"time": "2026-08-13T15:00:00+00:00", "popup": "Tropical Storm Cristobal", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [152.4, 28.3]}, "properties": {"time": "2026-08-13T18:00:00+00:00", "popup": "Tropical Storm Nangka", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-132.1, 17.8]}, "properties": {"time": "2026-08-13T18:00:00+00:00", "popup": "Cyclone Hernan", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-131.9, 17.1]}, "properties": {"time": "2026-08-14T00:00:00+00:00", "popup": "Cyclone Hernan", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [153.4, 28.5]}, "properties": {"time": "2026-08-14T00:00:00+00:00", "popup": "Tropical Storm Nangka", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-131.9, 16.5]}, "properties": {"time": "2026-08-14T06:00:00+00:00", "popup": "Cyclone Hernan", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-147.9, 16.2]}, "properties": {"time": "2026-08-14T06:00:00+00:00", "popup": "Tropical Storm Lala", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [153.7, 28.4]}, "properties": {"time": "2026-08-14T06:00:00+00:00", "popup": "Tropical Storm Nangka", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-132.0, 15.6]}, "properties": {"time": "2026-08-14T12:00:00+00:00", "popup": "Cyclone Hernan", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [154.5, 28.3]}, "properties": {"time": "2026-08-14T12:00:00+00:00", "popup": "Tropical Storm Nangka", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-132.0, 15.6]}, "properties": {"time": "2026-08-14T18:00:00+00:00", "popup": "Cyclone Hernan", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-132.1, 16.1]}, "properties": {"time": "2026-08-15T00:00:00+00:00", "popup": "Cyclone Hernan", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-133.2, 16.3]}, "properties": {"time": "2026-08-15T06:00:00+00:00", "popup": "Cyclone Hernan", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-134.4, 16.1]}, "properties": {"time": "2026-08-15T12:00:00+00:00", "popup": "Cyclone Hernan", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-154.1, 17.8]}, "properties": {"time": "2026-08-15T12:00:00+00:00", "popup": "Tropical Storm Lala", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-135.4, 15.8]}, "properties": {"time": "2026-08-15T18:00:00+00:00", "popup": "Cyclone Hernan", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-160.9, 20.8]}, "properties": {"time": "2026-08-17T00:00:00+00:00", "popup": "Tropical Storm Lala", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-166.6, 20.4]}, "properties": {"time": "2026-08-18T12:00:00+00:00", "popup": "Tropical Storm Lala", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [154.2, 8.6]}, "properties": {"time": "2026-08-19T00:00:00+00:00", "popup": "Typhoon Saudel", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-170.7, 21.9]}, "properties": {"time": "2026-08-19T18:00:00+00:00", "popup": "Tropical Storm Lala", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [150.9, 11.9]}, "properties": {"time": "2026-08-20T06:00:00+00:00", "popup": "Typhoon Saudel", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [108.7, 20.6]}, "properties": {"time": "2026-08-21T06:00:00+00:00", "popup": "Tropical Storm Narra", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-171.9, 26.1]}, "properties": {"time": "2026-08-21T06:00:00+00:00", "popup": "Tropical Storm Lala", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [147.3, 17.1]}, "properties": {"time": "2026-08-21T18:00:00+00:00", "popup": "Typhoon Saudel", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [108.6, 21.1]}, "properties": {"time": "2026-08-21T18:00:00+00:00", "popup": "Tropical Storm Narra", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-146.7, 13.7]}, "properties": {"time": "2026-08-21T18:00:00+00:00", "popup": "Tropical Storm Moke", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [108.2, 21.2]}, "properties": {"time": "2026-08-22T00:00:00+00:00", "popup": "Tropical Storm Narra", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-147.8, 13.8]}, "properties": {"time": "2026-08-22T00:00:00+00:00", "popup": "Tropical Storm Moke", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-172.2, 30.3]}, "properties": {"time": "2026-08-22T12:00:00+00:00", "popup": "Tropical Storm Lala", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [108.1, 20.9]}, "properties": {"time": "2026-08-22T12:00:00+00:00", "popup": "Tropical Storm Narra", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-149.6, 14.5]}, "properties": {"time": "2026-08-22T12:00:00+00:00", "popup": "Tropical Storm Moke", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-150.6, 14.8]}, "properties": {"time": "2026-08-22T18:00:00+00:00", "popup": "Tropical Storm Moke", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [108.0, 20.7]}, "properties": {"time": "2026-08-23T00:00:00+00:00", "popup": "Tropical Storm Narra", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-151.5, 15.1]}, "properties": {"time": "2026-08-23T00:00:00+00:00", "popup": "Tropical Storm Moke", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-111.9, 14.1]}, "properties": {"time": "2026-08-23T00:00:00+00:00", "popup": "Tropical Storm Iselle", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [142.3, 21.0]}, "properties": {"time": "2026-08-23T00:00:00+00:00", "popup": "Typhoon Saudel", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-152.7, 15.1]}, "properties": {"time": "2026-08-23T06:00:00+00:00", "popup": "Tropical Storm Moke", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-112.6, 14.6]}, "properties": {"time": "2026-08-23T06:00:00+00:00", "popup": "Tropical Storm Iselle", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [108.1, 20.6]}, "properties": {"time": "2026-08-23T06:00:00+00:00", "popup": "Tropical Storm Narra", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-155.7, 15.1]}, "properties": {"time": "2026-08-23T18:00:00+00:00", "popup": "Tropical Storm Moke", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-114.6, 16.6]}, "properties": {"time": "2026-08-23T18:00:00+00:00", "popup": "Tropical Storm Iselle", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [107.8, 20.4]}, "properties": {"time": "2026-08-23T18:00:00+00:00", "popup": "Tropical Storm Narra", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [107.6, 20.3]}, "properties": {"time": "2026-08-24T00:00:00+00:00", "popup": "Tropical Storm Narra", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-114.9, 16.8]}, "properties": {"time": "2026-08-24T00:00:00+00:00", "popup": "Tropical Storm Iselle", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-156.8, 15.2]}, "properties": {"time": "2026-08-24T00:00:00+00:00", "popup": "Tropical Storm Moke", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-174.6, 32.9]}, "properties": {"time": "2026-08-24T00:00:00+00:00", "popup": "Tropical Storm Lala", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-157.9, 15.3]}, "properties": {"time": "2026-08-24T06:00:00+00:00", "popup": "Tropical Storm Moke", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-116.7, 18.2]}, "properties": {"time": "2026-08-24T12:00:00+00:00", "popup": "Tropical Storm Iselle", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-159.5, 15.4]}, "properties": {"time": "2026-08-24T12:00:00+00:00", "popup": "Tropical Storm Moke", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [133.5, 24.9]}, "properties": {"time": "2026-08-24T12:00:00+00:00", "popup": "Typhoon Saudel", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [107.3, 19.6]}, "properties": {"time": "2026-08-24T12:00:00+00:00", "popup": "Tropical Storm Narra", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-117.6, 18.9]}, "properties": {"time": "2026-08-24T18:00:00+00:00", "popup": "Tropical Storm Iselle", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [107.5, 19.3]}, "properties": {"time": "2026-08-25T00:00:00+00:00", "popup": "Tropical Storm Narra", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-162.5, 15.7]}, "properties": {"time": "2026-08-25T00:00:00+00:00", "popup": "Tropical Storm Moke", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-163.5, 16.2]}, "properties": {"time": "2026-08-25T06:00:00+00:00", "popup": "Tropical Storm Moke", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-119.6, 20.4]}, "properties": {"time": "2026-08-25T06:00:00+00:00", "popup": "Tropical Storm Iselle", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-119.9, 14.9]}, "properties": {"time": "2026-08-25T06:00:00+00:00", "popup": "Tropical Storm Julio", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [108.2, 19.4]}, "properties": {"time": "2026-08-25T06:00:00+00:00", "popup": "Tropical Storm Narra", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-176.4, 34.8]}, "properties": {"time": "2026-08-25T12:00:00+00:00", "popup": "Tropical Storm Lala", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-119.1, 17.0]}, "properties": {"time": "2026-08-25T12:00:00+00:00", "popup": "Tropical Storm Julio", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-120.7, 20.8]}, "properties": {"time": "2026-08-25T12:00:00+00:00", "popup": "Tropical Storm Iselle", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-118.8, 19.5]}, "properties": {"time": "2026-08-25T18:00:00+00:00", "popup": "Tropical Storm Julio", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [109.6, 20.0]}, "properties": {"time": "2026-08-25T18:00:00+00:00", "popup": "Tropical Storm Narra", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [128.1, 27.5]}, "properties": {"time": "2026-08-25T18:00:00+00:00", "popup": "Typhoon Saudel", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-122.1, 21.1]}, "properties": {"time": "2026-08-26T00:00:00+00:00", "popup": "Tropical Storm Iselle", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-122.9, 21.5]}, "properties": {"time": "2026-08-26T06:00:00+00:00", "popup": "Tropical Storm Iselle", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-178.2, 35.9]}, "properties": {"time": "2026-08-26T18:00:00+00:00", "popup": "Tropical Storm Lala", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-124.5, 22.5]}, "properties": {"time": "2026-08-26T18:00:00+00:00", "popup": "Tropical Storm Iselle", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-125.5, 22.8]}, "properties": {"time": "2026-08-27T00:00:00+00:00", "popup": "Tropical Storm Iselle", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [167.7, 20.4]}, "properties": {"time": "2026-08-27T00:00:00+00:00", "popup": "Tropical Storm Etau", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [162.4, 16.9]}, "properties": {"time": "2026-08-27T06:00:00+00:00", "popup": "Tropical Storm Bang-Lang", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [167.9, 21.2]}, "properties": {"time": "2026-08-27T06:00:00+00:00", "popup": "Tropical Storm Etau", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [124.2, 28.4]}, "properties": {"time": "2026-08-27T06:00:00+00:00", "popup": "Typhoon Saudel", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [163.4, 17.1]}, "properties": {"time": "2026-08-27T12:00:00+00:00", "popup": "Tropical Storm Bang-Lang", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-111.5, 10.8]}, "properties": {"time": "2026-08-27T18:00:00+00:00", "popup": "Hurricane Karina", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [164.2, 17.6]}, "properties": {"time": "2026-08-27T18:00:00+00:00", "popup": "Tropical Storm Bang-Lang", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [167.8, 23.0]}, "properties": {"time": "2026-08-27T18:00:00+00:00", "popup": "Tropical Storm Etau", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [167.5, 24.0]}, "properties": {"time": "2026-08-28T00:00:00+00:00", "popup": "Tropical Storm Etau", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-179.1, 38.1]}, "properties": {"time": "2026-08-28T06:00:00+00:00", "popup": "Tropical Storm Lala", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [165.7, 18.7]}, "properties": {"time": "2026-08-28T06:00:00+00:00", "popup": "Tropical Storm Bang-Lang", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [166.8, 24.6]}, "properties": {"time": "2026-08-28T06:00:00+00:00", "popup": "Tropical Storm Etau", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [117.8, 27.7]}, "properties": {"time": "2026-08-28T12:00:00+00:00", "popup": "Typhoon Saudel", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [166.5, 19.5]}, "properties": {"time": "2026-08-28T12:00:00+00:00", "popup": "Tropical Storm Bang-Lang", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [167.3, 20.7]}, "properties": {"time": "2026-08-28T18:00:00+00:00", "popup": "Tropical Storm Bang-Lang", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [165.7, 25.8]}, "properties": {"time": "2026-08-28T18:00:00+00:00", "popup": "Tropical Storm Etau", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-115.2, 13.4]}, "properties": {"time": "2026-08-28T18:00:00+00:00", "popup": "Hurricane Karina", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [167.8, 22.3]}, "properties": {"time": "2026-08-29T00:00:00+00:00", "popup": "Tropical Storm Bang-Lang", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [165.8, 26.4]}, "properties": {"time": "2026-08-29T00:00:00+00:00", "popup": "Tropical Storm Etau", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [168.3, 24.0]}, "properties": {"time": "2026-08-29T06:00:00+00:00", "popup": "Tropical Storm Bang-Lang", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [168.7, 25.3]}, "properties": {"time": "2026-08-29T12:00:00+00:00", "popup": "Tropical Storm Bang-Lang", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [165.4, 30.0]}, "properties": {"time": "2026-08-29T12:00:00+00:00", "popup": "Tropical Storm Etau", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-117.2, 15.3]}, "properties": {"time": "2026-08-29T12:00:00+00:00", "popup": "Hurricane Karina", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [165.0, 30.7]}, "properties": {"time": "2026-08-29T18:00:00+00:00", "popup": "Tropical Storm Etau", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [167.9, 30.7]}, "properties": {"time": "2026-08-30T00:00:00+00:00", "popup": "Tropical Storm Bang-Lang", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [111.9, 24.3]}, "properties": {"time": "2026-08-30T00:00:00+00:00", "popup": "Typhoon Saudel", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [164.7, 30.9]}, "properties": {"time": "2026-08-30T00:00:00+00:00", "popup": "Tropical Storm Etau", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [167.3, 33.3]}, "properties": {"time": "2026-08-30T06:00:00+00:00", "popup": "Tropical Storm Bang-Lang", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [166.0, 31.1]}, "properties": {"time": "2026-08-30T12:00:00+00:00", "popup": "Tropical Storm Etau", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-121.7, 17.3]}, "properties": {"time": "2026-08-30T12:00:00+00:00", "popup": "Hurricane Karina", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [165.9, 34.1]}, "properties": {"time": "2026-08-30T12:00:00+00:00", "popup": "Tropical Storm Bang-Lang", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [166.8, 31.7]}, "properties": {"time": "2026-08-30T18:00:00+00:00", "popup": "Tropical Storm Etau", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [110.5, 19.4]}, "properties": {"time": "2026-08-31T06:00:00+00:00", "popup": "Typhoon Saudel", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-124.7, 17.3]}, "properties": {"time": "2026-08-31T12:00:00+00:00", "popup": "Hurricane Karina", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-91.8, 28.6]}, "properties": {"time": "2026-09-01T03:00:00+00:00", "popup": "Tropical Storm Edouard", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-108.1, 14.1]}, "properties": {"time": "2026-09-01T06:00:00+00:00", "popup": "Cyclone Marie", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-92.8, 29.0]}, "properties": {"time": "2026-09-01T09:00:00+00:00", "popup": "Tropical Storm Edouard", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-128.5, 18.0]}, "properties": {"time": "2026-09-01T12:00:00+00:00", "popup": "Hurricane Karina", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-93.3, 29.4]}, "properties": {"time": "2026-09-01T15:00:00+00:00", "popup": "Tropical Storm Edouard", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [116.3, 21.4]}, "properties": {"time": "2026-09-01T18:00:00+00:00", "popup": "Typhoon Saudel", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-94.0, 29.945]}, "properties": {"time": "2026-09-01T21:00:00+00:00", "popup": "Tropical Storm Edouard", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-109.9, 15.9]}, "properties": {"time": "2026-09-02T00:00:00+00:00", "popup": "Cyclone Marie", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-94.6, 30.5]}, "properties": {"time": "2026-09-02T03:00:00+00:00", "popup": "Tropical Storm Edouard", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-131.2, 18.5]}, "properties": {"time": "2026-09-02T06:00:00+00:00", "popup": "Hurricane Karina", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-95.0, 30.8]}, "properties": {"time": "2026-09-02T09:00:00+00:00", "popup": "Tropical Storm Edouard", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-111.3, 16.8]}, "properties": {"time": "2026-09-02T12:00:00+00:00", "popup": "Cyclone Marie", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-95.0, 31.3]}, "properties": {"time": "2026-09-02T15:00:00+00:00", "popup": "Tropical Storm Edouard", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-95.2, 31.6]}, "properties": {"time": "2026-09-02T21:00:00+00:00", "popup": "Tropical Storm Edouard", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [117.4, 23.8]}, "properties": {"time": "2026-09-03T00:00:00+00:00", "popup": "Typhoon Saudel", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-95.7, 32.2]}, "properties": {"time": "2026-09-03T03:00:00+00:00", "popup": "Tropical Storm Edouard", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-135.2, 19.5]}, "properties": {"time": "2026-09-03T06:00:00+00:00", "popup": "Hurricane Karina", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-113.4, 18.7]}, "properties": {"time": "2026-09-03T06:00:00+00:00", "popup": "Cyclone Marie", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-96.5, 32.5]}, "properties": {"time": "2026-09-03T09:00:00+00:00", "popup": "Tropical Storm Edouard", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-115.9, 19.5]}, "properties": {"time": "2026-09-04T00:00:00+00:00", "popup": "Cyclone Marie", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-138.9, 20.3]}, "properties": {"time": "2026-09-04T06:00:00+00:00", "popup": "Hurricane Karina", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-117.6, 19.9]}, "properties": {"time": "2026-09-04T12:00:00+00:00", "popup": "Cyclone Marie", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-119.3, 21.1]}, "properties": {"time": "2026-09-05T06:00:00+00:00", "popup": "Cyclone Marie", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-142.2, 21.2]}, "properties": {"time": "2026-09-05T06:00:00+00:00", "popup": "Hurricane Karina", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-120.6, 21.9]}, "properties": {"time": "2026-09-05T18:00:00+00:00", "popup": "Cyclone Marie", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-143.7, 21.8]}, "properties": {"time": "2026-09-06T00:00:00+00:00", "popup": "Hurricane Karina", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-122.3, 23.3]}, "properties": {"time": "2026-09-06T12:00:00+00:00", "popup": "Cyclone Marie", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-145.7, 23.0]}, "properties": {"time": "2026-09-07T00:00:00+00:00", "popup": "Hurricane Karina", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-123.4, 24.2]}, "properties": {"time": "2026-09-07T06:00:00+00:00", "popup": "Cyclone Marie", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-124.9, 24.6]}, "properties": {"time": "2026-09-07T18:00:00+00:00", "popup": "Cyclone Marie", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-127.1, 25.5]}, "properties": {"time": "2026-09-08T12:00:00+00:00", "popup": "Cyclone Marie", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [123.93079294141, -17.97505203661]}, "properties": {"time": "2026-09-09T19:00:00+00:00", "popup": "Wildfire in Australia 1031916", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [123.6974310692, -20.503068317887]}, "properties": {"time": "2026-09-09T19:00:00+00:00", "popup": "Wildfire in Australia 1031915", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [20.498908523505, -16.51419243014]}, "properties": {"time": "2026-09-09T19:00:00+00:00", "popup": "Wildfire in Angola 1031899", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [31.891932385475, -10.870696115233]}, "properties": {"time": "2026-09-09T19:00:00+00:00", "popup": "Wildfire in Zambia 1031941", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [24.324062224471, -23.632054795735]}, "properties": {"time": "2026-09-09T19:00:00+00:00", "popup": "Wildfire in Botswana 1031898", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [20.523392756908, -18.134428187278]}, "properties": {"time": "2026-09-09T19:00:00+00:00", "popup": "Wildfire in Namibia 1031920", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [19.339364922523, -18.526100485669]}, "properties": {"time": "2026-09-09T19:00:00+00:00", "popup": "Wildfire in Namibia 1031921", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [31.823007365441, -10.941649111769]}, "properties": {"time": "2026-09-09T19:00:00+00:00", "popup": "Wildfire in Zambia 1031900", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-51.673864324419, -13.316752180446]}, "properties": {"time": "2026-09-10T19:00:00+00:00", "popup": "Wildfire in Brazil 1031952", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-50.133013156616, -9.3969353889694]}, "properties": {"time": "2026-09-10T19:00:00+00:00", "popup": "Wildfire in Brazil 1031959", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [23.624330877053, -17.296344622414]}, "properties": {"time": "2026-09-10T19:00:00+00:00", "popup": "Wildfire in Zambia 1031940", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-46.821645175035, -11.366068693712]}, "properties": {"time": "2026-09-11T19:00:00+00:00", "popup": "Wildfire in Brazil 1031958", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [123.83814476183, -17.785345067781]}, "properties": {"time": "2026-09-11T19:00:00+00:00", "popup": "Wildfire in Australia 1031957", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [16.853097248467, -19.010826514308]}, "properties": {"time": "2026-09-11T19:00:00+00:00", "popup": "Wildfire in Namibia 1031935", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [16.525371955075, -19.219845995937]}, "properties": {"time": "2026-09-11T19:00:00+00:00", "popup": "Wildfire in Namibia 1031934", "icon": "circle", "style": {"color": "#C76D5A"}, "iconstyle": {"fillColor": "#C76D5A", "fillOpacity": 0.7, "stroke": "true", "radius": 4}}}]}, {
+                    pointToLayer: function (feature, latLng) {
+                        if (feature.properties.icon == 'marker') {
+                            if(feature.properties.iconstyle){
+                                return new L.Marker(latLng, {
+                                    icon: L.icon(feature.properties.iconstyle)});
+                            }
+                            //else
+                            return new L.Marker(latLng);
+                        }
+                        if (feature.properties.icon == 'circle') {
+                            if (feature.properties.iconstyle) {
+                                return new L.circleMarker(latLng, feature.properties.iconstyle)
+                                };
+                            //else
+                            return new L.circleMarker(latLng);
+                        }
+                        //else
+
+                        return new L.Marker(latLng);
+                    },
+                    style: function (feature) {
+                        return feature.properties.style;
+                    },
+                    onEachFeature: function(feature, layer) {
+                        if (feature.properties.popup) {
+                        layer.bindPopup(feature.properties.popup);
+                        }
+                        if (feature.properties.tooltip) {
+                        layer.bindTooltip(feature.properties.tooltip);
+                        }
+                    }
+                })
+
+            var timestamped_geo_json_2bb863028b6f731eb0e6b517cc3de6d8 = L.timeDimension.layer.geoJson(
+                geoJsonLayer,
+                {
+                    updateTimeDimension: true,
+                    addlastPoint: true,
+                    duration: undefined,
+                }
+            ).addTo(map_64f60bd5c261922d2fe416f7ad6e5732);
+        
+    
+            var layer_control_caa0e92ffaedfafa175c8ab2955f45c8_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_72bcf6514c359d2c1bce0b5d99aadea1,
+                },
+                overlays :  {
+                    "Event points" : marker_cluster_adc033281804a70ba9d0ac0fd442f8a6,
+                },
+            };
+            let layer_control_caa0e92ffaedfafa175c8ab2955f45c8 = L.control.layers(
+                layer_control_caa0e92ffaedfafa175c8ab2955f45c8_layers.base_layers,
+                layer_control_caa0e92ffaedfafa175c8ab2955f45c8_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_64f60bd5c261922d2fe416f7ad6e5732);
+
+        
+</script>
+</html>

@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-09-14T16:47:24.299445+00:00",
+  "openalex": {
+    "request_url": "https://api.openalex.org/works?search=network%20visualization%20knowledge%20graph%20geospatial%20visual%20analytics&per-page=40",
+    "retrieved_records": 40,
+    "license_note": "OpenAlex metadata snapshot. See https://docs.openalex.org/ for current terms and attribution guidance."
+  },
+  "nasa_eonet": {
+    "request_urls": [
+      "https://eonet.gsfc.nasa.gov/api/v3/events?status=closed&category=wildfires&limit=15&days=3650",
+      "https://eonet.gsfc.nasa.gov/api/v3/events?status=closed&category=severeStorms&limit=15&days=3650",
+      "https://eonet.gsfc.nasa.gov/api/v3/events?status=closed&category=volcanoes&limit=15&days=3650",
+      "https://eonet.gsfc.nasa.gov/api/v3/events?status=closed&category=earthquakes&limit=15&days=3650",
+      "https://eonet.gsfc.nasa.gov/api/v3/events?status=closed&category=floods&limit=15&days=3650",
+      "https://eonet.gsfc.nasa.gov/api/v3/events?status=closed&category=dustHaze&limit=15&days=3650",
+      "https://eonet.gsfc.nasa.gov/api/v3/events?status=closed&category=seaLakeIce&limit=15&days=3650",
+      "https://eonet.gsfc.nasa.gov/api/v3/events?status=closed&category=waterColor&limit=15&days=3650"
+    ],
+    "retrieved_geometry_records": 272,
+    "license_note": "NASA EONET v3 event metadata snapshot. See https://eonet.gsfc.nasa.gov/docs/v3 for current documentation."
+  },
+  "teaching_note": "Snapshots are bundled for reproducibility and offline teaching. Students should record a new retrieval date if they refresh either API."
+}

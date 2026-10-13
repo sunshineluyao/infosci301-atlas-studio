@@ -1,71 +1,72 @@
 [
   {
     "target": "public/notebooks/INFOSCI301_Week2_Idiom_Algorithm_Gallery_Python_R_Executed.html",
-    "sha256": "bf31f0f64c24fe5025db85b910ac6f9221b8fdfa40c56ded263e2e6193e9f3fd",
+    "sha256": "b752b4d73d5a462cf94de6357c685e9bce9388a877b32c54f11381ea0c8bc5c4",
     "parts": [
-      "public/notebooks/packed/INFOSCI301_Week2_Idiom_Algorithm_Gallery_Python_R_Executed-bf31f0f64c24-00.txt",
-      "public/notebooks/packed/INFOSCI301_Week2_Idiom_Algorithm_Gallery_Python_R_Executed-bf31f0f64c24-01.txt"
+      "public/notebooks/packed/INFOSCI301_Week2_Idiom_Algorithm_Gallery_Python_R_Executed-b752b4d73d5a-00.txt"
     ]
   },
   {
     "target": "public/notebooks/INFOSCI301_Week4_Network_Studio_Executed.html",
-    "sha256": "223843774f8358049699b0c9b83e12aeb050596d8b13014c2e4311a986643c26",
+    "sha256": "c4c02c21c44d73dd8a4cd2811c055687d09729921cff4d0f6327e2c8af6d9dcb",
     "parts": [
-      "public/notebooks/packed/INFOSCI301_Week4_Network_Studio_Executed-223843774f83-00.txt",
-      "public/notebooks/packed/INFOSCI301_Week4_Network_Studio_Executed-223843774f83-01.txt"
+      "public/notebooks/packed/INFOSCI301_Week4_Network_Studio_Executed-c4c02c21c44d-00.txt"
     ]
   },
   {
     "target": "public/notebooks/INFOSCI301_Week4_Spatiotemporal_Studio_Executed.html",
-    "sha256": "2abb4ffc8240d7b334628800b0ddaebb7c952ddc6b80209a47bc98df3965c9b7",
+    "sha256": "a59b5fe6c84db4991fc489e8642c74f420ce97ac789f51abfcadd83a3477d2ef",
     "parts": [
-      "public/notebooks/packed/INFOSCI301_Week4_Spatiotemporal_Studio_Executed-2abb4ffc8240-00.txt",
-      "public/notebooks/packed/INFOSCI301_Week4_Spatiotemporal_Studio_Executed-2abb4ffc8240-01.txt",
-      "public/notebooks/packed/INFOSCI301_Week4_Spatiotemporal_Studio_Executed-2abb4ffc8240-02.txt",
-      "public/notebooks/packed/INFOSCI301_Week4_Spatiotemporal_Studio_Executed-2abb4ffc8240-03.txt"
+      "public/notebooks/packed/INFOSCI301_Week4_Spatiotemporal_Studio_Executed-a59b5fe6c84d-00.txt",
+      "public/notebooks/packed/INFOSCI301_Week4_Spatiotemporal_Studio_Executed-a59b5fe6c84d-01.txt"
     ]
   },
   {
     "target": "public/notebooks/legacy-idiom-atlas.html",
-    "sha256": "bf31f0f64c24fe5025db85b910ac6f9221b8fdfa40c56ded263e2e6193e9f3fd",
+    "sha256": "b752b4d73d5a462cf94de6357c685e9bce9388a877b32c54f11381ea0c8bc5c4",
     "parts": [
-      "public/notebooks/packed/legacy-idiom-atlas-bf31f0f64c24-00.txt",
-      "public/notebooks/packed/legacy-idiom-atlas-bf31f0f64c24-01.txt"
+      "public/notebooks/packed/legacy-idiom-atlas-b752b4d73d5a-00.txt"
     ]
   },
   {
     "target": "public/notebooks/assets/INFOSCI301_Week2_Idiom_Algorithm_Gallery_Python_R/saved_assets.zip",
-    "sha256": "b9a5fb338058fe8d7ded8666ca9c54d53b83207815a6c819726be1a8e6a24202",
+    "sha256": "ae67da1515d45582696c38a7796977f2626a46cef619a5bfc35efa180951ae1d",
     "parts": [
-      "public/notebooks/packed/saved_assets-b9a5fb338058-00.txt",
-      "public/notebooks/packed/saved_assets-b9a5fb338058-01.txt",
-      "public/notebooks/packed/saved_assets-b9a5fb338058-02.txt",
-      "public/notebooks/packed/saved_assets-b9a5fb338058-03.txt",
-      "public/notebooks/packed/saved_assets-b9a5fb338058-04.txt",
-      "public/notebooks/packed/saved_assets-b9a5fb338058-05.txt",
-      "public/notebooks/packed/saved_assets-b9a5fb338058-06.txt"
+      "public/notebooks/packed/saved_assets-ae67da1515d4-00.txt",
+      "public/notebooks/packed/saved_assets-ae67da1515d4-01.txt",
+      "public/notebooks/packed/saved_assets-ae67da1515d4-02.txt",
+      "public/notebooks/packed/saved_assets-ae67da1515d4-03.txt",
+      "public/notebooks/packed/saved_assets-ae67da1515d4-04.txt",
+      "public/notebooks/packed/saved_assets-ae67da1515d4-05.txt",
+      "public/notebooks/packed/saved_assets-ae67da1515d4-06.txt"
     ]
   },
   {
     "target": "public/notebooks/assets/INFOSCI301_Week4_Network_Studio_Colab/saved_assets.zip",
-    "sha256": "9eb3d12dd94e027eb0d0645550d0b3d798ee75d19db55c92e9aecb8154e62b37",
+    "sha256": "b3932f3ed2ab47013a442f5bd8019b56a3260a439d0b998496785ebfb58d9d57",
     "parts": [
-      "public/notebooks/packed/saved_assets-9eb3d12dd94e-00.txt",
-      "public/notebooks/packed/saved_assets-9eb3d12dd94e-01.txt",
-      "public/notebooks/packed/saved_assets-9eb3d12dd94e-02.txt",
-      "public/notebooks/packed/saved_assets-9eb3d12dd94e-03.txt"
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-00.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-01.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-02.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-03.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-04.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-05.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-06.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-07.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-08.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-09.txt"
     ]
   },
   {
     "target": "public/notebooks/assets/INFOSCI301_Week4_Spatiotemporal_Studio_Colab/saved_assets.zip",
-    "sha256": "bd82d0551e85fda9834625ce53edecd2e72e0271a90a7ff43c3b34e811727178",
+    "sha256": "acd2a316c0274805922e3705cbb92e82998f5dffea4509deb7a7c5c8d02f9ca9",
     "parts": [
-      "public/notebooks/packed/saved_assets-bd82d0551e85-00.txt",
-      "public/notebooks/packed/saved_assets-bd82d0551e85-01.txt",
-      "public/notebooks/packed/saved_assets-bd82d0551e85-02.txt",
-      "public/notebooks/packed/saved_assets-bd82d0551e85-03.txt",
-      "public/notebooks/packed/saved_assets-bd82d0551e85-04.txt",
-      "public/notebooks/packed/saved_assets-bd82d0551e85-05.txt"
+      "public/notebooks/packed/saved_assets-acd2a316c027-00.txt",
+      "public/notebooks/packed/saved_assets-acd2a316c027-01.txt",
+      "public/notebooks/packed/saved_assets-acd2a316c027-02.txt",
+      "public/notebooks/packed/saved_assets-acd2a316c027-03.txt",
+      "public/notebooks/packed/saved_assets-acd2a316c027-04.txt",
+      "public/notebooks/packed/saved_assets-acd2a316c027-05.txt"
     ]
   }
 ]

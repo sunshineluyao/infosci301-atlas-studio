@@ -1,6 +1,6 @@
 """Revise teaching source while preserving all original demonstrations."""
 from pathlib import Path
-import base64, gzip, hashlib, json, textwrap
+import base64, gzip, hashlib, json, textwrap, re
 ROOT=Path(__file__).resolve().parents[1]
 WATER=(ROOT/'notebooks').is_dir()
 FOLDER=ROOT/('notebooks' if WATER else 'public/notebooks')
@@ -191,11 +191,13 @@ def revise(path,kind):
         original.append(c)
     for i,c in enumerate(original,1):
         c['id']=f'{kind}-original-{i:02d}'
+        if c['cell_type']=='markdown' and kind=='interaction':put(c,src(c).replace('observed archaeological records / 考古观察记录','original row-level data not bundled / 未内置原始逐行数据').replace('site, unit, level, decoration / 遗址、单位、层位、纹饰','original schema: site, unit, level, decoration / 原始字段：遗址、单位、层位、纹饰'))
         if c['cell_type']!='code':continue
         s=src(c);c['metadata']['infosci_original_source']=s
         if i==3:s=setup(kind,s)
         if kind=='network' and i==11:
             a=s.index('import igraph');b=s.index('summary =');s=s[:a]+"# Specialist Leiden comparison is optional; the core plot uses Louvain.\nleiden=louvain\nif RUN_PACKAGE_EXTENSIONS:\n"+textwrap.indent(s[a:b],'    ')+s[b:];s=s.replace('["Leiden", len(leiden), nx.community.modularity(G, leiden)],','').replace('Leiden communities;','Louvain communities;')
+            s=s.replace('ax.set_title("Louvain communities; node area encodes PageRank",','ax.set_title(("Leiden" if RUN_PACKAGE_EXTENSIONS else "Louvain") + " communities; node area encodes PageRank",')
         if kind=='spatial' and i==9:s=s[s.index('fig, ax'):].replace('world.plot(ax=ax, color="#EEF2F3", edgecolor="#A8B5B9", linewidth=.4)','ax.set_facecolor("#EEF2F3") # Coordinate map without a basemap download.')
         if kind=='spatial' and i==10:
             a=s.index('try:');b=s.index('ax.scatter');s=s[:a]+'# Projected marks remain the evidence; no Natural Earth download.\n'+s[b:]
@@ -215,7 +217,17 @@ def revise(path,kind):
         if kind=='color' and i==16:
             at=s.index('semantic_names=');s=s[:at]+"if globals().get('_imported_palette') is not None:\n    p=_imported_palette['parameters']\n    if (family.value,steps.value,base_hue.value,palette_chroma.value,span.value)==(p['family'],p['count'],p['hue'],p['chroma'],p['span']):export_colors=_imported_palette['colors']\n"+s[at:]
         if i in OPTIONAL.get(kind,set()):
-            label=NAMES[kind][i];s=f"# Optional package extension: {label}\nif RUN_PACKAGE_EXTENSIONS:\n    try:\n"+textwrap.indent(s,'        ')+f"\n        _extension_status[{label!r}]='completed'\n    except Exception as exc:\n        _extension_status[{label!r}]='unavailable: '+type(exc).__name__\n        print('Extension unavailable:',str(exc)[:240])\nelse:\n    _extension_status[{label!r}]='not run (optional)'\n    print({label!r},'not run; enable extensions and install its package to explore.')"
+            label=NAMES[kind][i]
+            # Inner fallbacks are incomplete extension execution, not success.
+            lines=[]
+            for line in s.splitlines():
+                match=re.match(r'^([ ]*)(except[^:]*:)(.*)$',line)
+                if match:
+                    indent=match[1]+'    ';lines.append(match[1]+match[2]);lines.append(indent+f"_extension_status[{label!r}]='fallback (not fully completed)'")
+                    if match[3].strip():lines.append(indent+match[3].strip())
+                else:lines.append(line)
+            s='\n'.join(lines)
+            s=f"# Optional package extension: {label}\nif RUN_PACKAGE_EXTENSIONS:\n    try:\n"+textwrap.indent(s,'        ')+f"\n        _extension_status.setdefault({label!r},'completed')\n    except Exception as exc:\n        _extension_status[{label!r}]='unavailable: '+type(exc).__name__\n        print('Extension unavailable:',str(exc)[:240])\nelse:\n    _extension_status[{label!r}]='not run (optional)'\n    print({label!r},'not run; enable extensions and install its package to explore.')"
         put(c,s);c['outputs']=[];c['execution_count']=None
     out=[original[0],cell('markdown',INTRO,kind+'-route')]
     for i,c in enumerate(original[1:],2):

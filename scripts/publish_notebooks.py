@@ -28,7 +28,7 @@ def execute(path):
             display({'image/svg+xml':buffer.getvalue()},raw=True)
         plt.close('all')
     def plotly_show(fig,*args,**kwargs):
-        raw=pio.to_json(fig);(figfolder/(current[0]+'.plotly.json')).write_text(raw)
+        serial[0]+=1;raw=pio.to_json(fig);(figfolder/(current[0]+f'-{serial[0]}.plotly.json')).write_text(raw)
         display({'application/vnd.plotly.v1+json':json.loads(raw),'text/plain':'Saved Plotly result; browser inspection requires its renderer.'},raw=True)
     plt.show=show;plotly.basedatatypes.BaseFigure.show=plotly_show
     count=0
@@ -52,7 +52,8 @@ def render(path):
     import nbformat,markdown
     from plotly.offline.offline import get_plotlyjs_version
     executed=ROOT/'.notebook-run'/path.stem/'executed.ipynb'
-    nb=nbformat.read(executed if executed.exists() else path,as_version=4);blocks=[];figures=0;needs_plotly=False
+    if not executed.exists():raise FileNotFoundError('Saved execution missing. Run notebook:publish; use the Node materializer to restore committed previews.')
+    nb=nbformat.read(executed,as_version=4);blocks=[];figures=0;needs_plotly=False
     run=ROOT/'.notebook-run'/path.stem;assets=PUBLIC/'assets'/path.stem;assets.mkdir(parents=True,exist_ok=True)
     for asset in run.glob('INFOSCI301_*'):
         if asset.is_file() and asset.suffix!='.zip':shutil.copy2(asset,assets/asset.name)
@@ -79,7 +80,7 @@ def render(path):
     bundle='assets/'+path.stem+'/saved_assets.zip'
     with zipfile.ZipFile(PUBLIC/bundle,'w',zipfile.ZIP_DEFLATED) as z:
         for p in sorted(run.rglob('*')):
-            if p.is_file() and p.suffix in ('.svg','.pdf','.csv','.json','.css','.ase','.md','.py','.R'):z.write(p,p.relative_to(run))
+            if p.is_file() and p.suffix in ('.svg','.pdf','.png','.csv','.json','.css','.ase','.md','.py','.R'):z.write(p,p.relative_to(run))
     name=path.stem.replace('_Colab','_Executed')+'.html' if '_Colab' in path.stem else path.stem+'_Executed.html'
     clean=json.loads(nbformat.writes(nb))
     for c in clean['cells']:
@@ -87,7 +88,7 @@ def render(path):
     clean['metadata']['infosci301_execution']['saved_output']='Matching saved HTML and execution receipt; this download contains editable source.'
     path.write_text(json.dumps(clean,ensure_ascii=False,indent=1)+'\n')
     digest=hashlib.sha256(path.read_bytes()).hexdigest();title=nb.metadata.get('colab',{}).get('name',path.stem).replace('.ipynb','').replace('_',' ')
-    body=f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} saved output</title><style>{CSS}</style></head><body><main><span class="badge">Saved execution · 13 October 2026</span><h1>{html.escape(title)}</h1><div class="intro">Results below were generated from the downloadable notebook. Python widgets require Colab. Plotly/Altair/deck.gl inspection may require external renderers and browser support; static counterparts remain readable.</div><nav><a href="{path.name}" download>Download the exact notebook</a><a href="{bundle}" download>Download SVG/PDF figures and source records</a><a href="#execution-record">Execution record</a></nav>'+''.join(blocks)+f'<section class="cell" id="execution-record"><h2>Execution record</h2><pre>{html.escape(json.dumps(dict(nb.metadata["infosci301_execution"]),indent=2))}</pre><p>Notebook SHA-256: <code>{digest}</code></p><p>Optional cells marked not run are retained source, not newly verified outputs. R and end-to-end Colab interaction are not certified by this record.</p></section></main>'
+    body=f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} saved output</title><style>{CSS}</style></head><body><main><span class="badge">Saved execution · 13 October 2026</span><h1>{html.escape(title)}</h1><div class="intro">Results below were generated from the downloadable notebook. Python widgets require Colab. Plotly/Altair/deck.gl inspection may require external renderers and browser support; static counterparts remain readable.</div><nav><a href="{path.name}" download>Download the exact notebook</a><a href="{bundle}" download>Download SVG/PDF/PNG figures and source records</a><a href="#execution-record">Execution record</a></nav>'+''.join(blocks)+f'<section class="cell" id="execution-record"><h2>Execution record</h2><pre>{html.escape(json.dumps(dict(nb.metadata["infosci301_execution"]),indent=2))}</pre><p>Notebook SHA-256: <code>{digest}</code></p><p>Optional cells marked not run are retained source, not newly verified outputs. R and end-to-end Colab interaction are not certified by this record.</p></section></main>'
     if needs_plotly:
         body+=f'<script src="https://cdn.plot.ly/plotly-{get_plotlyjs_version()}.min.js"></script>'+'''<script>
 const specs=[...document.querySelectorAll('script[data-plot]')];
@@ -98,7 +99,9 @@ if('IntersectionObserver' in window){const observer=new IntersectionObserver(es=
     return {'notebook':path.name,'preview':name,'bundle':bundle,'sha256':digest,'code_cells':sum(c.cell_type=='code' for c in nb.cells),'figures':figures,'preview_sha256':hashlib.sha256((PUBLIC/name).read_bytes()).hexdigest(),'execution':dict(nb.metadata['infosci301_execution'])}
 def pack_outputs():
     import gzip
-    packed=PUBLIC/'packed';packed.mkdir(exist_ok=True)
+    packed=PUBLIC/'packed'
+    if packed.exists():shutil.rmtree(packed)
+    packed.mkdir()
     files=sorted(PUBLIC.glob('*Executed.html'))
     if (PUBLIC/'legacy-idiom-atlas.html').exists():files.append(PUBLIC/'legacy-idiom-atlas.html')
     files+=sorted((PUBLIC/'assets').rglob('*.zip'))
@@ -106,13 +109,21 @@ def pack_outputs():
     for p in files:
         raw=p.read_bytes();encoded=base64.b64encode(gzip.compress(raw,mtime=0)).decode();prefix=p.stem+'-'+hashlib.sha256(raw).hexdigest()[:12]
         parts=[]
-        for i,start in enumerate(range(0,len(encoded),100000)):
-            part=packed/(prefix+f'-{i:02d}.txt');part.write_text(encoded[start:start+100000]);parts.append(str(part.relative_to(ROOT)))
+        for i,start in enumerate(range(0,len(encoded),300000)):
+            part=packed/(prefix+f'-{i:02d}.txt');part.write_text(encoded[start:start+300000]);parts.append(str(part.relative_to(ROOT)))
         rows.append({'target':str(p.relative_to(ROOT)),'sha256':hashlib.sha256(raw).hexdigest(),'parts':parts})
     (PUBLIC/'packed.json').write_text(json.dumps(rows,indent=2))
 def main():
     paths=sorted(SOURCE.glob('*.ipynb'))
-    if '--render-only' not in sys.argv:
+    if '--render-only' in sys.argv:
+        for p in paths:
+            run=ROOT/'.notebook-run'/p.stem;executed=run/'executed.ipynb'
+            if not executed.exists() or not (run/'execution.json').exists() or not (run/'executed_figures').is_dir():
+                raise SystemExit('Saved execution missing. Run notebook:publish; use the Node materializer to restore committed previews.')
+            current=json.loads(p.read_text());saved=json.loads(executed.read_text())
+            signature=lambda n:[(c['cell_type'],c['id'],''.join(c['source'])) for c in n['cells']]
+            if signature(current)!=signature(saved):raise SystemExit('Notebook source changed since execution. Run notebook:publish before rendering.')
+    else:
         for p in paths:subprocess.run([sys.executable,str(Path(__file__).resolve()),'--execute',str(p.resolve())],check=True,timeout=240)
     rows=[render(p) for p in paths]
     if not WATER:

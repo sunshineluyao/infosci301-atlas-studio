@@ -47,11 +47,12 @@ def execute(path):
         if c.source.startswith('# Optional package extension:'):
             label=c.source.splitlines()[0].split(': ',1)[1];c.metadata['infosci_execution']=shell.user_ns.get('_extension_status',{}).get(label,'not run')
     nb.metadata['infosci301_execution']={'method':'fresh IPython process; Colab frontend not tested','date':'2026-10-13','python':platform.python_version(),'code_cells':count,'status':'completed','optional_extensions':shell.user_ns.get('_extension_status',{})}
-    nbformat.validate(nb);nbformat.write(nb,path);(folder/'execution.json').write_text(json.dumps(dict(nb.metadata['infosci301_execution']),indent=2));print(path.name,count,'Python cells completed',flush=True)
+    nbformat.validate(nb);nbformat.write(nb,path);nbformat.write(nb,folder/'executed.ipynb');(folder/'execution.json').write_text(json.dumps(dict(nb.metadata['infosci301_execution']),indent=2));print(path.name,count,'Python cells completed',flush=True)
 def render(path):
     import nbformat,markdown
     from plotly.offline.offline import get_plotlyjs_version
-    nb=nbformat.read(path,as_version=4);blocks=[];figures=0;needs_plotly=False
+    executed=ROOT/'.notebook-run'/path.stem/'executed.ipynb'
+    nb=nbformat.read(executed if executed.exists() else path,as_version=4);blocks=[];figures=0;needs_plotly=False
     run=ROOT/'.notebook-run'/path.stem;assets=PUBLIC/'assets'/path.stem;assets.mkdir(parents=True,exist_ok=True)
     for asset in run.glob('INFOSCI301_*'):
         if asset.is_file() and asset.suffix!='.zip':shutil.copy2(asset,assets/asset.name)
@@ -80,6 +81,11 @@ def render(path):
         for p in sorted(run.rglob('*')):
             if p.is_file() and p.suffix in ('.svg','.pdf','.csv','.json','.css','.ase','.md','.py','.R'):z.write(p,p.relative_to(run))
     name=path.stem.replace('_Colab','_Executed')+'.html' if '_Colab' in path.stem else path.stem+'_Executed.html'
+    clean=json.loads(nbformat.writes(nb))
+    for c in clean['cells']:
+        if c['cell_type']=='code':c['outputs']=[];c['execution_count']=None
+    clean['metadata']['infosci301_execution']['saved_output']='Matching saved HTML and execution receipt; this download contains editable source.'
+    path.write_text(json.dumps(clean,ensure_ascii=False,indent=1)+'\n')
     digest=hashlib.sha256(path.read_bytes()).hexdigest();title=nb.metadata.get('colab',{}).get('name',path.stem).replace('.ipynb','').replace('_',' ')
     body=f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} saved output</title><style>{CSS}</style></head><body><main><span class="badge">Saved execution · 13 October 2026</span><h1>{html.escape(title)}</h1><div class="intro">Results below were generated from the downloadable notebook. Python widgets require Colab. Plotly/Altair/deck.gl inspection may require external renderers and browser support; static counterparts remain readable.</div><nav><a href="{path.name}" download>Download the exact notebook</a><a href="{bundle}" download>Download SVG/PDF figures and source records</a><a href="#execution-record">Execution record</a></nav>'+''.join(blocks)+f'<section class="cell" id="execution-record"><h2>Execution record</h2><pre>{html.escape(json.dumps(dict(nb.metadata["infosci301_execution"]),indent=2))}</pre><p>Notebook SHA-256: <code>{digest}</code></p><p>Optional cells marked not run are retained source, not newly verified outputs. R and end-to-end Colab interaction are not certified by this record.</p></section></main>'
     if needs_plotly:
@@ -89,7 +95,21 @@ function render(el){const spec=specs.find(s=>s.dataset.plot===el.id);if(!spec||e
 if('IntersectionObserver' in window){const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){render(e.target);observer.unobserve(e.target)}}),{rootMargin:'250px'});specs.forEach(s=>observer.observe(document.getElementById(s.dataset.plot)))}else{specs.forEach(s=>render(document.getElementById(s.dataset.plot)))}
 </script>'''
     (PUBLIC/name).write_text(body+'</body></html>')
-    return {'notebook':path.name,'preview':name,'bundle':bundle,'sha256':digest,'code_cells':sum(c.cell_type=='code' for c in nb.cells),'figures':figures,'execution':dict(nb.metadata['infosci301_execution'])}
+    return {'notebook':path.name,'preview':name,'bundle':bundle,'sha256':digest,'code_cells':sum(c.cell_type=='code' for c in nb.cells),'figures':figures,'preview_sha256':hashlib.sha256((PUBLIC/name).read_bytes()).hexdigest(),'execution':dict(nb.metadata['infosci301_execution'])}
+def pack_outputs():
+    import gzip
+    packed=PUBLIC/'packed';packed.mkdir(exist_ok=True)
+    files=sorted(PUBLIC.glob('*Executed.html'))
+    if (PUBLIC/'legacy-idiom-atlas.html').exists():files.append(PUBLIC/'legacy-idiom-atlas.html')
+    files+=sorted((PUBLIC/'assets').rglob('*.zip'))
+    rows=[]
+    for p in files:
+        raw=p.read_bytes();encoded=base64.b64encode(gzip.compress(raw,mtime=0)).decode();prefix=p.stem+'-'+hashlib.sha256(raw).hexdigest()[:12]
+        parts=[]
+        for i,start in enumerate(range(0,len(encoded),100000)):
+            part=packed/(prefix+f'-{i:02d}.txt');part.write_text(encoded[start:start+100000]);parts.append(str(part.relative_to(ROOT)))
+        rows.append({'target':str(p.relative_to(ROOT)),'sha256':hashlib.sha256(raw).hexdigest(),'parts':parts})
+    (PUBLIC/'packed.json').write_text(json.dumps(rows,indent=2))
 def main():
     paths=sorted(SOURCE.glob('*.ipynb'))
     if '--render-only' not in sys.argv:
@@ -98,7 +118,7 @@ def main():
     if not WATER:
         legacy=next((r for r in rows if 'Week2' in r['notebook']),None)
         if legacy:(PUBLIC/'legacy-idiom-atlas.html').write_text((PUBLIC/legacy['preview']).read_text())
-    (PUBLIC/'manifest.json').write_text(json.dumps({'revision':'2026-10-13','lessons':rows},ensure_ascii=False,indent=2));print('Published',len(rows),'matching saved views',flush=True)
+    (PUBLIC/'manifest.json').write_text(json.dumps({'revision':'2026-10-13','lessons':rows},ensure_ascii=False,indent=2));pack_outputs();print('Published',len(rows),'matching saved views',flush=True)
 if __name__=='__main__':
     if len(sys.argv)>1 and sys.argv[1]=='--execute':execute(Path(sys.argv[2]).resolve())
     else:main()

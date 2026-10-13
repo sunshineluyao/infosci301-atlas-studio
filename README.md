@@ -1,3 +1,7 @@
+## Revised notebooks · 13 October 2026
+
+Vercel now embeds genuine saved notebook results, with checksums, Colab, exact source downloads and vector/data bundles. See [NOTEBOOK_REVISION.md](NOTEBOOK_REVISION.md) for content changes, design tools, rebuild commands, checks and limits.
+
 # Atlas Studio · INFOSCI 301
 
 Two deployable editions of the same evidence-led visualization tutorial.

@@ -1,0 +1,72 @@
+[
+  {
+    "target": "public/notebooks/INFOSCI301_Week2_Idiom_Algorithm_Gallery_Python_R_Executed.html",
+    "sha256": "b752b4d73d5a462cf94de6357c685e9bce9388a877b32c54f11381ea0c8bc5c4",
+    "parts": [
+      "public/notebooks/packed/INFOSCI301_Week2_Idiom_Algorithm_Gallery_Python_R_Executed-b752b4d73d5a-00.txt"
+    ]
+  },
+  {
+    "target": "public/notebooks/INFOSCI301_Week4_Network_Studio_Executed.html",
+    "sha256": "c4c02c21c44d73dd8a4cd2811c055687d09729921cff4d0f6327e2c8af6d9dcb",
+    "parts": [
+      "public/notebooks/packed/INFOSCI301_Week4_Network_Studio_Executed-c4c02c21c44d-00.txt"
+    ]
+  },
+  {
+    "target": "public/notebooks/INFOSCI301_Week4_Spatiotemporal_Studio_Executed.html",
+    "sha256": "a59b5fe6c84db4991fc489e8642c74f420ce97ac789f51abfcadd83a3477d2ef",
+    "parts": [
+      "public/notebooks/packed/INFOSCI301_Week4_Spatiotemporal_Studio_Executed-a59b5fe6c84d-00.txt",
+      "public/notebooks/packed/INFOSCI301_Week4_Spatiotemporal_Studio_Executed-a59b5fe6c84d-01.txt"
+    ]
+  },
+  {
+    "target": "public/notebooks/legacy-idiom-atlas.html",
+    "sha256": "b752b4d73d5a462cf94de6357c685e9bce9388a877b32c54f11381ea0c8bc5c4",
+    "parts": [
+      "public/notebooks/packed/legacy-idiom-atlas-b752b4d73d5a-00.txt"
+    ]
+  },
+  {
+    "target": "public/notebooks/assets/INFOSCI301_Week2_Idiom_Algorithm_Gallery_Python_R/saved_assets.zip",
+    "sha256": "ae67da1515d45582696c38a7796977f2626a46cef619a5bfc35efa180951ae1d",
+    "parts": [
+      "public/notebooks/packed/saved_assets-ae67da1515d4-00.txt",
+      "public/notebooks/packed/saved_assets-ae67da1515d4-01.txt",
+      "public/notebooks/packed/saved_assets-ae67da1515d4-02.txt",
+      "public/notebooks/packed/saved_assets-ae67da1515d4-03.txt",
+      "public/notebooks/packed/saved_assets-ae67da1515d4-04.txt",
+      "public/notebooks/packed/saved_assets-ae67da1515d4-05.txt",
+      "public/notebooks/packed/saved_assets-ae67da1515d4-06.txt"
+    ]
+  },
+  {
+    "target": "public/notebooks/assets/INFOSCI301_Week4_Network_Studio_Colab/saved_assets.zip",
+    "sha256": "b3932f3ed2ab47013a442f5bd8019b56a3260a439d0b998496785ebfb58d9d57",
+    "parts": [
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-00.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-01.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-02.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-03.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-04.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-05.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-06.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-07.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-08.txt",
+      "public/notebooks/packed/saved_assets-b3932f3ed2ab-09.txt"
+    ]
+  },
+  {
+    "target": "public/notebooks/assets/INFOSCI301_Week4_Spatiotemporal_Studio_Colab/saved_assets.zip",
+    "sha256": "acd2a316c0274805922e3705cbb92e82998f5dffea4509deb7a7c5c8d02f9ca9",
+    "parts": [
+      "public/notebooks/packed/saved_assets-acd2a316c027-00.txt",
+      "public/notebooks/packed/saved_assets-acd2a316c027-01.txt",
+      "public/notebooks/packed/saved_assets-acd2a316c027-02.txt",
+      "public/notebooks/packed/saved_assets-acd2a316c027-03.txt",
+      "public/notebooks/packed/saved_assets-acd2a316c027-04.txt",
+      "public/notebooks/packed/saved_assets-acd2a316c027-05.txt"
+    ]
+  }
+]

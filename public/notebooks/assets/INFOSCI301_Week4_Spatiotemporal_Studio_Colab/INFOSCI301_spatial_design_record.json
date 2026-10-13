@@ -1,0 +1,35 @@
+{
+  "lesson": "spatial",
+  "student_design": {
+    "audience": "",
+    "question": "",
+    "human_decisions": [],
+    "supported_reading": "",
+    "limitation": "",
+    "actual_peer_feedback": "",
+    "next_test": ""
+  },
+  "snapshot_hashes": {
+    "heritage.json": "873da29153213014ca3cab86f4c5e29624d22474f458d9e2003c326c2efb19d9",
+    "provenance.json": "b3b3c4360e247caf8c3035a8bf926d03b115ecd47c04ce127037dec02291f4b1"
+  },
+  "parameters": {
+    "from": 1965,
+    "to": 2026,
+    "group": "All"
+  },
+  "extensions": {
+    "Robinson projected point map": "not run (optional)",
+    "Time-aware point map": "not run (optional)",
+    "GPU point layer": "not run (optional)",
+    "Rasterized count-density view": "not run (optional)",
+    "H3 hexagonal aggregation": "not run (optional)",
+    "Spatial autocorrelation": "not run (optional)",
+    "Georeferenced count raster": "not run (optional)",
+    "Repeated-geometry trajectory summary": "not run (optional)",
+    "Linked geographic inspection": "not run (optional)",
+    "Coordinate-derived graph": "not run (optional)",
+    "Optional tiled basemap": "not run (optional)"
+  },
+  "python": "3.12.14"
+}

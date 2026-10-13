@@ -64,3 +64,11 @@ with tempfile.TemporaryDirectory() as folder:
  print('fallback recorded')`
  assert.match(execFileSync('python3',['-c',script],{encoding:'utf8'}),/fallback recorded/);
 });
+
+test('implicit metric tables and legacy Markdown retain rich output',()=>{
+ const doc=new JSDOM(fs.readFileSync('public/notebooks/INFOSCI301_Week4_Network_Studio_Executed.html','utf8')).window.document;
+ assert.ok(doc.querySelector('#network-original-10 table'));
+ const legacy=new JSDOM(fs.readFileSync('public/notebooks/legacy-idiom-atlas.html','utf8')).window.document;
+ assert.ok(legacy.querySelector('#legacy-code-16 pre code'));
+ assert.ok(legacy.querySelector('#legacy-code-19 table'));
+});

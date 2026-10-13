@@ -1,16 +1,16 @@
 [
   {
     "target": "public/notebooks/INFOSCI301_Week2_Idiom_Algorithm_Gallery_Python_R_Executed.html",
-    "sha256": "b752b4d73d5a462cf94de6357c685e9bce9388a877b32c54f11381ea0c8bc5c4",
+    "sha256": "f1c89a3c3582cd1f2793aa87d123c19f353d12a6e112d98672be30b681240d35",
     "parts": [
-      "public/notebooks/packed/INFOSCI301_Week2_Idiom_Algorithm_Gallery_Python_R_Executed-b752b4d73d5a-00.txt"
+      "public/notebooks/packed/INFOSCI301_Week2_Idiom_Algorithm_Gallery_Python_R_Executed-f1c89a3c3582-00.txt"
     ]
   },
   {
     "target": "public/notebooks/INFOSCI301_Week4_Network_Studio_Executed.html",
-    "sha256": "c4c02c21c44d73dd8a4cd2811c055687d09729921cff4d0f6327e2c8af6d9dcb",
+    "sha256": "312d9d514c5fd3c2f0773f462b6bd78b44dfd4488d58390c8866cf114ff1ebd6",
     "parts": [
-      "public/notebooks/packed/INFOSCI301_Week4_Network_Studio_Executed-c4c02c21c44d-00.txt"
+      "public/notebooks/packed/INFOSCI301_Week4_Network_Studio_Executed-312d9d514c5f-00.txt"
     ]
   },
   {
@@ -23,9 +23,9 @@
   },
   {
     "target": "public/notebooks/legacy-idiom-atlas.html",
-    "sha256": "b752b4d73d5a462cf94de6357c685e9bce9388a877b32c54f11381ea0c8bc5c4",
+    "sha256": "f1c89a3c3582cd1f2793aa87d123c19f353d12a6e112d98672be30b681240d35",
     "parts": [
-      "public/notebooks/packed/legacy-idiom-atlas-b752b4d73d5a-00.txt"
+      "public/notebooks/packed/legacy-idiom-atlas-f1c89a3c3582-00.txt"
     ]
   },
   {
@@ -43,18 +43,18 @@
   },
   {
     "target": "public/notebooks/assets/INFOSCI301_Week4_Network_Studio_Colab/saved_assets.zip",
-    "sha256": "b3932f3ed2ab47013a442f5bd8019b56a3260a439d0b998496785ebfb58d9d57",
+    "sha256": "9eff3f1fb4caea9543cc2bd1b1c7d94a88d3ea0c2b9b6f149d1d5878b974a407",
     "parts": [
-      "public/notebooks/packed/saved_assets-b3932f3ed2ab-00.txt",
-      "public/notebooks/packed/saved_assets-b3932f3ed2ab-01.txt",
-      "public/notebooks/packed/saved_assets-b3932f3ed2ab-02.txt",
-      "public/notebooks/packed/saved_assets-b3932f3ed2ab-03.txt",
-      "public/notebooks/packed/saved_assets-b3932f3ed2ab-04.txt",
-      "public/notebooks/packed/saved_assets-b3932f3ed2ab-05.txt",
-      "public/notebooks/packed/saved_assets-b3932f3ed2ab-06.txt",
-      "public/notebooks/packed/saved_assets-b3932f3ed2ab-07.txt",
-      "public/notebooks/packed/saved_assets-b3932f3ed2ab-08.txt",
-      "public/notebooks/packed/saved_assets-b3932f3ed2ab-09.txt"
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-00.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-01.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-02.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-03.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-04.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-05.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-06.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-07.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-08.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-09.txt"
     ]
   },
   {

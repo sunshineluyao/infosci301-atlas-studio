@@ -8,7 +8,7 @@
       "sha256": "16aaaf0ac7a82effddf65daa0c65788f9f1d16718ddf43bdfdde8d47fbe9b30c",
       "code_cells": 12,
       "figures": 4,
-      "preview_sha256": "b752b4d73d5a462cf94de6357c685e9bce9388a877b32c54f11381ea0c8bc5c4",
+      "preview_sha256": "f1c89a3c3582cd1f2793aa87d123c19f353d12a6e112d98672be30b681240d35",
       "execution": {
         "code_cells": 12,
         "date": "2026-10-13",
@@ -22,10 +22,10 @@
       "notebook": "INFOSCI301_Week4_Network_Studio_Colab.ipynb",
       "preview": "INFOSCI301_Week4_Network_Studio_Executed.html",
       "bundle": "assets/INFOSCI301_Week4_Network_Studio_Colab/saved_assets.zip",
-      "sha256": "4dfeae79ca1239f67614fdb014b0240b16edd02b7e9c696948a9a734dc0c097e",
+      "sha256": "d58bbcdcc3811ca8360d79c68ccb40a15c16a25d74df072ae94c6925df05d15c",
       "code_cells": 21,
       "figures": 8,
-      "preview_sha256": "c4c02c21c44d73dd8a4cd2811c055687d09729921cff4d0f6327e2c8af6d9dcb",
+      "preview_sha256": "312d9d514c5fd3c2f0773f462b6bd78b44dfd4488d58390c8866cf114ff1ebd6",
       "execution": {
         "code_cells": 21,
         "date": "2026-10-13",
@@ -38,6 +38,16 @@
           "Sparse-graph PageRank comparison": "not run (optional)"
         },
         "python": "3.12.14",
+        "rich_output_refresh": {
+          "cells": [
+            3,
+            4,
+            6,
+            10
+          ],
+          "method": "selected setup and dependent cells re-executed in a fresh IPython process; other previously verified outputs retained",
+          "python_code": "unchanged"
+        },
         "status": "completed"
       }
     },

@@ -19,6 +19,16 @@ def execute(path):
     state=os.environ.get('INFOSCI301_PALETTE_INPUT')
     if state and 'Color' in path.name:shutil.copy2(state,'INFOSCI301_palette_state.json')
     current=[''];serial=[0]
+    # Emit implicit results with the rich display formatter, rather than terminal repr.
+    shell.displayhook.write_output_prompt=lambda:None
+    shell.displayhook.write_format_data=lambda *args,**kwargs:None
+    def emit_result(value):
+        if value is None:return
+        if type(value).__module__.startswith('altair') and hasattr(value,'to_html'):
+            serial[0]+=1;stem=current[0]+f'-{serial[0]}'
+            chart=value.to_html();(figfolder/(stem+'.vegalite.json')).write_text(value.to_json())
+            display({'text/html':'<iframe title="Saved Altair chart" style="width:100%;height:650px;border:0" sandbox="allow-scripts allow-downloads" srcdoc="'+html.escape(chart,quote=True)+'"></iframe>'},raw=True)
+        else:display(value)
     def show(*args,**kwargs):
         for i in list(plt.get_fignums()):
             fig=plt.figure(i);serial[0]+=1;stem=f'{current[0]}-{serial[0]}'
@@ -35,7 +45,9 @@ def execute(path):
     for idx,c in enumerate(nb.cells):
         if c.cell_type!='code':continue
         count+=1;current[0]=c.id;serial[0]=0
-        with capture_output() as captured:result=shell.run_cell(c.source,store_history=False)
+        with capture_output() as captured:
+            result=shell.run_cell(c.source,store_history=False)
+            if not (result.error_before_exec or result.error_in_exec):emit_result(result.result)
         exc=result.error_before_exec or result.error_in_exec
         if exc:
             (folder/'error.txt').write_text(captured.stdout+'\n'+captured.stderr);raise RuntimeError(f'{path.name} cell {idx+1} ({c.id}): {exc}')
@@ -70,6 +82,7 @@ def render(path):
                 figures+=1;needs_plotly=True;pid=f'plot-{c.id}-{j}';spec=json.dumps(data['application/vnd.plotly.v1+json']).replace('</','<\\/')
                 parts.append(f'<div id="{pid}" class="plotly-graph-div" aria-label="Saved Plotly result"></div><script type="application/json" data-plot="{pid}">{spec}</script>')
             elif 'text/html' in data:parts.append(data['text/html'])
+            elif 'text/markdown' in data:parts.append(markdown.markdown(data['text/markdown'],extensions=['tables','fenced_code']))
             elif 'application/vnd.jupyter.widget-view+json' in data:parts.append('<p class="widget-note">Run this cell in Colab to use its controls. Static counterparts appear later in this lesson.</p>')
             elif 'text/plain' in data:parts.append('<pre>'+html.escape(data['text/plain'])+'</pre>')
         text=''.join('<div class="output">'+p+'</div>' for p in parts)

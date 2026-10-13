@@ -7,3 +7,5 @@
 .field{font-size:13px}.field select{font-size:13px}.field small{font-size:12px}.step-prompt h3{font-size:14px}.checkline{font-size:12px}.tabs button{font-size:13px}.boundary p{font-size:12px}.search input{font-size:14px}.chart-note{font-size:11px}.status-label{font-size:12px}.local-badge{font-size:12px}
 @media(max-width:760px){.tabs button{font-size:12px}.field select{font-size:12px}.field small{font-size:11px}.boundary p{font-size:12px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+.saved-chart{display:block;width:100%;height:auto;background:white;border:1px solid var(--line);border-radius:8px}.notebook-card figure{margin:20px 0 0}.notebook-card figcaption{font-size:12px;color:var(--muted);margin-top:8px}

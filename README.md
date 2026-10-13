@@ -1,3 +1,24 @@
+## Executed notebook release · 14 October 2026
+
+The notebook sources are authoritative. Saved HTML views and download bundles are generated from their recorded Python outputs. Vercel builds pin Colab links to `VERCEL_GIT_COMMIT_SHA`, so the source, local download and preview belong to the same build.
+
+- Interaction: bundled OSM/NASA/Mandara snapshots; categorical CP labels; a fixed rainfall scale and matched January/July comparison.
+- Color: documented color-vision simulation direction; imported palettes update the builder and 3D surface; current-state PNG/SVG/PDF, audit CSV, CSS, tokens and ASE exports.
+- Network: ordered paper–topic comparisons and source dictionaries, preserving optional package demonstrations.
+- Place/time: matched 2D/projected space–time views of the same retained landmark IDs, with designation year explicitly defined.
+- Idioms: editable 38-leaf gallery, paired Python/R patterns and a matched synthetic comparison. R is an unexecuted reference route.
+
+Each notebook has an execution record and a blank student design record. Python widgets require a Colab/Jupyter kernel; saved JavaScript plots retain supported browser interactions. Optional specialist extensions are retained and explicitly disabled for the recorded core run.
+
+To regenerate this repository's notebooks and previews:
+
+```bash
+python3 -m pip install -r scripts/notebook-requirements.txt
+npm run notebook:build
+```
+
+Inspect `NOTEBOOK_RELEASE.json` for source and HTML SHA-256 hashes. The review branch holds the teaching revision until the instructor's merge decision.
+
 # Atlas Studio · INFOSCI 301
 
 Two deployable editions of the same evidence-led visualization tutorial.

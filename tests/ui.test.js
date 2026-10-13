@@ -30,7 +30,7 @@ test('Guided UI loads real data, switches studios/sections, filters and opens co
  await act(async()=>{dataset.value='earth';dataset.dispatchEvent(new dom.window.Event('change',{bubbles:true}));});assert.ok(text().includes('272'));assert.ok(text().includes('Earth events in place and time'));
  const group=[...document.querySelectorAll('select')].find(s=>s.querySelector('option')?.textContent==='All');
  const selectedGroup=group.options[1].value;await act(async()=>{group.value=selectedGroup;group.dispatchEvent(new dom.window.Event('change',{bubbles:true}));});assert.ok(text().includes('visible records'));
- await click('Code & packages');assert.ok(text().includes('Open original idiom atlas'));assert.equal(document.querySelectorAll('a[download]').length,2);
+ await click('Code & packages');assert.ok(text().includes('Open original idiom atlas'));assert.equal(document.querySelectorAll('a[download][href$=".ipynb"]').length,3);assert.equal(document.querySelectorAll('a[download][href$="-evidence.zip"]').length,3);
  await click('R');assert.ok(text().includes('R was not executed in this release'));
  await click('Sources & inspiration');assert.ok(text().includes('InstantMesh'));assert.ok(text().includes('React Three Next'));
  await click('Configure');assert.ok(document.querySelector('[role="dialog"]'));await click('Apply for this session');assert.equal(document.querySelector('[role="dialog"]'),null);

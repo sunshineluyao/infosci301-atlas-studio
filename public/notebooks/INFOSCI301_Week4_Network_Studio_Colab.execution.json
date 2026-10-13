@@ -1,0 +1,11 @@
+{
+  "executed_utc": "2026-10-13T17:13:10.299607+00:00",
+  "runner": "in-process Python: saved display outputs and initial widget callbacks; optional extensions explicitly disabled",
+  "executed_cells": 21,
+  "python": "3.12.14",
+  "optional_extensions": false,
+  "notebook_sha256": "f830ebe8e8716eac3e3b48741311f527f54840c90a4d7a313a3ad37c35a536bc",
+  "html_sha256": "10d0f4986025134e7635b0fb4848bb9eb40fa510ddf778bad530fd3ee015645f",
+  "notebook": "INFOSCI301_Week4_Network_Studio_Colab.ipynb",
+  "html": "INFOSCI301_Week4_Network_Studio_Colab.html"
+}

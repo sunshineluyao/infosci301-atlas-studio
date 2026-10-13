@@ -1,0 +1,73 @@
+name,language,category,use,tags,official_url
+Matplotlib,Python,grammar,"Foundational static, animated, and publication figures.",bar line scatter animation,https://matplotlib.org/stable/gallery/index.html
+Seaborn,Python,grammar,Statistical graphics with concise data-aware defaults.,distribution relational categorical,https://seaborn.pydata.org/examples/index.html
+Plotly,Python,grammar,"Interactive browser charts, maps, 3D, and dashboards.",interactive hover map,https://plotly.com/python/
+Altair,Python,grammar,Declarative Vega-Lite grammar for composable charts.,declarative grammar interactive,https://altair-viz.github.io/gallery/index.html
+Bokeh,Python,grammar,Interactive linked plots and browser applications.,interactive linked brushing server,https://docs.bokeh.org/en/latest/docs/gallery.html
+HoloViews,Python,grammar,High-level declarative views across plotting backends.,declarative linked data,https://holoviews.org/reference/index.html
+hvPlot,Python,grammar,"Interactive plotting API for pandas, xarray, and more.",pandas xarray interactive,https://hvplot.holoviz.org/reference/index.html
+plotnine,Python,grammar,Grammar-of-graphics implementation inspired by ggplot2.,grammar layers facets,https://plotnine.org/gallery.html
+Lets-Plot,Python,grammar,Grammar-of-graphics plots for notebooks and web output.,grammar interactive notebooks,https://lets-plot.org/python/pages/gallery.html
+Pygal,Python,grammar,Lightweight SVG charts with browser-friendly output.,svg browser simple,https://www.pygal.org/en/stable/documentation/types/index.html
+pyecharts,Python,grammar,Python bindings for the Apache ECharts ecosystem.,echarts interactive web,https://gallery.pyecharts.org/
+Panel,Python,grammar,"Compose plots, widgets, and data apps across libraries.",dashboard widgets app,https://panel.holoviz.org/gallery/index.html
+pandas plotting,Python,statistics,Quick plots directly from Series and DataFrames.,dataframe quick exploratory,https://pandas.pydata.org/docs/user_guide/visualization.html
+statsmodels graphics,Python,statistics,"Regression, diagnostic, time-series, and model plots.",regression residual diagnostic,https://www.statsmodels.org/stable/graphics.html
+scikit-learn Displays,Python,statistics,Model evaluation displays with estimator integration.,machine learning calibration roc confusion,https://scikit-learn.org/stable/visualizations.html
+Yellowbrick,Python,statistics,Visual diagnostics for machine-learning workflows.,machine learning diagnostic residual,https://www.scikit-yb.org/en/latest/gallery.html
+ArviZ,Python,statistics,Exploratory analysis and diagnostics for Bayesian models.,bayesian posterior interval,https://python.arviz.org/en/stable/examples/index.html
+corner.py,Python,statistics,Multidimensional posterior and parameter distributions.,bayesian pairplot distribution,https://corner.readthedocs.io/en/latest/pages/quickstart/
+missingno,Python,statistics,"Missing-data matrices, bars, heatmaps, and dendrograms.",missingness data quality,https://github.com/ResidentMario/missingno
+UpSetPlot,Python,statistics,Scalable set-intersection visualization.,sets intersections upset,https://upsetplot.readthedocs.io/en/stable/auto_examples/index.html
+JoyPy,Python,statistics,Ridgeline distribution plots built on Matplotlib.,ridgeline density distribution,https://github.com/leotac/joypy
+PtitPrince,Python,statistics,"Raincloud plots combining density, box, and points.",raincloud distribution,https://github.com/pog87/PtitPrince
+SciencePlots,Python,statistics,Matplotlib styles for scientific publication contexts.,publication style journal,https://github.com/garrettj403/SciencePlots
+statannotations,Python,statistics,Statistical annotations for seaborn and Matplotlib plots.,significance annotation box,https://github.com/trevismd/statannotations
+GeoPandas,Python,specialized,Geospatial vector data analysis and mapping.,map geometry spatial,https://geopandas.org/en/stable/docs/user_guide/mapping.html
+Cartopy,Python,specialized,Projected maps and geospatial data transformations.,map projection geospatial,https://cartopy.readthedocs.io/stable/gallery/index.html
+Folium,Python,specialized,Interactive Leaflet maps from Python.,interactive map leaflet,https://python-visualization.github.io/folium/latest/getting_started.html
+pydeck,Python,specialized,Large-scale layered geospatial visualizations with deck.gl.,map layers gpu spatial,https://deckgl.readthedocs.io/en/latest/gallery/index.html
+Datashader,Python,specialized,Rasterize and aggregate massive point or line datasets.,large data density raster,https://datashader.org/user_guide/index.html
+NetworkX,Python,specialized,"Network analysis, layouts, and graph drawing.",network graph topology,https://networkx.org/documentation/stable/auto_examples/index.html
+PyVis,Python,specialized,Interactive browser-based network visualization.,network interactive browser,https://pyvis.readthedocs.io/en/latest/
+OSMnx,Python,specialized,"Download, analyze, and visualize street networks.",network street map osm,https://osmnx.readthedocs.io/en/stable/
+contextily,Python,specialized,Add web basemaps to geospatial plots.,basemap tiles spatial,https://contextily.readthedocs.io/en/latest/intro_guide.html
+GeoViews,Python,specialized,Geographic visualization built on HoloViews.,map geographic interactive,https://geoviews.org/gallery/index.html
+Graphviz,Python,specialized,Graph and hierarchy layout through the Graphviz engine.,network tree layout,https://graphviz.readthedocs.io/en/stable/examples.html
+pyCirclize,Python,specialized,"Circular genome, chord, and sector visualizations.",circular chord polar,https://moshi4.github.io/pyCirclize/
+ggplot2,R,grammar,Layered grammar of graphics for analytical and publication figures.,grammar layers facets,https://ggplot2.tidyverse.org/
+plotly for R,R,grammar,Interactive Plotly figures and ggplotly conversion.,interactive hover web,https://plotly.com/r/
+Shiny,R,grammar,Reactive interactive applications and dashboards.,app reactive dashboard,https://shiny.posit.co/r/gallery/
+highcharter,R,grammar,Interactive Highcharts visualizations from R.,interactive web time series,https://jkunst.com/highcharter/
+echarts4r,R,grammar,R interface to Apache ECharts with rich interaction.,interactive echarts web,https://echarts4r.john-coene.com/
+ggiraph,R,grammar,Interactive SVG output for ggplot2 graphics.,ggplot interactive svg,https://davidgohel.github.io/ggiraph/
+lattice,R,grammar,Trellis graphics for multivariable conditioning.,facets conditioning multivariate,https://lattice.r-forge.r-project.org/
+r2d3,R,grammar,Build custom D3 visualizations from R.,d3 custom interactive,https://rstudio.github.io/r2d3/
+htmlwidgets,R,grammar,Framework connecting JavaScript visualization libraries to R.,html javascript interactive,https://www.htmlwidgets.org/showcase_leaflet.html
+vegawidget,R,grammar,Render and compose Vega and Vega-Lite specifications.,vega declarative grammar,https://vegawidget.github.io/vegawidget/
+dygraphs,R,grammar,Interactive time-series charts for R and Shiny.,interactive time series,https://rstudio.github.io/dygraphs/
+reactable,R,grammar,Interactive data tables with sorting and grouping.,table interactive arranged,https://glin.github.io/reactable/articles/examples.html
+patchwork,R,statistics,Compose multiple ggplot2 figures with a layout grammar.,composition panels publication,https://patchwork.data-imaginist.com/
+cowplot,R,statistics,"Align, arrange, annotate, and theme publication plots.",publication arrange annotation,https://wilkelab.org/cowplot/
+ggridges,R,statistics,Ridgeline density plots for grouped distributions.,ridgeline distribution density,https://wilkelab.org/ggridges/
+ggdist,R,statistics,Uncertainty and distribution visualization for ggplot2.,uncertainty interval distribution,https://mjskay.github.io/ggdist/
+ggbeeswarm,R,statistics,Non-overlapping point plots for distributions.,beeswarm points distribution,https://eclarke.github.io/ggbeeswarm/
+GGally,R,statistics,Pairs plots and extensions to ggplot2.,pairplot correlation multivariate,https://ggobi.github.io/ggally/
+ggstatsplot,R,statistics,ggplot2 figures integrated with statistical details.,statistics annotation inference,https://indrajeetpatil.github.io/ggstatsplot/
+forestplot,R,statistics,Customizable forest plots and confidence intervals.,forest interval meta analysis,https://cran.r-project.org/package=forestplot
+survminer,R,statistics,Publication-ready survival curves and diagnostics.,survival model curve,https://rpkgs.datanovia.com/survminer/
+ggforce,R,statistics,"Geometric extensions, facets, and annotations for ggplot2.",geometry facet annotation,https://ggforce.data-imaginist.com/
+ggthemes,R,statistics,"Additional complete themes, scales, and palettes for ggplot2.",theme publication palette,https://jrnold.github.io/ggthemes/
+ggtext,R,statistics,Rich text rendering inside ggplot2 figures.,typography annotation publication,https://wilkelab.org/ggtext/
+sf,R,specialized,Simple-features vector data operations and mapping.,map geometry spatial,https://r-spatial.github.io/sf/
+terra,R,specialized,Spatial raster and vector analysis with plotting support.,raster map spatial,https://rspatial.github.io/terra/
+tmap,R,specialized,Thematic static and interactive maps.,thematic map interactive,https://r-tmap.github.io/tmap/
+leaflet,R,specialized,Interactive Leaflet maps from R and Shiny.,interactive map tiles,https://rstudio.github.io/leaflet/
+mapview,R,specialized,Rapid interactive viewing of spatial objects.,interactive map exploratory,https://r-spatial.github.io/mapview/
+ggraph,R,specialized,Grammar-of-graphics approach to networks and trees.,network tree grammar,https://ggraph.data-imaginist.com/
+igraph,R,specialized,"Network analysis, layout, and plotting.",network topology graph,https://r.igraph.org/
+ComplexHeatmap,R,specialized,Highly composable heatmaps with annotations.,heatmap matrix annotation,https://jokergoo.github.io/ComplexHeatmap-reference/book/
+ggalluvial,R,specialized,Alluvial plots for categorical flows in ggplot2.,alluvial sankey flow,https://corybrunson.github.io/ggalluvial/
+circlize,R,specialized,"Circular, chord, genomic, and sector visualizations.",circular chord polar,https://jokergoo.github.io/circlize_book/book/
+networkD3,R,specialized,"Interactive D3 networks, trees, and Sankey diagrams.",network sankey interactive,https://christophergandrud.github.io/networkD3/
+treemapify,R,specialized,Treemaps in the ggplot2 ecosystem.,treemap hierarchy area,https://wilkox.org/treemapify/

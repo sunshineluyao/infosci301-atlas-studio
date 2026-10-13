@@ -67,4 +67,5 @@ def execute(path):
  print('PASS',path.name,count,'cells',flush=True)
 
 if __name__=='__main__':
- for arg in sys.argv[1:]:execute(arg)
+ paths=[Path(arg).resolve() for arg in sys.argv[1:]]
+ for path in paths:execute(path)

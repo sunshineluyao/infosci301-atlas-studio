@@ -11,7 +11,7 @@ def execute(path):
     import matplotlib.pyplot as plt,plotly.basedatatypes,plotly.io as pio
     from IPython.core.interactiveshell import InteractiveShell
     from IPython.utils.capture import capture_output
-    from IPython.display import display,HTML
+    from IPython.display import display
     nb=nbformat.read(path,as_version=4);shell=InteractiveShell.instance()
     folder=ROOT/'.notebook-run'/path.stem
     if folder.exists():shutil.rmtree(folder)
@@ -27,7 +27,7 @@ def execute(path):
         if type(value).__module__.startswith('altair') and hasattr(value,'to_html'):
             serial[0]+=1;stem=current[0]+f'-{serial[0]}'
             chart=value.to_html();(figfolder/(stem+'.vegalite.json')).write_text(value.to_json())
-            display(HTML('<iframe title="Saved Altair chart" style="width:100%;height:650px;border:0" sandbox="allow-scripts allow-downloads" srcdoc="'+html.escape(chart,quote=True)+'"></iframe>'))
+            display({'text/html':'<iframe title="Saved Altair chart" style="width:100%;height:650px;border:0" sandbox="allow-scripts allow-downloads" srcdoc="'+html.escape(chart,quote=True)+'"></iframe>'},raw=True)
         else:display(value)
     def show(*args,**kwargs):
         for i in list(plt.get_fignums()):

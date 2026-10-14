@@ -1,0 +1,76 @@
+[
+  {
+    "target": "public/notebooks/INFOSCI301_Week2_Idiom_Algorithm_Gallery_Python_R_Executed.html",
+    "sha256": "9223ad4f0081f0f431e388b81d778ea25d2a66208a5b7563ad7caf34c1df3281",
+    "parts": [
+      "public/notebooks/packed/INFOSCI301_Week2_Idiom_Algorithm_Gallery_Python_R_Executed-9223ad4f0081-00.txt"
+    ]
+  },
+  {
+    "target": "public/notebooks/INFOSCI301_Week4_Network_Studio_Executed.html",
+    "sha256": "47300e5416f37fc099053eb019562722392ef81b21201d36de0ed28f6f5ba05e",
+    "parts": [
+      "public/notebooks/packed/INFOSCI301_Week4_Network_Studio_Executed-312d9d514c5f-00.txt"
+    ],
+    "patch": "public/notebooks/patches/INFOSCI301_Week4_Network_Studio_Executed.json"
+  },
+  {
+    "target": "public/notebooks/INFOSCI301_Week4_Spatiotemporal_Studio_Executed.html",
+    "sha256": "edc82f7902b57dac4d568fed91f26c645dc89346aa25948aeec11dc82a35d10f",
+    "parts": [
+      "public/notebooks/packed/INFOSCI301_Week4_Spatiotemporal_Studio_Executed-edc82f7902b5-00.txt",
+      "public/notebooks/packed/INFOSCI301_Week4_Spatiotemporal_Studio_Executed-edc82f7902b5-01.txt"
+    ]
+  },
+  {
+    "target": "public/notebooks/legacy-idiom-atlas.html",
+    "sha256": "9223ad4f0081f0f431e388b81d778ea25d2a66208a5b7563ad7caf34c1df3281",
+    "parts": [
+      "public/notebooks/packed/legacy-idiom-atlas-9223ad4f0081-00.txt"
+    ]
+  },
+  {
+    "target": "public/notebooks/assets/INFOSCI301_Week2_Idiom_Algorithm_Gallery_Python_R/saved_assets.zip",
+    "sha256": "d8142524761c03b071de116f8c00f77d3d9a3801d1c233545af180b0d3175b19",
+    "parts": [
+      "public/notebooks/packed/saved_assets-d8142524761c-00.txt",
+      "public/notebooks/packed/saved_assets-d8142524761c-01.txt",
+      "public/notebooks/packed/saved_assets-d8142524761c-02.txt",
+      "public/notebooks/packed/saved_assets-d8142524761c-03.txt",
+      "public/notebooks/packed/saved_assets-d8142524761c-04.txt",
+      "public/notebooks/packed/saved_assets-d8142524761c-05.txt",
+      "public/notebooks/packed/saved_assets-d8142524761c-06.txt",
+      "public/notebooks/packed/saved_assets-d8142524761c-07.txt"
+    ]
+  },
+  {
+    "target": "public/notebooks/assets/INFOSCI301_Week4_Network_Studio_Colab/saved_assets.zip",
+    "sha256": "3341b33c946468974f7617aaef9fdafbadff8f166e37b198aa46755b3ed1d098",
+    "parts": [
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-00.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-01.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-02.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-03.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-04.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-05.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-06.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-07.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-08.txt",
+      "public/notebooks/packed/saved_assets-9eff3f1fb4ca-09.txt"
+    ],
+    "patch": "public/notebooks/patches/INFOSCI301_Week4_Network_Studio_Colab.json"
+  },
+  {
+    "target": "public/notebooks/assets/INFOSCI301_Week4_Spatiotemporal_Studio_Colab/saved_assets.zip",
+    "sha256": "b0a3f2b3dc71e3e7d8675b3e83dad8de6d7ecfe49f810bda7994ef2210d91ebf",
+    "parts": [
+      "public/notebooks/packed/saved_assets-acd2a316c027-00.txt",
+      "public/notebooks/packed/saved_assets-acd2a316c027-01.txt",
+      "public/notebooks/packed/saved_assets-acd2a316c027-02.txt",
+      "public/notebooks/packed/saved_assets-acd2a316c027-03.txt",
+      "public/notebooks/packed/saved_assets-acd2a316c027-04.txt",
+      "public/notebooks/packed/saved_assets-acd2a316c027-05.txt"
+    ],
+    "patch": "public/notebooks/patches/INFOSCI301_Week4_Spatiotemporal_Studio_Colab.json"
+  }
+]

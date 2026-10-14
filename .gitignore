@@ -10,3 +10,11 @@ release/
 .vercel/
 *.log
 .DS_Store
+
+.notebook-run/
+.venv/
+__pycache__/
+
+/public/notebooks/*Executed.html
+/public/notebooks/legacy-idiom-atlas.html
+/public/notebooks/assets/**/*.zip

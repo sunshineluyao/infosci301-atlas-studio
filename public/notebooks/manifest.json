@@ -1,0 +1,77 @@
+{
+  "revision": "2026-10-14",
+  "lessons": [
+    {
+      "notebook": "INFOSCI301_Week2_Idiom_Algorithm_Gallery_Python_R.ipynb",
+      "preview": "INFOSCI301_Week2_Idiom_Algorithm_Gallery_Python_R_Executed.html",
+      "bundle": "assets/INFOSCI301_Week2_Idiom_Algorithm_Gallery_Python_R/saved_assets.zip",
+      "sha256": "c292178d911d11524ae1225520c9328ac02fc76273214d5dec401b77c166f98c",
+      "code_cells": 12,
+      "figures": 4,
+      "preview_sha256": "9223ad4f0081f0f431e388b81d778ea25d2a66208a5b7563ad7caf34c1df3281",
+      "execution": {
+        "code_cells": 12,
+        "date": "2026-10-14",
+        "executed_utc": "2026-10-14T04:34:43.576056+00:00",
+        "method": "fresh IPython process; Colab frontend not tested",
+        "optional_extensions": {},
+        "python": "3.12.14",
+        "status": "completed"
+      }
+    },
+    {
+      "notebook": "INFOSCI301_Week4_Network_Studio_Colab.ipynb",
+      "preview": "INFOSCI301_Week4_Network_Studio_Executed.html",
+      "bundle": "assets/INFOSCI301_Week4_Network_Studio_Colab/saved_assets.zip",
+      "sha256": "d6f20d63363636ca3a105f6f387565d41926b72fcdee288ab606e6356d59b067",
+      "code_cells": 21,
+      "figures": 8,
+      "preview_sha256": "47300e5416f37fc099053eb019562722392ef81b21201d36de0ed28f6f5ba05e",
+      "execution": {
+        "code_cells": 21,
+        "date": "2026-10-14",
+        "executed_utc": "2026-10-14T04:34:52.795350+00:00",
+        "method": "fresh IPython process; Colab frontend not tested",
+        "optional_extensions": {
+          "Directed process diagram": "not run (optional)",
+          "Inter-community chord diagram": "not run (optional)",
+          "Physics-enabled node-link diagram": "not run (optional)",
+          "Rasterized node-link exploration": "not run (optional)",
+          "Sparse-graph PageRank comparison": "not run (optional)"
+        },
+        "python": "3.12.14",
+        "status": "completed"
+      }
+    },
+    {
+      "notebook": "INFOSCI301_Week4_Spatiotemporal_Studio_Colab.ipynb",
+      "preview": "INFOSCI301_Week4_Spatiotemporal_Studio_Executed.html",
+      "bundle": "assets/INFOSCI301_Week4_Spatiotemporal_Studio_Colab/saved_assets.zip",
+      "sha256": "e22d6903dd88fb78607085472d03a892dd137f527d54c9ddca40f11a7b69dbc3",
+      "code_cells": 23,
+      "figures": 6,
+      "preview_sha256": "edc82f7902b57dac4d568fed91f26c645dc89346aa25948aeec11dc82a35d10f",
+      "execution": {
+        "code_cells": 23,
+        "date": "2026-10-14",
+        "executed_utc": "2026-10-14T04:34:58.658336+00:00",
+        "method": "fresh IPython process; Colab frontend not tested",
+        "optional_extensions": {
+          "Coordinate-derived graph": "not run (optional)",
+          "GPU point layer": "not run (optional)",
+          "Georeferenced count raster": "not run (optional)",
+          "H3 hexagonal aggregation": "not run (optional)",
+          "Linked geographic inspection": "not run (optional)",
+          "Optional tiled basemap": "not run (optional)",
+          "Rasterized count-density view": "not run (optional)",
+          "Repeated-geometry trajectory summary": "not run (optional)",
+          "Robinson projected point map": "not run (optional)",
+          "Spatial autocorrelation": "not run (optional)",
+          "Time-aware point map": "not run (optional)"
+        },
+        "python": "3.12.14",
+        "status": "completed"
+      }
+    }
+  ]
+}

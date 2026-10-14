@@ -1,0 +1,30 @@
+{
+  "lesson": "network",
+  "student_design": {
+    "audience": "",
+    "question": "",
+    "human_decisions": [],
+    "supported_reading": "",
+    "limitation": "",
+    "actual_peer_feedback": "",
+    "next_test": ""
+  },
+  "snapshot_hashes": {
+    "emerging-tech.json": "aec84855a8d67fb4094b4953327a8ebb2209055eaabd84c5313130813ce748b0",
+    "provenance.json": "b3b3c4360e247caf8c3035a8bf926d03b115ecd47c04ce127037dec02291f4b1"
+  },
+  "parameters": {
+    "maxPapers": 30,
+    "since": 2019,
+    "seed": 301,
+    "metric": "degree"
+  },
+  "extensions": {
+    "Physics-enabled node-link diagram": "not run (optional)",
+    "Directed process diagram": "not run (optional)",
+    "Inter-community chord diagram": "not run (optional)",
+    "Rasterized node-link exploration": "not run (optional)",
+    "Sparse-graph PageRank comparison": "not run (optional)"
+  },
+  "python": "3.12.14"
+}

@@ -10,7 +10,13 @@
     "build:vercel": "node scripts/build.mjs vercel",
     "preview": "vite preview --host 0.0.0.0",
     "test": "node --test tests/*.test.js",
-    "notebook:build": "python3 scripts/execute-core-notebooks.py public/notebooks/*.ipynb && python3 scripts/package-notebook-outputs.py"
+    "notebook:build": "python3 scripts/revise_notebooks.py",
+    "notebook:publish": "python3 scripts/publish_notebooks.py",
+    "pretest": "node scripts/materialize-notebook-outputs.mjs",
+    "prebuild": "node scripts/materialize-notebook-outputs.mjs",
+    "prebuild:vercel": "node scripts/materialize-notebook-outputs.mjs",
+    "prebuild:hf": "node scripts/materialize-notebook-outputs.mjs",
+    "predev": "node scripts/materialize-notebook-outputs.mjs"
   },
   "dependencies": {
     "d3": "7.9.0",

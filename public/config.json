@@ -8,7 +8,7 @@
   "maxVisiblePapers": 30,
   "allowLocalData": true,
   "githubRepo": "sunshineluyao/infosci301-atlas-studio",
-  "githubBranch": "codex/notebook-studio-20261014",
+  "githubBranch": "main",
   "notebookPath": "public/notebooks",
   "spaceUrl": "",
   "vercelUrl": ""

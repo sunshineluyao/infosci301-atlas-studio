@@ -1,31 +1,9 @@
-# INFOSCI 301 Week 4 Advanced Idiom Tutorial
+# Editable lessons and authentic saved results
 
-This folder is a drop-in replacement for the current `notebooks/idiom-algorithm-preview.html` resource. It narrows the required path to two advanced studios while retaining a broad package crosswalk.
+Three canonical GitHub notebooks cover the restored 38-idiom / 72-tool gallery, Network Studio, and Spatiotemporal Studio. Vercel embeds their generated *_Executed.html views. legacy-idiom-atlas.html retains the old gallery URL while serving the same regenerated result.
 
-## Files
+manifest.json records exact notebook SHA-256, execution status, code-cell count, figure count and the asset bundle. assets/ includes SVG/PDF figures, source CSV dictionaries, JSON design records and execution receipts. Existing outputs/ retains prior specialist artifacts; an old artifact does not verify optional-package execution in this revision.
 
-- `idiom-algorithm-preview.html`: replacement landing page.
-- `INFOSCI301_Week4_Network_Studio_Colab.ipynb`: editable Google Colab notebook.
-- `INFOSCI301_Week4_Spatiotemporal_Studio_Colab.ipynb`: editable Google Colab notebook.
-- `*_Executed.html`: executed, read-only previews with outputs.
-- `data/`: simplified real-data snapshots and provenance.
-- `outputs/`: static and interactive outputs created during verification.
+Follow Domain → Data/Task → Idiom → Algorithm. Keep a baseline and a justified revision. Widgets require Colab; browser inspection may need external renderers. Source data are bundled, and optional packages and R retain explicit limits.
 
-## Deployment
-
-1. Copy this folder into the existing Hugging Face Space `notebooks/` directory.
-2. Replace the previous `idiom-algorithm-preview.html` with the file of the same name.
-3. Keep the two notebooks, executed HTML files, `data/`, and `outputs/` beside the landing page so relative links continue to work.
-4. Rebuild the Space and test every link in a private or preview deployment before publishing.
-
-The existing public URL can remain unchanged after deployment. This package does not itself modify the public Space.
-
-## Teaching route
-
-- **Required:** run all cells in one notebook, save one relevant output, and complete the final-project transfer task.
-- **Extension:** change one algorithm, parameter, or package only when it improves a named user task.
-- **Verification:** students submit the output, captioned claim and boundary, code location, data/provenance note, accessibility fallback, and next test.
-
-## Reproducibility
-
-The notebook outputs were executed against the bundled snapshots. Live API, OpenStreetMap, and basemap cells have transparent fallbacks because external services can change or fail. Students must not present fallback data as live service output.
+See ../../NOTEBOOK_REVISION.md for content changes, design tools, rebuild commands and validation.

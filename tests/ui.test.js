@@ -13,7 +13,8 @@ test('Guided UI loads real data, switches studios/sections, filters and opens co
  for(const key of ['window','document','localStorage','location','HTMLElement','Event','MouseEvent'])globalThis[key]=dom.window[key];
  globalThis.IS_REACT_ACT_ENVIRONMENT=true;
  globalThis.fetch=async url=>({ok:true,json:async()=>JSON.parse(fs.readFileSync(path.join(process.cwd(),'public',String(url).replace(/^\//,''))))});
- const output=await build({entryPoints:['src/App.jsx'],bundle:true,format:'esm',platform:'node',write:false,packages:'external',define:{__EDITION__:'"guided"','import.meta.env.BASE_URL':'"/"'}});
+ const notebookRef='1234567890123456789012345678901234567890';
+ const output=await build({entryPoints:['src/App.jsx'],bundle:true,format:'esm',platform:'node',write:false,packages:'external',define:{__EDITION__:'"guided"',__NOTEBOOK_REF__:JSON.stringify(notebookRef),'import.meta.env.BASE_URL':'"/"'}});
  fs.mkdirSync('.test-cache',{recursive:true});fs.writeFileSync('.test-cache/app.mjs',output.outputFiles[0].text);
  const App=(await import(pathToFileURL(path.resolve('.test-cache/app.mjs')).href+'?v='+Date.now())).default;
  const root=createRoot(document.getElementById('root'));
@@ -30,7 +31,9 @@ test('Guided UI loads real data, switches studios/sections, filters and opens co
  await act(async()=>{dataset.value='earth';dataset.dispatchEvent(new dom.window.Event('change',{bubbles:true}));});assert.ok(text().includes('272'));assert.ok(text().includes('Earth events in place and time'));
  const group=[...document.querySelectorAll('select')].find(s=>s.querySelector('option')?.textContent==='All');
  const selectedGroup=group.options[1].value;await act(async()=>{group.value=selectedGroup;group.dispatchEvent(new dom.window.Event('change',{bubbles:true}));});assert.ok(text().includes('visible records'));
- await click('Code & packages');assert.ok(text().includes('Open original idiom atlas'));assert.equal(document.querySelectorAll('a[download][href$=".ipynb"]').length,3);assert.equal(document.querySelectorAll('a[download][href$="-evidence.zip"]').length,3);
+ await click('Code & packages');assert.ok(text().includes('Open original idiom atlas'));assert.equal(document.querySelectorAll('.notebook-card').length,3);assert.equal(document.querySelectorAll('.notebook-card iframe').length,3);assert.equal(document.querySelectorAll('.notebook-card a[download]').length,6);
+ const colabLinks=[...document.querySelectorAll('.notebook-card a')].filter(a=>a.href.startsWith('https://colab.research.google.com/'));
+ assert.equal(colabLinks.length,3);assert.ok(colabLinks.every(a=>a.href.includes('/blob/'+notebookRef+'/public/notebooks/')));
  await click('R');assert.ok(text().includes('R was not executed in this release'));
  await click('Sources & inspiration');assert.ok(text().includes('InstantMesh'));assert.ok(text().includes('React Three Next'));
  await click('Configure');assert.ok(document.querySelector('[role="dialog"]'));await click('Apply for this session');assert.equal(document.querySelector('[role="dialog"]'),null);

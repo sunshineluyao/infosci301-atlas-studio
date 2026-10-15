@@ -1,6 +1,6 @@
 """Execute each lesson in a fresh process; publish its authentic saved output."""
 from pathlib import Path
-import base64,hashlib,html,io,json,os,platform,re,shutil,subprocess,sys,zipfile
+import base64,datetime,hashlib,html,io,json,os,platform,re,shutil,subprocess,sys,zipfile
 ROOT=Path(__file__).resolve().parents[1]
 WATER=(ROOT/'notebooks').is_dir()
 SOURCE=ROOT/('notebooks' if WATER else 'public/notebooks');PUBLIC=ROOT/'public/notebooks'
@@ -12,7 +12,7 @@ def execute(path):
     from IPython.core.interactiveshell import InteractiveShell
     from IPython.utils.capture import capture_output
     from IPython.display import display
-    nb=nbformat.read(path,as_version=4);shell=InteractiveShell.instance()
+    nb=nbformat.read(path,as_version=4);shell=InteractiveShell.instance();started=datetime.datetime.now(datetime.timezone.utc).isoformat()
     folder=ROOT/'.notebook-run'/path.stem
     if folder.exists():shutil.rmtree(folder)
     folder.mkdir(parents=True);os.chdir(folder);figfolder=Path('executed_figures');figfolder.mkdir()
@@ -33,7 +33,10 @@ def execute(path):
         for i in list(plt.get_fignums()):
             fig=plt.figure(i);serial[0]+=1;stem=f'{current[0]}-{serial[0]}'
             buffer=io.StringIO();fig.savefig(buffer,format='svg',bbox_inches='tight')
-            (figfolder/(stem+'.svg')).write_text(buffer.getvalue());fig.savefig(figfolder/(stem+'.pdf'),bbox_inches='tight')
+            (figfolder/(stem+'.svg')).write_text(buffer.getvalue())
+            pdf=io.BytesIO();fig.savefig(pdf,format='pdf',bbox_inches='tight')
+            if not pdf.getvalue():raise RuntimeError('Empty PDF export: '+stem)
+            (figfolder/(stem+'.pdf')).write_bytes(pdf.getvalue())
             # SVG is sufficient in the notebook. PNG exports still come from lesson cells.
             display({'image/svg+xml':buffer.getvalue()},raw=True)
         plt.close('all')
@@ -58,7 +61,9 @@ def execute(path):
         c.outputs=out;c.execution_count=count;c.metadata['infosci_execution']='completed'
         if c.source.startswith('# Optional package extension:'):
             label=c.source.splitlines()[0].split(': ',1)[1];c.metadata['infosci_execution']=shell.user_ns.get('_extension_status',{}).get(label,'not run')
-    nb.metadata['infosci301_execution']={'method':'fresh IPython process; Colab frontend not tested','date':'2026-10-13','python':platform.python_version(),'code_cells':count,'status':'completed','optional_extensions':shell.user_ns.get('_extension_status',{})}
+    empty=[str(p.relative_to(folder)) for p in folder.rglob('*') if p.is_file() and p.suffix in ('.svg','.pdf','.png') and not p.stat().st_size]
+    if empty:raise RuntimeError('Empty figure exports: '+', '.join(empty))
+    nb.metadata['infosci301_execution']={'method':'fresh IPython process; Colab frontend not tested','date':started[:10],'executed_utc':started,'python':platform.python_version(),'code_cells':count,'status':'completed','optional_extensions':shell.user_ns.get('_extension_status',{})}
     nbformat.validate(nb);nbformat.write(nb,path);nbformat.write(nb,folder/'executed.ipynb');(folder/'execution.json').write_text(json.dumps(dict(nb.metadata['infosci301_execution']),indent=2));print(path.name,count,'Python cells completed',flush=True)
 def render(path):
     import nbformat,markdown
@@ -101,7 +106,7 @@ def render(path):
     clean['metadata']['infosci301_execution']['saved_output']='Matching saved HTML and execution receipt; this download contains editable source.'
     path.write_text(json.dumps(clean,ensure_ascii=False,indent=1)+'\n')
     digest=hashlib.sha256(path.read_bytes()).hexdigest();title=nb.metadata.get('colab',{}).get('name',path.stem).replace('.ipynb','').replace('_',' ')
-    body=f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} saved output</title><style>{CSS}</style></head><body><main><span class="badge">Saved execution · 13 October 2026</span><h1>{html.escape(title)}</h1><div class="intro">Results below were generated from the downloadable notebook. Python widgets require Colab. Plotly/Altair/deck.gl inspection may require external renderers and browser support; static counterparts remain readable.</div><nav><a href="{path.name}" download>Download the exact notebook</a><a href="{bundle}" download>Download SVG/PDF/PNG figures and source records</a><a href="#execution-record">Execution record</a></nav>'+''.join(blocks)+f'<section class="cell" id="execution-record"><h2>Execution record</h2><pre>{html.escape(json.dumps(dict(nb.metadata["infosci301_execution"]),indent=2))}</pre><p>Notebook SHA-256: <code>{digest}</code></p><p>Optional cells marked not run are retained source, not newly verified outputs. R and end-to-end Colab interaction are not certified by this record.</p></section></main>'
+    body=f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} saved output</title><style>{CSS}</style></head><body><main><span class="badge">Saved execution · {html.escape(nb.metadata["infosci301_execution"]["date"])}</span><h1>{html.escape(title)}</h1><div class="intro">Results below were generated from the downloadable notebook. Python widgets require Colab. Plotly/Altair/deck.gl inspection may require external renderers and browser support; static counterparts remain readable.</div><nav><a href="{path.name}" download>Download the exact notebook</a><a href="{bundle}" download>Download SVG/PDF/PNG figures and source records</a><a href="#execution-record">Execution record</a></nav>'+''.join(blocks)+f'<section class="cell" id="execution-record"><h2>Execution record</h2><pre>{html.escape(json.dumps(dict(nb.metadata["infosci301_execution"]),indent=2))}</pre><p>Notebook SHA-256: <code>{digest}</code></p><p>Optional cells marked not run are retained source, not newly verified outputs. R and end-to-end Colab interaction are not certified by this record.</p></section></main>'
     if needs_plotly:
         body+=f'<script src="https://cdn.plot.ly/plotly-{get_plotlyjs_version()}.min.js"></script>'+'''<script>
 const specs=[...document.querySelectorAll('script[data-plot]')];
@@ -142,7 +147,7 @@ def main():
     if not WATER:
         legacy=next((r for r in rows if 'Week2' in r['notebook']),None)
         if legacy:(PUBLIC/'legacy-idiom-atlas.html').write_text((PUBLIC/legacy['preview']).read_text())
-    (PUBLIC/'manifest.json').write_text(json.dumps({'revision':'2026-10-13','lessons':rows},ensure_ascii=False,indent=2));pack_outputs();print('Published',len(rows),'matching saved views',flush=True)
+    (PUBLIC/'manifest.json').write_text(json.dumps({'revision':datetime.datetime.now(datetime.timezone.utc).date().isoformat(),'lessons':rows},ensure_ascii=False,indent=2));pack_outputs();print('Published',len(rows),'matching saved views',flush=True)
 if __name__=='__main__':
     if len(sys.argv)>1 and sys.argv[1]=='--execute':execute(Path(sys.argv[2]).resolve())
     else:main()

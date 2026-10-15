@@ -11,3 +11,4 @@ geopandas==1.2.0
 shapely==2.2.0
 beautifulsoup4==4.15.0
 scikit-learn==1.8.0
+packaging>=23.2

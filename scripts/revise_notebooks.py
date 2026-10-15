@@ -19,12 +19,18 @@ def bundled_json(name):
     assert hashlib.sha256(raw).hexdigest()==SNAPSHOT_HASHES[name]
     return json.loads(raw)
 '''
-STYLE='''import matplotlib.pyplot as plt
+STYLE='''import io
+import matplotlib.pyplot as plt
 from pathlib import Path
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'axes.titlesize':14,'axes.labelsize':11,'xtick.labelsize':10,'ytick.labelsize':10,'figure.dpi':120,'axes.spines.top':False,'axes.spines.right':False,'svg.fonttype':'none'})
 LESSON_OUTPUT=Path('lesson_outputs');LESSON_OUTPUT.mkdir(exist_ok=True)
 def save_lesson_figure(fig,name):
-    for fmt in ('svg','pdf','png'):fig.savefig(LESSON_OUTPUT/(name+'.'+fmt),bbox_inches='tight',dpi=160)
+    for fmt in ('svg','pdf','png'):
+        buffer=io.BytesIO()
+        fig.savefig(buffer,format=fmt,bbox_inches='tight',dpi=160)
+        data=buffer.getvalue()
+        if not data:raise RuntimeError('Empty figure export: '+name+'.'+fmt)
+        (LESSON_OUTPUT/(name+'.'+fmt)).write_bytes(data)
     plt.show()
 '''
 INTRO='''## Read, explore, revise, and explain / 阅读、探索、修改与解释
@@ -59,14 +65,27 @@ def guide(title,detail='Inspect, compare, or explain the stated evidence.',bound
 **Try and explain / 尝试并解释:** keep the baseline, change one documented parameter, and explain which reading changes. Retain the original and revised outputs.
 '''
 def setup(kind,old):
-    names=['pandas','numpy','matplotlib','plotly']+({'network':['networkx','sklearn'],'spatial':['geopandas','shapely'],'interaction':['altair','pydeck','ipywidgets'],'color':['ipywidgets','coloraide','colorspacious']}[kind])
-    requirements={n:('scikit-learn' if n=='sklearn' else n) for n in names}
-    s=f'''# Install only missing core libraries. Data are bundled; package downloads may need internet.
+    names=['pandas','numpy','matplotlib','plotly']+({'network':['networkx','sklearn'],'spatial':['geopandas','shapely'],'interaction':['altair','pydeck','ipywidgets','requests'],'color':['ipywidgets','coloraide','colorspacious']}[kind])
+    constraints={'pandas':'pandas>=2.2','numpy':'numpy>=1.26','matplotlib':'matplotlib>=3.8','plotly':'plotly>=5.24','networkx':'networkx>=3.3','sklearn':'scikit-learn>=1.4','geopandas':'geopandas>=1.0','shapely':'shapely>=2.0','altair':'altair>=5.4','pydeck':'pydeck>=0.9','ipywidgets':'ipywidgets>=8.1','requests':'requests>=2.31','coloraide':'coloraide>=3.0','colorspacious':'colorspacious>=1.1.2'}
+    requirements={n:constraints[n] for n in names}
+    s=f'''# Install missing or outdated core libraries. Data are bundled; package downloads may need internet.
 import importlib.util,subprocess,sys
+from importlib.metadata import version,PackageNotFoundError
+try:
+    from packaging.requirements import Requirement
+except ImportError:
+    subprocess.check_call([sys.executable,'-m','pip','install','-q','packaging>=23.2'])
+    from packaging.requirements import Requirement
 RUN_PACKAGE_EXTENSIONS=False
 _extension_status={{}}
 requirements={requirements!r}
-missing=[pkg for module,pkg in requirements.items() if importlib.util.find_spec(module) is None]
+def needs_install(constraint):
+    requirement=Requirement(constraint)
+    try:
+        return version(requirement.name) not in requirement.specifier
+    except PackageNotFoundError:
+        return True
+missing=[pkg for module,pkg in requirements.items() if importlib.util.find_spec(module) is None or needs_install(pkg)]
 if missing:subprocess.check_call([sys.executable,'-m','pip','install','-q',*missing])
 print('Core environment ready; no live data API or key is required.')
 '''
